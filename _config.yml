@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: golove
+subtitle: 'blog'
+description: '自在飞花轻似梦，无边丝雨细如愁'
 keywords:
-author: John Doe
-language: en
+author: golove
+language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://golove.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,9 +93,18 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/golove/golove.github.io.git
+  branch: master
+
+
+# Algolia Search API Key
+algolia:
+  applicationID: 'GMYCWNPBV8'
+  apiKey: '3f41a3d3ca28ce2d81fd24cc833fc45a'
+  indexName: 'search'
