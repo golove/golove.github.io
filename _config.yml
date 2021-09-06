@@ -149,9 +149,9 @@ aomori_gitalk:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/golove/golove.github.io.git
-  branch: master
-  token: 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
+  repository: git@github.com:golove/golove.github.io.git
+  branch: main
+
 
 # Algolia Search API Key
 algolia:
@@ -159,3 +159,4 @@ algolia:
   apiKey: '04c2f1003cc0614b0e70049f7f7a37d2'
   adminApiKey: '16a58506a5d9e913c10335ab9fd04fa8'
   indexName: 'goloveblog'
+
