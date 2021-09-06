@@ -95,11 +95,11 @@
             <div class="header-menu-social">
                 
     <a class="social" target="_blank" href="">
-        <box-icon type='' name='icon-project'></box-icon>
+        <box-icon type='facebook' name='facebook-circle'></box-icon>
     </a>
 
-    <a class="social" target="_blank" href="">
-        <box-icon type='' name='icon-friendship'></box-icon>
+    <a class="social" target="_blank" href="github.com/golove">
+        <box-icon type='github' name='github'></box-icon>
     </a>
 
             </div>
@@ -146,169 +146,7 @@
   
     
       <article
-  id="tweet-javaScript继承多态闭包"
-  class="article article-type-tweet"
->
-
-    <div class="article-tweet article-type-tweet-inner">
-
-        <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
-
-        <div class="article-tweet-content post-inner-html">
-            
-                <h2 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h2><p>构造函数继承的关键：在child构造函数中执行<code>Parent.call(this)</code></p>
-            
-        </div>
-
-        <footer class="article-footer">
-            <a class="article-footer-common" href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">评论</a>
-            <div class="article-more-info">
-            <div class="article-date">
-  <time datetime="2020-04-10T08:50:53.000Z" itemprop="datePublished">2020-04-10</time>
-</div>
-            
-                <div class="article-category">
-                <a class="article-category-link" href="/categories/javaScripte/">javaScripte</a>
-                </div>
-            
-            
-                <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScripte/" rel="tag">javaScripte</a></li></ul>
-                </div>
-            
-            </div>
-        </footer>
-
-        <div class="article-badge">
-            
-            <div class="article-top">
-                <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
-            </div>
-            
-            
-        </div>
-
-    </div>
-
-</article>
-
-    
-  
-    
-      <article
-  id="tweet-javaScript常用方法"
-  class="article article-type-tweet"
->
-
-    <div class="article-tweet article-type-tweet-inner">
-
-        <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
-
-        <div class="article-tweet-content post-inner-html">
-            
-                <p>使用给定的参数对句子执行一次查找和替换，然后返回新句子<br>Javascript<br>function myReplace(str, before, after) {<br>    if (before.charAt(0) &gt;= ‘A’ &amp;&amp; before.charAt(0) &lt;= ‘Z’) {<br>        //将after的首字母变为大写<br>        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());<br>        str = str.replace(before, after);<br>    } else {<br>//将after的首字母变为小写<br>        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());<br>        str = str.replace(before, after);<br>    }<br>    return str;<br>}<br>console.log(myReplace(“Let us get back to more Coding”, “Coding”, “algorithms”))<br>重复输出字符串<br>Javascript<br>function repeat(str, num) {<br>    if (num &gt; 0) {<br>        var newstr = []<br>        for (let i = 0; i &lt; num; i++) {<br>            newstr[i] = str<br>        }<br>        console.log(newstr.join(“”));<br>    } else {<br>        console.log(“ “);<br>    }<br>}</p>
-<p>repeat(“i love you “, 3);<br>字符串超出隐藏<br>Javascript<br>function truncate(str, num) {<br>    let newstr = str.split(“”);</p>
-<pre><code>if (newstr.length &gt; num &amp;&amp; num &gt; 3) &#123;
-    console.log(newstr.slice(0, num - 3).join(&quot;&quot;) + &#39;...&#39;);
-&#125; else if (num &lt;= 3) &#123;
-    console.log(newstr.slice(0, num).join(&quot;&quot;) + &#39;...&#39;);
-&#125; else if (newstr.length === num) &#123;
-    console.log(newstr.join(&quot;&quot;));
-&#125;
-
-// console.log(newstr.slice(0, num).join(&quot;&quot;) + &#39;...&#39;)
-// return newstr1;
-</code></pre>
-<p>}</p>
-<p>truncate(“Walking on water and developing software from a specification”, 36)<br>把一个数组分成子数组为n的一个2维数组<br>Javascript<br>function chunk(arr, size) {<br>    var len = arr.length;<br>    var n = len / size;<br>    var arry = [];</p>
-<pre><code>for (var i = 0; i &lt; n; i++) &#123;
-    arry[i] = arr.slice(size * i, size * (i + 1))
-&#125;
-// console.log(arr.slice(2, 4))
-console.log(arry)
-</code></pre>
-<p>}<br>chunk([0, 1, 2, 3, 4, 5], 3);<br>如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。<br>Javascript<br>function mutation(arr) {<br>    let arry = [];<br>    let arr1 = arr[1].toLowerCase().split(“”)<br>    let arr0 = arr[0].toLowerCase()<br>    arr1.forEach((e, i) =&gt; {</p>
-<pre><code>    if (arr0.indexOf(e) &gt;= 0) &#123;
-        arry[i] = true;
-        console.log(e, true)
-    &#125; else &#123;
-        console.log(e, false)
-        arry[i] = false;
-    &#125;
-&#125;);
-// return arr[0].toLowerCase()
-if (JSON.stringify(arry).indexOf(&#39;false&#39;) &gt;= 0) &#123;
-    return false;
-&#125; else &#123;
-    return true;
-&#125;
-// return arr[1].toLowerCase().split(&quot;&quot;)
-</code></pre>
-<p>}</p>
-<p>yy = mutation([“floor”, “for”]);<br>实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值<br>Javascript<br>function destroyer() {<br>    var argu = arguments<br>    var arr1 = argu[0];<br>    var arr2 = arr1.filter(function (val) {<br>        var a = true;<br>        for (var i = 1; i &lt; argu.length; i++) {<br>            if (val === argu[i]) {<br>                a = false;<br>            }<br>        }<br>        return a;<br>    })<br>    return arr2<br>}</p>
-<p>console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));<br>先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。<br>Javascript<br>function where(arr, num) {<br>    function compare(a, b) {<br>        return a - b;<br>    }<br>    arr.push(num);<br>    arr.sort(compare);<br>    return arr.indexOf(num);<br>}</p>
-<p>console.log(where([2, 10, 20, 3], 5))<br>下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。<br>Javascript<br>// 普通方法<br>function rot13(str) { // LBH QVQ VG!<br>    var yy = [‘A’, ‘B’, ‘C’, ‘D’, ‘E’, ‘F’, ‘G’, ‘H’, ‘I’, ‘J’, ‘K’, ‘L’, ‘M’, ‘N’, ‘O’, ‘P’, ‘Q’, ‘R’, ‘S’, ‘T’, ‘U’, ‘V’, ‘W’, ‘X’, ‘Y’, ‘Z’];<br>    var ystr = yy.join(“”).replace(“,”, “”);<br>    let n = [];<br>    str.toUpperCase().split(“”).forEach(e =&gt; {<br>        if (e === “!” || e === ‘?’ || e === “ “ || e === “.”) n.push(e)<br>        n.push(ystr.indexOf(e))<br>    })<br>    let newstr = [];<br>    n.forEach((e, i) =&gt; {<br>        if (e === “!” || e === ‘?’ || e === “ “ || e === “.”) {<br>            newstr[i] = e;<br>        } else if (e &gt;= 0) {<br>            newstr[i] = yy[e + 13];<br>            if (e + 13 &gt; 25) {<br>                newstr[i] = yy[13 - (26 - e)]<br>            }<br>        }<br>    })<br>    return newstr.join(“”);<br>}</p>
-<p>// charCodeAt() 方法可返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。<br>// (字符串中第一个字符的下标是 0。如果 index 是负数，或大于等于字符串的长度，则 charCodeAt() 返回 NaN。)<br>// fromCharCode() 可接受一个指定的Unicode 值，然后返回一个字符串。<br>// (该方法是 String 的静态方法，字符串中的每个字符都由单独的数字 Unicode 编码指定。<br>// 它不能作为您已创建的 String 对象的方法来使用。因此它的语法应该是<br>// String.fromCharCode()，而不是 myStringObject.fromCharCode()。)</p>
-<p>function rot13(str) { // LBH QVQ VG!<br>    var str1 = [];<br>    for (var i = 0; i &lt; str.length; i++) {<br>        var num = str[i].charCodeAt();<br>        if (num &gt;= 65 &amp;&amp; num &lt;= 77) {<br>            num += 13;<br>        } else if (num &gt; 77 &amp;&amp; num &lt; 91) {<br>            num -= 13;<br>        }<br>        str1.push(String.fromCharCode(num));<br>    }<br>    return str1.join(“”);<br>}</p>
-<p>console.log(rot13(“GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.”))<br>求任意两数之间所有数之和<br>Javascript<br>function sumAll(arr) {<br>    var i = 0;<br>    let a = Math.max(…arr);<br>    let b = Math.min(…arr);</p>
-<pre><code>for (; b &lt; a + 1; b++) &#123;
-    i = i + b
-&#125;
-console.log(i)
-</code></pre>
-<p>}</p>
-<p>sumAll([56, 10]);<br>数组去重<br>Javascript<br>function diff(arr1, arr2) {<br>  var newArr = [];</p>
-<p>  newArr = Array.from(new Set([…arr1, …arr2]));</p>
-<p>  console.log(newArr);<br>}</p>
-<p>diff([“diorite”, “andesite”, “grass”, “dirt”, “pink wool”, “dead shrub”], [“diorite”, “andesite”, “grass”, “dirt”, “dead shrub”]);<br>对象数组去重<br>Javascript<br>const lists = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];<br>const lists2 = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];</p>
-<p>const result = lists.reduce((prev, cur) =&gt; {<br>  const ids = prev.map(item =&gt; item.id)<br>  return ids.includes(cur.id) ? prev : […prev, cur]<br>}, []);<br>console.log(result)<br>比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。<br>Javascript<br>function diff(arr1, arr2) {<br>  var newArr = [];<br>  var arr3 = […arr1, …arr2]<br>  // var arr3 = arr1.concat(arr2); //将arr1和arr2合并为arr3<br>  function isContain(a) {<br>    //找出arr3中不存在于arr1和arr2中的元素<br>    return arr1.indexOf(a) == -1 || arr2.indexOf(a) == -1;<br>  }<br>  newArr = arr3.filter(isContain);<br>  console.log(newArr);<br>}</p>
-<p>diff([“andesite”, “grass”, “dirt”, “pink wool”, “dead shrub”], [“diorite”, “andesite”, “grass”, “dirt”, “dead shrub”])<br>将给定的数字转换成罗马数字。<br>Javascript<br>function convert(num) {<br>  var num0 = [“1”, “4”, “5”, “9”, “10”, “40”, “50”, “90”, “100”, “400”, “500”, “900”, “1000”];<br>  var num0R = num0.reverse();<br>  var num1 = [“I”, “IV”, “V”, “IX”, “X”, “XL”, “L”, “XC”, “C”, “CD”, “D”, “CM”, “M”];<br>  var num1R = num1.reverse();<br>  var numCon = [];<br>  num0R.forEach(function (value, index, arr) {<br>    while (num &gt;= value) { //条件循环<br>      numCon.push(num1R[index]);<br>      num -= value;<br>    }<br>  });</p>
-<p>  return numCon.join(“”);<br>}</p>
-<p>console.log(convert(222));<br>将给的的数字转换成中文<br>Javascript<br>function convert(num) {<br>  let changeNum = [ ‘零’, ‘一’,’二’,’三’,’四’,’五’,’六’, ‘七’,’八’, ‘九’ ];<br>  let unit = [‘’, ‘十’, ‘百’, ‘千’, ‘万’];<br>  num = parseInt(num)<br>  let getWan = temp =&gt; {<br>    let strArr = temp<br>      .toString()<br>      .split(‘’)<br>      .reverse()<br>    let newNum = ‘’<br>    for (var i = 0; i &lt; strArr.length; i++) {<br>      newNum =<br>        (i == 0 &amp;&amp; strArr[i] == 0<br>          ? ‘’<br>          : i &gt; 0 &amp;&amp; strArr[i] == 0 &amp;&amp; strArr[i - 1] == 0<br>            ? ‘’<br>            : changeNum[strArr[i]] + (strArr[i] == 0 ? unit[0] : unit[i])) +<br>        newNum<br>    }<br>    return newNum<br>  }<br>  let overWan = Math.floor(num / 10000)<br>  let noWan = num % 10000<br>  if (noWan.toString().length &lt; 4) {<br>    noWan = ‘0’ + noWan<br>  }<br>  return overWan ? getWan(overWan) + ‘万’ + getWan(noWan) : getWan(num)<br>}<br>遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性<br>Javascript<br>function where(collection, source) {<br>  var arr = [];<br>  // What’s in a name?<br>  var sourceArr = Object.keys(source);<br>  arr = collection.filter(function (obj) {<br>    for (var i = 0; i &lt; sourceArr.length; i++) {<br>      if (obj[sourceArr[i]] !== source[sourceArr[i]]) {<br>        return false;<br>      }<br>    }<br>    return true;<br>  });<br>  console.log(arr);<br>}</p>
-<p>where([{<br>  first: “Romeo”,<br>  last: “Montague”<br>}, {<br>  first: “Mercutio”,<br>  last: null<br>}, {<br>  first: “Tybalt”,<br>  last: “Capulet”<br>}], {<br>  last: “Capulet”<br>});<br>给定一个字符串返回对象数组中包含该字符串的对象<br>Javascript<br>let str = ‘MOTI’;<br>let data = [<br>    { technology: ‘CHARACTER’, score: -1, text: ‘sfoefjlasdoejfoausfe’ },<br>    { technology: ‘PRESSURE_RELIEF’, score: 2, text: ‘123qw’ },<br>    { technology: ‘SUPPORT’, score: 3, text: ‘123qw’ },<br>    { technology: ‘MOTION_ISOLATION’, score: 2, text: ‘123qw’ },<br>    { technology: ‘TEMPERATURE_MANAGEMENT’, score: -1, text: ‘123qw’ },<br>    { technology: ‘COMFORT’, score: 2, text: ‘szyy’ }<br>];<br>let result = data.filter(function (el) {<br>    return el.technology.indexOf(str) &gt; -1 || el.text.indexOf(str) &gt; -1;<br>});</p>
-<p>console.log(result);<br>Javascript<br>function confirmEnding(str, target) {<br>    var n = target.split(“”).length;<br>    var newstr = str.split(“ “).join(“”);<br>    if (newstr.substr(-n) === target) {<br>        console.log(newstr.substr(-n));<br>        // return true;<br>    } else {<br>        //return false;<br>        console.log(newstr.substr(-n));<br>    }<br>}</p>
-<p>confirmEnding(“Walking on water and developing software from a specification are easy if both are frozen”, “specification”);</p>
-
-            
-        </div>
-
-        <footer class="article-footer">
-            <a class="article-footer-common" href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">评论</a>
-            <div class="article-more-info">
-            <div class="article-date">
-  <time datetime="2020-04-08T08:50:53.000Z" itemprop="datePublished">2020-04-08</time>
-</div>
-            
-                <div class="article-category">
-                <a class="article-category-link" href="/categories/javaScripte/">javaScripte</a>
-                </div>
-            
-            
-                <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScripte/" rel="tag">javaScripte</a></li></ul>
-                </div>
-            
-            </div>
-        </footer>
-
-        <div class="article-badge">
-            
-            <div class="article-top">
-                <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
-            </div>
-            
-            
-        </div>
-
-    </div>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-hello-world"
+id="post-莫听穿林打叶声"
 class="article article-type-post"
 >
 
@@ -319,29 +157,24 @@ class="article article-type-post"
 
     <div class="article-body">
     <header class="article-title">
-        <a href="/2021/09/05/hello-world/">Hello World</a>
+        <a href="/2021/09/05/%E8%8E%AB%E5%90%AC%E7%A9%BF%E6%9E%97%E6%89%93%E5%8F%B6%E5%A3%B0/">莫听穿林打叶声</a>
     </header>
     <div class="article-entry post-inner-html">
         
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>莫听穿林打叶声，何妨吟啸且徐行。</p>
+<p>竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。</p>
+<p> 料峭春风吹酒醒，微冷，山头斜照却相迎。</p>
+<p>回首向来萧瑟处，归去，也无风雨也无晴。</p>
 
         
     </div>
     </div>
 
     <div class="article-badge">
+        
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
         
         
     </div>
@@ -351,12 +184,259 @@ class="article article-type-post"
 <footer class="article-footer">
     <div class="article-more-info">
     <div class="article-date">
-  <time datetime="2021-09-06T00:50:21.085Z" itemprop="datePublished">2021-09-05</time>
+  <time datetime="2021-09-06T06:58:58.000Z" itemprop="datePublished">2021-09-05</time>
 </div>
     
+        <div class="article-category">
+        <a class="article-category-link" href="/categories/poems/">poems</a>
+        </div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/" rel="tag">poem</a></li></ul>
+        </div>
     
     </div>
 </footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-javaScript常用方法"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">javaScript常用方法</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h4 id="使用给定的参数对句子执行一次查找和替换，然后返回新句子"><a href="#使用给定的参数对句子执行一次查找和替换，然后返回新句子" class="headerlink" title="使用给定的参数对句子执行一次查找和替换，然后返回新句子"></a>使用给定的参数对句子执行一次查找和替换，然后返回新句子</h4><pre><code class="Javascript">function myReplace(str, before, after) &#123;
+    if (before.charAt(0) &gt;= &#39;A&#39; &amp;&amp; before.charAt(0) &lt;= &#39;Z&#39;) &#123;
+        //将after的首字母变为大写
+        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());
+        str = str.replace(before, after);
+    &#125; else &#123;
+//将after的首字母变为小写
+        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());
+        str = str.replace(before, after);
+    &#125;
+    return str;
+&#125;
+console.log(myReplace(&quot;Let us get back to more Coding&quot;, &quot;Coding&quot;, &quot;algorithms&quot;))
+</code></pre>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2020-04-08T08:50:53.000Z" itemprop="datePublished">2020-04-08</time>
+</div>
+    
+        <div class="article-category">
+        <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
+        </div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-javaScript继承多态闭包"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">javaScript继承多态闭包</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h2 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h2><p>构造函数继承的关键：在child构造函数中执行<code>Parent.call(this)</code></p>
+<pre><code class="js">function Parent(name)&#123;
+    this.name=name;
+    this.hobby=[];
+    this.speak=function()&#123;
+        console.log(&quot;Parent spea&quot;);
+    &#125;// 缺点1：new多个child时Parent构造函数中的方法会在每个child中拷贝一份，浪费内存
+&#125;
+Parent.prototype.say = function()&#123;
+    console.log(&quot;Parent say&quot;)
+&#125; // 缺点2：Parent原型对象上的方法不会被Child继承
+
+function Child(name,type)&#123;
+    Parent.call(this,name);
+    this.type = type;
+&#125;
+</code></pre>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2020-04-10T08:50:53.000Z" itemprop="datePublished">2020-04-10</time>
+</div>
+    
+        <div class="article-category">
+        <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
+        </div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-java基础"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2020/04/10/java%E5%9F%BA%E7%A1%80/">java基础</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <ul>
+<li><p>基础语法</p>
+</li>
+<li><p>面向对象</p>
+</li>
+<li><p>继承与多态</p>
+</li>
+<li><p>常用的api</p>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2020-04-11T02:22:47.000Z" itemprop="datePublished">2020-04-10</time>
+</div>
+    
+        <div class="article-category">
+        <a class="article-category-link" href="/categories/java/">java</a>
+        </div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+  id="tweet-hello-world"
+  class="article article-type-tweet"
+>
+
+    <div class="article-tweet article-type-tweet-inner">
+
+        <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
+
+        <div class="article-tweet-content post-inner-html">
+            
+                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+            
+        </div>
+
+        <footer class="article-footer">
+            <a class="article-footer-common" href="/2021/09/05/hello-world/">评论</a>
+            <div class="article-more-info">
+            <div class="article-date">
+  <time datetime="2021-09-06T00:50:21.085Z" itemprop="datePublished">2021-09-05</time>
+</div>
+            
+            
+            </div>
+        </footer>
+
+        <div class="article-badge">
+            
+            
+        </div>
+
+    </div>
 
 </article>
 
@@ -392,7 +472,7 @@ class="article article-type-post"
   <div class="widget-wrap widget-cate">
     <div class="widget-title"><span>Categories</span></div>
     <div class="widget-inner">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/javaScripte/">javaScripte</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/poems/">poems</a></li></ul>
     </div>
   </div>
 
@@ -402,7 +482,7 @@ class="article article-type-post"
   <div class="widget-wrap widget-tags">
     <div class="widget-title"><span>Tags</span></div>
     <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScripte/" rel="tag">javaScripte</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li></ul>
     </div>
   </div>
 
@@ -415,7 +495,15 @@ class="article article-type-post"
       <ul>
         
           <li>
+            <a href="/2021/09/05/%E8%8E%AB%E5%90%AC%E7%A9%BF%E6%9E%97%E6%89%93%E5%8F%B6%E5%A3%B0/">莫听穿林打叶声</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/10/java%E5%9F%BA%E7%A1%80/">java基础</a>
           </li>
         
           <li>

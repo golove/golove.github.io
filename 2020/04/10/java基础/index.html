@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>javaScript继承多态闭包 | Golove</title>
+    <title>java基础 | Golove</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
@@ -143,7 +143,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckt84kp0k00075qmf8qw93a8a" class="article article-type-post" itemscope
+    <article id="post-ckt89pisw0000oqmf9svfchs1" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -159,7 +159,7 @@
             
   
     <h1 class="article-title" itemprop="name">
-      javaScript继承多态闭包
+      java基础
     </h1>
   
 
@@ -169,18 +169,18 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2020-04-10T08:50:53.000Z" itemprop="datePublished">2020-04-10</time>
+  <time datetime="2020-04-11T02:22:47.000Z" itemprop="datePublished">2020-04-10</time>
 </div>
 
             
             <div class="article-category">
-                <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
+                <a class="article-category-link" href="/categories/java/">java</a>
             </div>
             
 
             
             <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
             </div>
             
 
@@ -193,105 +193,195 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h2 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h2><p>构造函数继承的关键：在child构造函数中执行<code>Parent.call(this)</code></p>
-<pre><code class="js">function Parent(name)&#123;
-    this.name=name;
-    this.hobby=[];
-    this.speak=function()&#123;
-        console.log(&quot;Parent spea&quot;);
-    &#125;// 缺点1：new多个child时Parent构造函数中的方法会在每个child中拷贝一份，浪费内存
-&#125;
-Parent.prototype.say = function()&#123;
-    console.log(&quot;Parent say&quot;)
-&#125; // 缺点2：Parent原型对象上的方法不会被Child继承
-
-function Child(name,type)&#123;
-    Parent.call(this,name);
-    this.type = type;
-&#125;
-</code></pre>
-<span id="more"></span>
-
-
-<h2 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h2><p>原型继承的关键：设置Child的原型指向Parent, <code>Child.prototype=new Parent()</code></p>
-<pre><code class="js">function Parent(name)&#123;
-    this.name = name;
-    this.hobby=[]; // 缺点：Parent的引用属性会被所有Child实列共享，互相干扰
-&#125;
-Parent.prototype.say = function()&#123;
-    console.log(&quot;Parent say&quot;);
-&#125;
-function Child(type)&#123;
-    this.type =type;
-&#125;
-Child.prototype = new Parent();
-</code></pre>
-<h2 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h2><h4 id="组合继承的关键："><a href="#组合继承的关键：" class="headerlink" title="组合继承的关键："></a>组合继承的关键：</h4><ul>
-<li>属性使用构造函数继承，避免了原型继承中<code>Parent</code>引用属性被所有<code>Child</code>实例共享的缺陷</li>
-<li>方法使用原型继承，避免了构造函数继承中方法重复拷贝，浪费内存的缺陷</li>
+            <ul>
+<li><p>基础语法</p>
+</li>
+<li><p>面向对象</p>
+</li>
+<li><p>继承与多态</p>
+</li>
+<li><p>常用的api</p>
+<span id="more"></span></li>
 </ul>
-<pre><code class="js">function Parent(name)&#123;
-    this.name = name;
-    this.hobby = []; //属性放在构造函数中
-&#125;
-Parent.ptototype.say = function()&#123;
-    console.log(&#39;Parent say&#39;);
-&#125;
-function Child(name,type)&#123;
-    Parent.call(this,name); // Child 继承Parent属性（构造函数继承）
-    this.type = type; // Child 扩展属性
-&#125;
-Child.prototype = Object.create(Parent.prototype);//Child继承Parent方法（原型继承）
-Child.prototype.speak=function()&#123; //Child扩展方法
-    console.logd(&quot;Child speak&quot;)
-&#125;
-Child.prototype.constructor = Child; // 修复Child的constructor指向，否则Child的constructor会指向Parent
-</code></pre>
-<h4 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h4><p>对于组合继承中的 <code> Child.prototype = Object.create(Parent.prototype)</code>还有两种常见的写法</p>
+<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><ul>
+<li><p>整数型 byte short int long</p>
+</li>
+<li><p>浮点型 float double</p>
+</li>
+<li><p>字符型 char</p>
+</li>
+<li><p>布尔型 boolean</p>
+</li>
+</ul>
+<p>==注意事项：==</p>
+<p>​    1.字符串不是基本类型，而是引用类型。</p>
+<p>​    2.浮点型可能只是一个近似指而非精确的值。</p>
+<p>​    3.数据范围与字节数不一定相关，例如float数据范围比long更加广泛，但是float是4字节，long是8字节。</p>
+<p>​    4.浮点数中默认是double类型，如果要指定为float类型，需要加后缀F，整数默认是int类型，如果要指定为long类型需要家后缀L。</p>
+<h6 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h6><ul>
+<li><p>自动转换（隐式）</p>
+<p>特点：代码不需要进行特殊处理，自动完成</p>
+<p>规则：数据范围从小到大</p>
+</li>
+<li><p>强制转换（显式）</p>
+<p>特点：代码需要进行特殊格式处理，不能自动完成</p>
+<p>格式：范围小的类型 变量名 = （范围小的类型）原本范围大的数据 </p>
+<p>例如：<code> int num = (int) 300L;</code></p>
+<p>注意：强制类型转换一般不推荐使用，因为有可能发生精度损失，数据溢出</p>
+<p>​            byte/short/char这三种类型进行数学运算时会先被提升为int类型，然后在计算</p>
+</li>
+</ul>
+<h4 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h4><ul>
+<li><p>字符串</p>
+</li>
+<li><p>数组</p>
+</li>
+<li><p>类</p>
+</li>
+<li><p>接口</p>
+</li>
+<li><p>Lambda</p>
+</li>
+</ul>
+<h4 id="switch语句使用注意事项："><a href="#switch语句使用注意事项：" class="headerlink" title="switch语句使用注意事项："></a>switch语句使用注意事项：</h4><ul>
+<li><p>switch后面小括号中只能是下列数据类型</p>
+<p>基本数据类型：byte/short/char/int</p>
+<p>引用数据类型：String（字符串）/enum（枚举）</p>
+</li>
+</ul>
+<h2 id="Java的内存需要划分成为5个部分"><a href="#Java的内存需要划分成为5个部分" class="headerlink" title="Java的内存需要划分成为5个部分"></a>Java的内存需要划分成为5个部分</h2><ol>
+<li><p>栈 （Stack) :存放的都是方法中的局部变量。方法的运行一定要在栈当中运行。</p>
+<p>局部变量：方法的参数，或者是方法{}内部的变量</p>
+<p>作用域：一旦超出作用域，立即从栈内存中消失。</p>
+</li>
+<li><p>堆（Heap) :凡是new出来的东西，都在堆当中。</p>
+<p>堆内存里面的东西都有一个地址值：16进制。</p>
+<p>堆内存里面的数据都有默认值：</p>
+<table>
+<thead>
+<tr>
+<th align="left">数据类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">整数</td>
+<td>0</td>
+</tr>
+<tr>
+<td align="left">浮点数</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td align="left">字符</td>
+<td>‘\u0000’</td>
+</tr>
+<tr>
+<td align="left">布尔</td>
+<td>false</td>
+</tr>
+<tr>
+<td align="left">引用</td>
+<td>null</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>方法区（Method Area) : 存储.class相关信息，包含方法的信息。</p>
+</li>
+<li><p>本地方法栈 (Native Method Stack) :与操作系统相关。</p>
+</li>
+<li><p>寄存器 （PC Register) : 与CPU相关。</p>
+</li>
+</ol>
+<h2 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h2><p>现实世界的一类事物：</p>
 <ul>
-<li><p><code>Child.prototype  = Parent.prototype</code> 修改<code>Child.prototype</code>就等于修改<code>Parent.prototype</code>,会干扰所有的Parent实例</p>
-</li>
-<li><p><code>Child.prototype = New Parent()</code> Parent构造函数重复调用的两次，浪费效率，且如果Parent构造函数有副作用，重复调用可能造成不良后果</p>
-</li>
+<li>属性：事物的状态信息</li>
+<li>行为：事物能够做什么</li>
 </ul>
-<h2 id="js中的多态"><a href="#js中的多态" class="headerlink" title="js中的多态"></a>js中的多态</h2><p>多态的实际含义是同一操作作用于不同的对象可以产生不同的解散和不同的执行结果。  </p>
-<p>多态”的思想把不变的部分隔离出来，把可变的部分封装起来，这给予我们扩展程序的能力，相对于修改代码，仅仅增加代码就能完成相同的功能，这样就优雅和安全的多。</p>
-<pre><code class="js">let MakeAction = function(animale)&#123;
-    animale.action()
-&#125;
-
-let Cat = function()&#123;&#125;
-Cat.prototype.sound = function()&#123;
-    console.log(&#39;miao miao&#39;)
-&#125;
-
-let Dog = function()&#123;&#125;
-Dog.prototype.sound = function()&#123;
-    console.log(&#39;wang wang wang&#39;)
-&#125;
-MakeAction(new Cat());
-MakeAction(new Dog());
-
-</code></pre>
-<h2 id="js-闭包"><a href="#js-闭包" class="headerlink" title="js 闭包"></a>js 闭包</h2><p>闭包指能够访问另一个函数作用域的变量的函数，</p>
-<p>闭包就是一个函数，这个函数能够访问其他函数的作用域中的变量。</p>
-<pre><code class="js">let add = (function () &#123;
-let counter = 0;
-return function () &#123;return counter += 1&#125;
-&#125;)();
-
-add();
-add();
-add();
-</code></pre>
-<p>add 变量可以作为一个函数使用，它可以访问函数上一层作用域的 它使得函数拥有私有变量变成可能</p>
-<h4 id="js-闭包实现递归"><a href="#js-闭包实现递归" class="headerlink" title="js 闭包实现递归"></a>js 闭包实现递归</h4><pre><code class="js">let inify = function f(num)&#123;
-    if(num&lt;1)&#123;return 1&#125;
-    else&#123;
-      return num * f(num-=1)
-    &#125;
+<p><code>java</code>中类的定义：</p>
+<pre><code class="java">public class ClassName&#123;
+    // 成员变量
+    // 成员方法
 &#125;
 </code></pre>
+<h4 id="局部变量和成员变量："><a href="#局部变量和成员变量：" class="headerlink" title="局部变量和成员变量："></a>局部变量和成员变量：</h4><ol>
+<li><p>定义的位置不一样</p>
+<ul>
+<li>局部变量：在方法内部</li>
+<li>成员变量：在方法外部，，写在类当中</li>
+</ul>
+</li>
+<li><p>作用范围不一样</p>
+<ul>
+<li>局部变量：只有方法当中才可以使用，出了方法就不能在用了 </li>
+<li>成员变量：在整个类中都可以使用</li>
+</ul>
+</li>
+<li><p>默认值不一样</p>
+<ul>
+<li>局部变量：没有默认值，必须要手动赋值</li>
+<li>成员变量：如果没有赋值，会有默认值，规则和数组一样</li>
+</ul>
+</li>
+<li><p>内存的位置不一样</p>
+<ul>
+<li>局部变量：位于栈内存中</li>
+<li>成员变量：位于堆内存中</li>
+</ul>
+</li>
+<li><p>生命周期不一样</p>
+<ul>
+<li>局部变量：随着方法进栈而诞生，随着方法出栈而消失</li>
+<li>成员变量：随着对象创建而诞生，随着对象被垃圾回收而消失</li>
+</ul>
+</li>
+</ol>
+<h2 id="面向对象三大特征：封装，继承，多态"><a href="#面向对象三大特征：封装，继承，多态" class="headerlink" title="面向对象三大特征：封装，继承，多态"></a>面向对象三大特征：封装，继承，多态</h2><h4 id="封装在java中的体现"><a href="#封装在java中的体现" class="headerlink" title="封装在java中的体现"></a>封装在java中的体现</h4><h2 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList<E></h2><p>ArrayList当中常用的方法：</p>
+<pre><code class="java">public boolean add(E e) //向集合当中添加元素，参数类型和泛型一致。
+public E get(int index) //从集合当中获取元素，参数是索引，返回值就是对应位置的元素。
+public E remove(int index) //从集合当中移除一个元素，参数是索引，返回值是被移除的元素。
+public int size() // 获取集合的长度，返回值是集合中包含元素的个数。
+</code></pre>
+<h4 id="如果希望往集合ArrayList当中储存基本类型数据，必须使用基本类型对应的包装类"><a href="#如果希望往集合ArrayList当中储存基本类型数据，必须使用基本类型对应的包装类" class="headerlink" title="如果希望往集合ArrayList当中储存基本类型数据，必须使用基本类型对应的包装类"></a>如果希望往集合ArrayList当中储存基本类型数据，必须使用基本类型对应的包装类</h4><table>
+<thead>
+<tr>
+<th>基本类型</th>
+<th>包装类（引用类型，包装类都位于<code>java.lang</code>包 下）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>floot</td>
+<td>Floot</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
 
         </div>
 
@@ -316,19 +406,19 @@ add();
     
 <nav class="article-nav">
   
-    <a href="/2020/04/10/java%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/09/05/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-caption">下一篇</div>
       <div class="article-nav-title">
         
-          java基础
+          Hello World
         
       </div>
     </a>
   
   
-    <a href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
-      <div class="article-nav-title">javaScript常用方法</div>
+      <div class="article-nav-title">javaScript继承多态闭包</div>
     </a>
   
 </nav>
@@ -337,15 +427,15 @@ add();
     <section class="share">
         <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=javaScript继承多态闭包 - Golove&url=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">
+            href="https://twitter.com/share?text=java基础 - Golove&url=http://golove.github.io/2020/04/10/java%E5%9F%BA%E7%A1%80/">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=javaScript继承多态闭包 - Golove&u=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">
+            href="https://www.facebook.com/sharer.php?title=java基础 - Golove&u=http://golove.github.io/2020/04/10/java%E5%9F%BA%E7%A1%80/">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=javaScript继承多态闭包 - Golove&url=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/&pic=">
+            href="https://service.weibo.com/share/share.php?title=java基础 - Golove&url=http://golove.github.io/2020/04/10/java%E5%9F%BA%E7%A1%80/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>
