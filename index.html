@@ -12,6 +12,8 @@
     
 
     
+        <meta property="algolia:search" data-application-id="9XOXM50CPU" data-api-key="04c2f1003cc0614b0e70049f7f7a37d2" data-index-name="goloveblog">
+    
 
     
 
@@ -37,8 +39,8 @@
             
             gitalk: {
                 enable: true,
-                clientID: "GitHub Application Client ID",
-                clientSecret: "GitHub Application Client Secret",
+                clientID: "61dde4a7e2226b01b885",
+                clientSecret: "cd897e432772363a96abea0f3a2f010ca065f5ba",
                 repo: "GitHub repo",
                 owner: "GitHub repo owner",
                 admin: ["GitHub repo owner and collaborators","GitHub repo owner and collaborators",],
@@ -49,7 +51,7 @@
             
         }
         window.aomori_logo_typed_animated = true
-        window.aomori_search_algolia = false
+        window.aomori_search_algolia = true
 
     </script>
 
@@ -81,7 +83,11 @@
                 
                 <a href="/">Home</a>
                 
+                <a href="/photography/">Gallery</a>
+                
                 <a href="/archives">Archives</a>
+                
+                <a href="/friends/">Friends</a>
                 
                 <a href="/toc,category,tag,recent_posts,archive">aomori_widgets</a>
                 
@@ -117,7 +123,11 @@
                     
                     <a href="/">Home</a>
                     
+                    <a href="/photography/">Gallery</a>
+                    
                     <a href="/archives">Archives</a>
+                    
+                    <a href="/friends/">Friends</a>
                     
                     <a href="/toc,category,tag,recent_posts,archive">aomori_widgets</a>
                     
@@ -186,22 +196,17 @@
   
     
       <article
-id="post-javaScript常用方法"
-class="article article-type-post"
+  id="tweet-javaScript常用方法"
+  class="article article-type-tweet"
 >
 
+    <div class="article-tweet article-type-tweet-inner">
 
+        <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
 
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/09/05/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"></a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>使用给定的参数对句子执行一次查找和替换，然后返回新句子<br>Javascript<br>function myReplace(str, before, after) {<br>    if (before.charAt(0) &gt;= ‘A’ &amp;&amp; before.charAt(0) &lt;= ‘Z’) {<br>        //将after的首字母变为大写<br>        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());<br>        str = str.replace(before, after);<br>    } else {<br>//将after的首字母变为小写<br>        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());<br>        str = str.replace(before, after);<br>    }<br>    return str;<br>}<br>console.log(myReplace(“Let us get back to more Coding”, “Coding”, “algorithms”))<br>重复输出字符串<br>Javascript<br>function repeat(str, num) {<br>    if (num &gt; 0) {<br>        var newstr = []<br>        for (let i = 0; i &lt; num; i++) {<br>            newstr[i] = str<br>        }<br>        console.log(newstr.join(“”));<br>    } else {<br>        console.log(“ “);<br>    }<br>}</p>
+        <div class="article-tweet-content post-inner-html">
+            
+                <p>使用给定的参数对句子执行一次查找和替换，然后返回新句子<br>Javascript<br>function myReplace(str, before, after) {<br>    if (before.charAt(0) &gt;= ‘A’ &amp;&amp; before.charAt(0) &lt;= ‘Z’) {<br>        //将after的首字母变为大写<br>        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());<br>        str = str.replace(before, after);<br>    } else {<br>//将after的首字母变为小写<br>        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());<br>        str = str.replace(before, after);<br>    }<br>    return str;<br>}<br>console.log(myReplace(“Let us get back to more Coding”, “Coding”, “algorithms”))<br>重复输出字符串<br>Javascript<br>function repeat(str, num) {<br>    if (num &gt; 0) {<br>        var newstr = []<br>        for (let i = 0; i &lt; num; i++) {<br>            newstr[i] = str<br>        }<br>        console.log(newstr.join(“”));<br>    } else {<br>        console.log(“ “);<br>    }<br>}</p>
 <p>repeat(“i love you “, 3);<br>字符串超出隐藏<br>Javascript<br>function truncate(str, num) {<br>    let newstr = str.split(“”);</p>
 <pre><code>if (newstr.length &gt; num &amp;&amp; num &gt; 3) &#123;
     console.log(newstr.slice(0, num - 3).join(&quot;&quot;) + &#39;...&#39;);
@@ -264,26 +269,38 @@ console.log(i)
 <p>console.log(result);<br>Javascript<br>function confirmEnding(str, target) {<br>    var n = target.split(“”).length;<br>    var newstr = str.split(“ “).join(“”);<br>    if (newstr.substr(-n) === target) {<br>        console.log(newstr.substr(-n));<br>        // return true;<br>    } else {<br>        //return false;<br>        console.log(newstr.substr(-n));<br>    }<br>}</p>
 <p>confirmEnding(“Walking on water and developing software from a specification are easy if both are frozen”, “specification”);</p>
 
-        
-    </div>
-    </div>
+            
+        </div>
 
-    <div class="article-badge">
-        
-        
-    </div>
-
+        <footer class="article-footer">
+            <a class="article-footer-common" href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">评论</a>
+            <div class="article-more-info">
+            <div class="article-date">
+  <time datetime="2020-04-08T08:50:53.000Z" itemprop="datePublished">2020-04-08</time>
 </div>
+            
+                <div class="article-category">
+                <a class="article-category-link" href="/categories/javaScripte/">javaScripte</a>
+                </div>
+            
+            
+                <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScripte/" rel="tag">javaScripte</a></li></ul>
+                </div>
+            
+            </div>
+        </footer>
 
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-09-06T02:21:07.909Z" itemprop="datePublished">2021-09-05</time>
-</div>
-    
-    
+        <div class="article-badge">
+            
+            <div class="article-top">
+                <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+            </div>
+            
+            
+        </div>
+
     </div>
-</footer>
 
 </article>
 
@@ -353,8 +370,18 @@ class="article article-type-post"
             </section>
 
             
-            <aside class="sidebar ">
+            <aside class="sidebar sidebar-search-fix">
                 
+
+    <div class="search">
+    <div class="has-icon-right">
+        <input type="text" class="form-input" id="search" placeholder="SEARCH" autocomplete="off">
+        <div class="form-icon">
+            <box-icon name='search' color="#3c4859"></box-icon>
+        </div>
+    </div>
+    <div class="search-result" id="search-ps"></div>
+</div>
 
 
 <div class="widget" id="widget">
@@ -388,15 +415,15 @@ class="article article-type-post"
       <ul>
         
           <li>
-            <a href="/2021/09/05/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">(no title)</a>
-          </li>
-        
-          <li>
             <a href="/2021/09/05/hello-world/">Hello World</a>
           </li>
         
           <li>
             <a href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">javaScript继承多态闭包</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">javaScript常用方法</a>
           </li>
         
       </ul>
