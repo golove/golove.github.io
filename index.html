@@ -146,6 +146,162 @@
   
     
       <article
+id="post-python3"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2021/09/09/python3/">python3</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+          <span id="more"></span>
+
+<h3 id="变量的三个特性"><a href="#变量的三个特性" class="headerlink" title="变量的三个特性"></a>变量的三个特性</h3><ol>
+<li>id就是变量值的内存空间地址，每一个值都有一个唯一的I’d,内存地址不同，id就不同。可以使用id()来查看变量的内存地址，id(object)函数是返回对象object在其生命周期内位于内存中的地址。</li>
+<li>type 不同类型的值记录事物的状态有所不同。这就是python的数据类型。可以使用type()来查看。</li>
+<li>变量值就是储存值本身</li>
+</ol>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>与   X and Y;    或   X  or Y;  非  not  X</p>
+<p>not 优先级最高其次是and ,or的优先级最低</p>
+  <!-- more -->
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><a target="_blank" rel="noopener" href="https://www.notion.so/5ee498ffa0c44ea59482eaa06afaf626">赋值运算符</a></p>
+<h3 id="操作符"><a href="#操作符" class="headerlink" title="%操作符"></a>%操作符</h3><p>在字符串内部,%s 表示用字符串替换,%d 表示用整数替换,%f 表示用浮点数替换,有几个%占位符,后面就跟几个变量或值,顺序要对应好,如果只有一个%,括号可以省略.</p>
+<pre><code class="python">account_name=&quot;golove&quot;
+instrument_id=&quot;BTC-USD-210421&quot;
+leverage=10
+print(&quot;尊敬的用户,因市场剧烈波动,您的子账户%s的%s %d倍合约已被强制清仓.&quot;
+%(account_name,instrument_id,leverage))
+</code></pre>
+<h3 id="format格式化函数"><a href="#format格式化函数" class="headerlink" title="format格式化函数"></a>format格式化函数</h3><pre><code class="python">account_name=&quot;golove&quot;
+instrument_id=&quot;BTC-USD-210421&quot;
+leverage=10
+# 按顺序填入
+print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;&#125;的&#123;&#125; &#123;&#125;倍合约已被强制清仓.&quot;
+.format(account_name,instrument_id,leverage))
+# 指定名称填入
+print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;name&#125;的&#123;id&#125; &#123;leverage&#125;倍合约已被强制清仓.&quot;
+.format(name = account_name,id=instrument_id,leverage=leverage))
+</code></pre>
+<h3 id="检索字符串"><a href="#检索字符串" class="headerlink" title="检索字符串"></a>检索字符串</h3><pre><code class="python">str = &quot;BTC-USD-210408&quot;
+
+&#39;&#39;&#39;
+ count()方法
+ str.count(sub[,start[,end]])  sub 表示要检索的字符,start可选参数,end可选参数
+ 用于检索制定字符在字符串出现的次数,如果不存在则返回0,否则返回出现的次数
+&#39;&#39;&#39;
+print(srt.count(&quot;-&quot;))  //2
+
+&#39;&#39;&#39;
+find()方法
+str.find(sub[,start[,end]]) 
+检索是否包含指定的字符串,如果不存在返回-1,否则返回首次出现的索引
+&#39;&#39;&#39;
+print(str.find(&#39;USD&#39;))  //4
+
+&#39;&#39;&#39;
+index()方法
+str.index(sub[,start[,end]]) 
+和find方法类似,如果检索不存在会抛出异常.
+&#39;&#39;&#39;
+print(str.index(&#39;D&#39;))  //6
+
+&#39;&#39;&#39;
+startswith()方法
+str.startswith(prefix[,start[,end]])
+检索字符串是否以指定的字符串开头,如果是返回true,否则返回false.
+&#39;&#39;&#39;
+print(startswith(&#39;B&#39;))  // true
+
+&#39;&#39;&#39;
+endswith()方法
+str.endswith(prefix[,start[,end]])
+检索字符串是否以指定的字符串结尾,如果是返回true,否则返回false.
+&#39;&#39;&#39;
+print(endswith(&#39;B&#39;))  // false
+
+&#39;&#39;&#39;
+in方法和not in方法
+判断元素是否存在,返回值为true或者false
+&#39;&#39;&#39;
+print(&#39;USD&#39; in str)  //true
+print(&#39;USD&#39; not in str)  //false
+</code></pre>
+<h3 id="字符串大小写转换"><a href="#字符串大小写转换" class="headerlink" title="字符串大小写转换"></a>字符串大小写转换</h3><ol>
+<li><p>lower()方法</p>
+<p>将字符串的大写字母转换成小写字母</p>
+<pre><code class="python">str = &quot;Hello World&quot;
+print(str.lower())   // hello world
+</code></pre>
+</li>
+<li><p>upper()方法</p>
+<p>将字符串的小写字母转换成大写字母</p>
+<pre><code class="python">str = &quot;Hello World&quot;
+print(str.upper())   // HELLO WORLD
+</code></pre>
+</li>
+</ol>
+<h3 id="去除字符串中的空格和特殊字符"><a href="#去除字符串中的空格和特殊字符" class="headerlink" title="去除字符串中的空格和特殊字符"></a>去除字符串中的空格和特殊字符</h3><ol>
+<li><p>strip()方法   str.strip([chars])</p>
+<p>去除字符串前后的空格或特殊字符</p>
+<pre><code class="python">str = &quot;   hello world!     &quot;
+print(str.strip())  // hello world!
+
+str1 = &quot;hello world!!!&quot;
+print(str1.strip(&#39;!&#39;))  // hello world
+</code></pre>
+</li>
+<li><p>lstrip() 只去除左边的空格或者特色字符;rstrip()只去除右边的空格或者特色字符</p>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.notion.so/141699493d8941938da4a703637b6b92">列表常用方法</a></p>
+
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2021-09-09T11:42:08.000Z" itemprop="datePublished">2021-09-09</time>
+</div>
+    
+        <div class="article-category">
+        <a class="article-category-link" href="/categories/python/">python</a>
+        </div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
 id="post-testblog"
 class="article article-type-post"
 >
@@ -531,7 +687,7 @@ class="article article-type-post"
   <div class="widget-wrap widget-cate">
     <div class="widget-title"><span>Categories</span></div>
     <div class="widget-inner">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/poems/">poems</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/poems/">poems</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li></ul>
     </div>
   </div>
 
@@ -541,7 +697,7 @@ class="article article-type-post"
   <div class="widget-wrap widget-tags">
     <div class="widget-title"><span>Tags</span></div>
     <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
     </div>
   </div>
 
@@ -552,6 +708,10 @@ class="article article-type-post"
     <div class="widget-title"><span>Recent Posts</span></div>
     <div class="widget-inner">
       <ul>
+        
+          <li>
+            <a href="/2021/09/09/python3/">python3</a>
+          </li>
         
           <li>
             <a href="/2021/09/06/testblog/">testblog</a>
@@ -567,10 +727,6 @@ class="article article-type-post"
         
           <li>
             <a href="/2020/04/10/java%E5%9F%BA%E7%A1%80/">java基础</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">javaScript继承多态闭包</a>
           </li>
         
       </ul>
