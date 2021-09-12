@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>python3 | Golove</title>
+    <title>Docker镜像使用 | Golove</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
@@ -143,7 +143,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cktgqrwti000sh2mferxp7fc8" class="article article-type-post" itemscope
+    <article id="post-cktgqrwt20009h2mf4d7u02ms" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -159,7 +159,7 @@
             
   
     <h1 class="article-title" itemprop="name">
-      python3
+      Docker镜像使用
     </h1>
   
 
@@ -169,18 +169,18 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2021-09-09T11:42:08.000Z" itemprop="datePublished">2021-09-09</time>
+  <time datetime="2021-08-12T04:48:05.000Z" itemprop="datePublished">2021-08-11</time>
 </div>
 
             
             <div class="article-category">
-                <a class="article-category-link" href="/categories/python/">python</a>
+                <a class="article-category-link" href="/categories/Docker/">Docker</a>
             </div>
             
 
             
             <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li></ul>
             </div>
             
 
@@ -193,105 +193,133 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h3 id="变量的三个特性"><a href="#变量的三个特性" class="headerlink" title="变量的三个特性"></a>变量的三个特性</h3><ol>
-<li>id就是变量值的内存空间地址，每一个值都有一个唯一的I’d,内存地址不同，id就不同。可以使用id()来查看变量的内存地址，id(object)函数是返回对象object在其生命周期内位于内存中的地址。</li>
-<li>type 不同类型的值记录事物的状态有所不同。这就是python的数据类型。可以使用type()来查看。</li>
-<li>变量值就是储存值本身</li>
-</ol>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>与   X and Y;    或   X  or Y;  非  not  X</p>
-<p>not 优先级最高其次是and ,or的优先级最低</p>
+            <p>当运行容器时，使用的镜像如果在本地中不存在，docker 就会自动从 docker 镜像仓库中下载，默认是从 Docker Hub 公共镜像源下载。</p>
+<p>下面我们来学习：</p>
+<ul>
+<li>1、管理和使用本地 Docker 主机镜像</li>
+<li>2、创建镜像</li>
+</ul>
+<hr>
   <span id="more"></span>
 
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><a target="_blank" rel="noopener" href="https://www.notion.so/5ee498ffa0c44ea59482eaa06afaf626">赋值运算符</a></p>
-<h3 id="操作符"><a href="#操作符" class="headerlink" title="%操作符"></a>%操作符</h3><p>在字符串内部,%s 表示用字符串替换,%d 表示用整数替换,%f 表示用浮点数替换,有几个%占位符,后面就跟几个变量或值,顺序要对应好,如果只有一个%,括号可以省略.</p>
-<pre><code class="python">account_name=&quot;golove&quot;
-instrument_id=&quot;BTC-USD-210421&quot;
-leverage=10
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户%s的%s %d倍合约已被强制清仓.&quot;
-%(account_name,instrument_id,leverage))
+<h2 id="列出镜像列表"><a href="#列出镜像列表" class="headerlink" title="列出镜像列表"></a>列出镜像列表</h2><p>我们可以使用 <strong>docker images</strong> 来列出本地主机上的镜像。</p>
+<pre><code class="bash">~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              14.04               90d5884b1ee0        5 days ago          188 MB
+nginx               latest              6f8d099c3adc        12 days ago         182.7 MB
 </code></pre>
-<h3 id="format格式化函数"><a href="#format格式化函数" class="headerlink" title="format格式化函数"></a>format格式化函数</h3><pre><code class="python">account_name=&quot;golove&quot;
-instrument_id=&quot;BTC-USD-210421&quot;
-leverage=10
-# 按顺序填入
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;&#125;的&#123;&#125; &#123;&#125;倍合约已被强制清仓.&quot;
-.format(account_name,instrument_id,leverage))
-# 指定名称填入
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;name&#125;的&#123;id&#125; &#123;leverage&#125;倍合约已被强制清仓.&quot;
-.format(name = account_name,id=instrument_id,leverage=leverage))
+<p>各个选项说明:</p>
+<ul>
+<li><strong>REPOSITORY：</strong>表示镜像的仓库源</li>
+<li><strong>TAG：</strong>镜像的标签</li>
+<li><strong>IMAGE ID：</strong>镜像ID</li>
+<li><strong>CREATED：</strong>镜像创建时间</li>
+<li><strong>SIZE：</strong>镜像大小</li>
+</ul>
+<p>同一仓库源可以有多个 TAG，代表这个仓库源的不同个版本，如 ubuntu 仓库源里，有 15.10、14.04 等多个不同的版本，我们使用 REPOSITORY:TAG 来定义不同的镜像。</p>
+<p>所以，我们如果要使用版本为15.10的ubuntu系统镜像来运行容器时，命令如下：</p>
+<pre><code class="bash">~$ docker run -t -i ubuntu:15.10 /bin/bash
+root@d77ccb2e5cca:/#
 </code></pre>
-<h3 id="检索字符串"><a href="#检索字符串" class="headerlink" title="检索字符串"></a>检索字符串</h3><pre><code class="python">str = &quot;BTC-USD-210408&quot;
-
-&#39;&#39;&#39;
- count()方法
- str.count(sub[,start[,end]])  sub 表示要检索的字符,start可选参数,end可选参数
- 用于检索制定字符在字符串出现的次数,如果不存在则返回0,否则返回出现的次数
-&#39;&#39;&#39;
-print(srt.count(&quot;-&quot;))  //2
-
-&#39;&#39;&#39;
-find()方法
-str.find(sub[,start[,end]]) 
-检索是否包含指定的字符串,如果不存在返回-1,否则返回首次出现的索引
-&#39;&#39;&#39;
-print(str.find(&#39;USD&#39;))  //4
-
-&#39;&#39;&#39;
-index()方法
-str.index(sub[,start[,end]]) 
-和find方法类似,如果检索不存在会抛出异常.
-&#39;&#39;&#39;
-print(str.index(&#39;D&#39;))  //6
-
-&#39;&#39;&#39;
-startswith()方法
-str.startswith(prefix[,start[,end]])
-检索字符串是否以指定的字符串开头,如果是返回true,否则返回false.
-&#39;&#39;&#39;
-print(startswith(&#39;B&#39;))  // true
-
-&#39;&#39;&#39;
-endswith()方法
-str.endswith(prefix[,start[,end]])
-检索字符串是否以指定的字符串结尾,如果是返回true,否则返回false.
-&#39;&#39;&#39;
-print(endswith(&#39;B&#39;))  // false
-
-&#39;&#39;&#39;
-in方法和not in方法
-判断元素是否存在,返回值为true或者false
-&#39;&#39;&#39;
-print(&#39;USD&#39; in str)  //true
-print(&#39;USD&#39; not in str)  //false
+<p>参数说明：</p>
+<ul>
+<li><strong>i</strong>: 交互式操作。</li>
+<li><strong>t</strong>: 终端。</li>
+<li><strong>ubuntu:15.10</strong>: 这是指用 ubuntu 15.10 版本镜像为基础来启动容器。</li>
+<li><strong>/bin/bash</strong>：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。</li>
+</ul>
+<p>如果你不指定一个镜像的版本标签，例如你只使用 ubuntu，docker 将默认使用 ubuntu:latest 镜像。</p>
+<h2 id="获取一个新的镜像"><a href="#获取一个新的镜像" class="headerlink" title="获取一个新的镜像"></a>获取一个新的镜像</h2><p>当我们在本地主机上使用一个不存在的镜像时 Docker 就会自动下载这个镜像。如果我们想预先下载这个镜像，我们可以使用 docker pull 命令来下载它。</p>
+<h2 id="查找镜像"><a href="#查找镜像" class="headerlink" title="查找镜像"></a>查找镜像</h2><p>我们可以从 Docker Hub 网站来搜索镜像，Docker Hub 网址为： <strong><a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></strong></p>
+<p>我们也可以使用 docker search 命令来搜索镜像。比如我们需要一个 httpd 的镜像来作为我们的 web 服务。我们可以通过 docker search 命令搜索 httpd 来寻找适合我们的镜像。</p>
+<pre><code class="bash">~$  docker search httpd
 </code></pre>
-<h3 id="字符串大小写转换"><a href="#字符串大小写转换" class="headerlink" title="字符串大小写转换"></a>字符串大小写转换</h3><ol>
-<li><p>lower()方法</p>
-<p>将字符串的大写字母转换成小写字母</p>
-<pre><code class="python">str = &quot;Hello World&quot;
-print(str.lower())   // hello world
+<h2 id="拖取镜像"><a href="#拖取镜像" class="headerlink" title="拖取镜像"></a>拖取镜像</h2><p>我们决定使用上图中的 httpd 官方版本的镜像，使用命令 docker pull 来下载镜像。</p>
+<p>下载完成后，我们就可以使用这个镜像了。</p>
+<pre><code class="bash">~$ docker run httpd
 </code></pre>
-</li>
-<li><p>upper()方法</p>
-<p>将字符串的小写字母转换成大写字母</p>
-<pre><code class="python">str = &quot;Hello World&quot;
-print(str.upper())   // HELLO WORLD
+<h2 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h2><p>镜像删除使用 <strong>docker rmi</strong> 命令，比如我们删除 hello-world 镜像：</p>
+<pre><code class="bash">~$ docker rmi hello-world
 </code></pre>
-</li>
-</ol>
-<h3 id="去除字符串中的空格和特殊字符"><a href="#去除字符串中的空格和特殊字符" class="headerlink" title="去除字符串中的空格和特殊字符"></a>去除字符串中的空格和特殊字符</h3><ol>
-<li><p>strip()方法   str.strip([chars])</p>
-<p>去除字符串前后的空格或特殊字符</p>
-<pre><code class="python">str = &quot;   hello world!     &quot;
-print(str.strip())  // hello world!
+<h2 id="创建镜像"><a href="#创建镜像" class="headerlink" title="创建镜像"></a>创建镜像</h2><p>当我们从 docker 镜像仓库中下载的镜像不能满足我们的需求时，我们可以通过以下两种方式对镜像进行更改。</p>
+<ul>
+<li>1、从已经创建的容器中更新镜像，并且提交这个镜像</li>
+<li>2、使用 Dockerfile 指令来创建一个新的镜像</li>
+</ul>
+<h3 id="更新镜像"><a href="#更新镜像" class="headerlink" title="更新镜像"></a><strong>更新镜像</strong></h3><p>更新镜像之前，我们需要使用镜像来创建一个容器。</p>
+<pre><code class="bash">~$ docker run -t -i ubuntu:15.10 /bin/bash
+root@e218edb10161:/
+</code></pre>
+<p>在运行的容器内使用 <strong>apt-get update</strong> 命令进行更新。</p>
+<p>在完成操作之后，输入 exit 命令来退出这个容器。</p>
+<p>此时 ID 为 e218edb10161 的容器，是按我们的需求更改的容器。我们可以通过命令 docker commit 来提交容器副本。</p>
+<pre><code class="bash">~$ docker commit -m=&quot;has update&quot; -a=&quot;runoob&quot; e218edb10161 runoob/ubuntu:v2
+sha256:70bf1840fd7c0d2d8ef0a42a817eb29f854c1af8f7c59fc03ac7bdee9545aff8
+</code></pre>
+<p>各个参数说明：</p>
+<ul>
+<li><strong>m:</strong> 提交的描述信息</li>
+<li><strong>a:</strong> 指定镜像作者</li>
+<li><strong>e218edb10161：</strong>容器 ID</li>
+<li><strong>runoob/ubuntu:v2:</strong> 指定要创建的目标镜像名</li>
+</ul>
+<p>我们可以使用 <strong>docker images</strong> 命令来查看我们的新镜像 <strong>runoob/ubuntu:v2</strong>：</p>
+<pre><code class="bash">runoob@runoob:~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+runoob/ubuntu       v2                  70bf1840fd7c        15 seconds ago      158.5 MB
+ubuntu              14.04               90d5884b1ee0        5 days ago          188 MB
+php                 5.6                 f40e9e0f10c8        9 days ago          444.8 MB
+nginx               latest              6f8d099c3adc        12 days ago         182.7 MB
+mysql               5.6                 f2e8d6c772c0        3 weeks ago         324.6 MB
+httpd               latest              02ef73cf1bc0        3 weeks ago         194.4 MB
+ubuntu              15.10               4e3b13c8a266        4 weeks ago         136.3 MB
+hello-world         latest              690ed74de00f        6 months ago        960 B
+training/webapp     latest              6fae60ef3446        12 months ago       348.8 MB
+</code></pre>
+<p>使用我们的新镜像 <strong>runoob/ubuntu</strong> 来启动一个容器</p>
+<pre><code class="bash">runoob@runoob:~$ docker run -t -i runoob/ubuntu:v2 /bin/bash
+root@1a9fbdeb5da3:/#
+</code></pre>
+<h3 id="构建镜像"><a href="#构建镜像" class="headerlink" title="构建镜像"></a><strong>构建镜像</strong></h3><p>我们使用命令 <strong>docker build</strong> ， 从零开始来创建一个新的镜像。为此，我们需要创建一个 Dockerfile 文件，其中包含一组指令来告诉 Docker 如何构建我们的镜像。</p>
+<pre><code class="bash">runoob@runoob:~$ cat Dockerfile
+FROM    centos:6.7
+MAINTAINER      Fisher &quot;fisher@sudops.com&quot;
 
-str1 = &quot;hello world!!!&quot;
-print(str1.strip(&#39;!&#39;))  // hello world
+RUN     /bin/echo &#39;root:123456&#39; |chpasswd
+RUN     useradd runoob
+RUN     /bin/echo &#39;runoob:123456&#39; |chpasswd
+RUN     /bin/echo -e &quot;LANG=\\&quot;en_US.UTF-8\\&quot;&quot; &gt;/etc/default/local
+EXPOSE  22
+EXPOSE  80
+CMD     /usr/sbin/sshd -D
 </code></pre>
-</li>
-<li><p>lstrip() 只去除左边的空格或者特色字符;rstrip()只去除右边的空格或者特色字符</p>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://www.notion.so/141699493d8941938da4a703637b6b92">列表常用方法</a></p>
+<p>每一个指令都会在镜像上创建一个新的层，每一个指令的前缀都必须是大写的。</p>
+<p>第一条FROM，指定使用哪个镜像源</p>
+<p>RUN 指令告诉docker 在镜像内执行命令，安装了什么。。。</p>
+<p>然后，我们使用 Dockerfile 文件，通过 docker build 命令来构建一个镜像。</p>
+<pre><code class="bash">runoob@runoob:~$ docker build -t runoob/centos:6.7 .
+Sending build context to Docker daemon 17.92 kB
+Step 1 : FROM centos:6.7
+ ---&amp;gt; d95b5ca17cc3
+Step 2 : MAINTAINER Fisher &quot;fisher@sudops.com&quot;
+ ---&amp;gt; Using cache
+ ---&amp;gt; 0c92299c6f03
+Step 3 : RUN /bin/echo &#39;root:123456&#39; |chpasswd
+ ---&amp;gt; Using cache
+ ---&amp;gt; 0397ce2fbd0a
+Step 4 : RUN useradd runoob
+......
+</code></pre>
+<p>参数说明：</p>
+<ul>
+<li><strong>t</strong> ：指定要创建的目标镜像名</li>
+<li><strong>.</strong> ：Dockerfile 文件所在目录，可以指定Dockerfile 的绝对路径</li>
+</ul>
+<h3 id="设置镜像标签"><a href="#设置镜像标签" class="headerlink" title="设置镜像标签"></a><strong>设置镜像标签</strong></h3><p>我们可以使用 docker tag 命令，为镜像添加一个新的标签。</p>
+<pre><code>runoob@runoob:~$ docker tag 860c279d2fec runoob/centos:dev
+</code></pre>
+<p>docker tag 镜像ID，这里是 860c279d2fec ,用户名称、镜像源名(repository name)和新的标签名(tag)。</p>
+<p>使用 docker images 命令可以看到，ID为860c279d2fec的镜像多一个标签。</p>
 
         </div>
 
@@ -316,10 +344,19 @@ print(str1.strip(&#39;!&#39;))  // hello world
     
 <nav class="article-nav">
   
+    <a href="/2021/08/11/Docker%E5%AE%B9%E5%99%A8%E8%BF%9E%E6%8E%A5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          Docker容器连接
+        
+      </div>
+    </a>
   
-    <a href="/2021/09/06/testblog/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2021/08/10/javascript%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
-      <div class="article-nav-title">testblog</div>
+      <div class="article-nav-title">javascript基础</div>
     </a>
   
 </nav>
@@ -328,15 +365,15 @@ print(str1.strip(&#39;!&#39;))  // hello world
     <section class="share">
         <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=python3 - Golove&url=http://golove.github.io/2021/09/09/python3/">
+            href="https://twitter.com/share?text=Docker镜像使用 - Golove&url=http://golove.github.io/2021/08/11/Docker%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=python3 - Golove&u=http://golove.github.io/2021/09/09/python3/">
+            href="https://www.facebook.com/sharer.php?title=Docker镜像使用 - Golove&u=http://golove.github.io/2021/08/11/Docker%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=python3 - Golove&url=http://golove.github.io/2021/09/09/python3/&pic=">
+            href="https://service.weibo.com/share/share.php?title=Docker镜像使用 - Golove&url=http://golove.github.io/2021/08/11/Docker%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>

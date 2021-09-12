@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>python3 | Golove</title>
+    <title>Docker容器连接 | Golove</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
@@ -143,7 +143,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cktgqrwti000sh2mferxp7fc8" class="article article-type-post" itemscope
+    <article id="post-cktgqrwt00007h2mfan9kcyaj" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -159,7 +159,7 @@
             
   
     <h1 class="article-title" itemprop="name">
-      python3
+      Docker容器连接
     </h1>
   
 
@@ -169,18 +169,18 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2021-09-09T11:42:08.000Z" itemprop="datePublished">2021-09-09</time>
+  <time datetime="2021-08-12T04:49:07.000Z" itemprop="datePublished">2021-08-11</time>
 </div>
 
             
             <div class="article-category">
-                <a class="article-category-link" href="/categories/python/">python</a>
+                <a class="article-category-link" href="/categories/Docker/">Docker</a>
             </div>
             
 
             
             <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li></ul>
             </div>
             
 
@@ -193,105 +193,89 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h3 id="变量的三个特性"><a href="#变量的三个特性" class="headerlink" title="变量的三个特性"></a>变量的三个特性</h3><ol>
-<li>id就是变量值的内存空间地址，每一个值都有一个唯一的I’d,内存地址不同，id就不同。可以使用id()来查看变量的内存地址，id(object)函数是返回对象object在其生命周期内位于内存中的地址。</li>
-<li>type 不同类型的值记录事物的状态有所不同。这就是python的数据类型。可以使用type()来查看。</li>
-<li>变量值就是储存值本身</li>
-</ol>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>与   X and Y;    或   X  or Y;  非  not  X</p>
-<p>not 优先级最高其次是and ,or的优先级最低</p>
+            <p>容器中可以运行一些网络应用，要让外部也可以访问这些应用，可以通过 -P 或 -p 参数来指定端口映射。</p>
+<p>两种方式的区别是:</p>
+<ul>
+<li>**P :**是容器内部端口**随机**映射到主机的高端口。</li>
+<li><strong>p :</strong> 是容器内部端口绑定到<strong>指定</strong>的主机端口。</li>
+</ul>
+<p>另外，我们可以指定容器绑定的网络地址，比如绑定 127.0.0.1。</p>
+<p>容器默认都是绑定 tcp 端口，如果要绑定 UDP 端口，可以在端口后面加上 /udp。</p>
+<p>-p 127.0.0.1:5000:5000/udp</p>
+<p>docker port 命令可以让我们快捷地查看端口的绑定情况。</p>
   <span id="more"></span>
 
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><a target="_blank" rel="noopener" href="https://www.notion.so/5ee498ffa0c44ea59482eaa06afaf626">赋值运算符</a></p>
-<h3 id="操作符"><a href="#操作符" class="headerlink" title="%操作符"></a>%操作符</h3><p>在字符串内部,%s 表示用字符串替换,%d 表示用整数替换,%f 表示用浮点数替换,有几个%占位符,后面就跟几个变量或值,顺序要对应好,如果只有一个%,括号可以省略.</p>
-<pre><code class="python">account_name=&quot;golove&quot;
-instrument_id=&quot;BTC-USD-210421&quot;
-leverage=10
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户%s的%s %d倍合约已被强制清仓.&quot;
-%(account_name,instrument_id,leverage))
+<h2 id="Docker-容器互联"><a href="#Docker-容器互联" class="headerlink" title="Docker 容器互联"></a>Docker 容器互联</h2><p>端口映射并不是唯一把 docker 连接到另一个容器的方法。</p>
+<p>docker 有一个连接系统允许将多个容器连接在一起，共享连接信息。</p>
+<p>docker 连接会创建一个父子关系，其中父容器可以看到子容器的信息。</p>
+<h3 id="容器命名"><a href="#容器命名" class="headerlink" title="容器命名"></a><strong>容器命名</strong></h3><p>当我们创建一个容器的时候，docker 会自动对它进行命名。另外，我们也可以使用 <strong>–name</strong> 标识来命名容器，例如：</p>
+<pre><code class="bash">runoob@runoob:~$  docker run -d -P --name runoob training/webapp python app.py
+43780a6eabaaf14e590b6e849235c75f3012995403f97749775e38436db9a441
 </code></pre>
-<h3 id="format格式化函数"><a href="#format格式化函数" class="headerlink" title="format格式化函数"></a>format格式化函数</h3><pre><code class="python">account_name=&quot;golove&quot;
-instrument_id=&quot;BTC-USD-210421&quot;
-leverage=10
-# 按顺序填入
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;&#125;的&#123;&#125; &#123;&#125;倍合约已被强制清仓.&quot;
-.format(account_name,instrument_id,leverage))
-# 指定名称填入
-print(&quot;尊敬的用户,因市场剧烈波动,您的子账户&#123;name&#125;的&#123;id&#125; &#123;leverage&#125;倍合约已被强制清仓.&quot;
-.format(name = account_name,id=instrument_id,leverage=leverage))
+<h3 id="新建网络"><a href="#新建网络" class="headerlink" title="新建网络"></a><strong>新建网络</strong></h3><p>下面先创建一个新的 Docker 网络。</p>
+<pre><code class="bash">$ docker network create -d bridge test-net
 </code></pre>
-<h3 id="检索字符串"><a href="#检索字符串" class="headerlink" title="检索字符串"></a>检索字符串</h3><pre><code class="python">str = &quot;BTC-USD-210408&quot;
-
-&#39;&#39;&#39;
- count()方法
- str.count(sub[,start[,end]])  sub 表示要检索的字符,start可选参数,end可选参数
- 用于检索制定字符在字符串出现的次数,如果不存在则返回0,否则返回出现的次数
-&#39;&#39;&#39;
-print(srt.count(&quot;-&quot;))  //2
-
-&#39;&#39;&#39;
-find()方法
-str.find(sub[,start[,end]]) 
-检索是否包含指定的字符串,如果不存在返回-1,否则返回首次出现的索引
-&#39;&#39;&#39;
-print(str.find(&#39;USD&#39;))  //4
-
-&#39;&#39;&#39;
-index()方法
-str.index(sub[,start[,end]]) 
-和find方法类似,如果检索不存在会抛出异常.
-&#39;&#39;&#39;
-print(str.index(&#39;D&#39;))  //6
-
-&#39;&#39;&#39;
-startswith()方法
-str.startswith(prefix[,start[,end]])
-检索字符串是否以指定的字符串开头,如果是返回true,否则返回false.
-&#39;&#39;&#39;
-print(startswith(&#39;B&#39;))  // true
-
-&#39;&#39;&#39;
-endswith()方法
-str.endswith(prefix[,start[,end]])
-检索字符串是否以指定的字符串结尾,如果是返回true,否则返回false.
-&#39;&#39;&#39;
-print(endswith(&#39;B&#39;))  // false
-
-&#39;&#39;&#39;
-in方法和not in方法
-判断元素是否存在,返回值为true或者false
-&#39;&#39;&#39;
-print(&#39;USD&#39; in str)  //true
-print(&#39;USD&#39; not in str)  //false
+<p>参数说明：</p>
+<ul>
+<li><strong>d</strong>：参数指定 Docker 网络类型，有 bridge、overlay。</li>
+</ul>
+<p>其中 overlay 网络类型用于 Swarm mode，在本小节中你可以忽略它。</p>
+<h3 id="连接容器"><a href="#连接容器" class="headerlink" title="连接容器"></a><strong>连接容器</strong></h3><p>运行一个容器并连接到新建的 test-net 网络:</p>
+<pre><code class="bash">$ docker run -itd --name test1 --network test-net ubuntu /bin/bash
 </code></pre>
-<h3 id="字符串大小写转换"><a href="#字符串大小写转换" class="headerlink" title="字符串大小写转换"></a>字符串大小写转换</h3><ol>
-<li><p>lower()方法</p>
-<p>将字符串的大写字母转换成小写字母</p>
-<pre><code class="python">str = &quot;Hello World&quot;
-print(str.lower())   // hello world
+<p>打开新的终端，再运行一个容器并加入到 test-net 网络:</p>
+<pre><code class="bash">$ docker run -itd --name test2 --network test-net ubuntu /bin/bash
 </code></pre>
-</li>
-<li><p>upper()方法</p>
-<p>将字符串的小写字母转换成大写字母</p>
-<pre><code class="python">str = &quot;Hello World&quot;
-print(str.upper())   // HELLO WORLD
+<p>下面通过 ping 来证明 test1 容器和 test2 容器建立了互联关系。</p>
+<p>如果 test1、test2 容器内中无 ping 命令，则在容器内执行以下命令安装 ping（即学即用：可以在一个容器里安装好，提交容器到镜像，在以新的镜像重新运行以上俩个容器）。如果你有多个容器之间需要互相连接，推荐使用 Docker Compose，后面会介绍。</p>
+<pre><code class="bash">apt-get update
+apt install iputils-ping
 </code></pre>
-</li>
-</ol>
-<h3 id="去除字符串中的空格和特殊字符"><a href="#去除字符串中的空格和特殊字符" class="headerlink" title="去除字符串中的空格和特殊字符"></a>去除字符串中的空格和特殊字符</h3><ol>
-<li><p>strip()方法   str.strip([chars])</p>
-<p>去除字符串前后的空格或特殊字符</p>
-<pre><code class="python">str = &quot;   hello world!     &quot;
-print(str.strip())  // hello world!
+<h2 id="配置-DNS"><a href="#配置-DNS" class="headerlink" title="配置 DNS"></a>配置 DNS</h2><p>我们可以在宿主机的 /etc/docker/daemon.json 文件中增加以下内容来设置全部容器的 DNS：</p>
+<pre><code class="bash">&#123;
+  &quot;dns&quot; : [
+    &quot;114.114.114.114&quot;,
+    &quot;8.8.8.8&quot;
+  ]
+&#125;
+</code></pre>
+<p>设置后，启动容器的 DNS 会自动配置为 114.114.114.114 和 8.8.8.8。</p>
+<p>配置完，需要重启 docker 才能生效。</p>
+<p>查看容器的 DNS 是否生效可以使用以下命令，它会输出容器的 DNS 信息：</p>
+<pre><code class="bash">$ docker run -it --rm  ubuntu  cat etc/resolv.conf
+</code></pre>
+<p>参数说明：</p>
+<ul>
+<li><strong>-rm</strong>：容器退出时自动清理容器内部的文件系统。</li>
+<li><strong>h HOSTNAME 或者 –hostname=HOSTNAME</strong>： 设定容器的主机名，它会被写到容器内的 /etc/hostname 和 /etc/hosts。</li>
+<li><strong>-dns=IP_ADDRESS</strong>： 添加 DNS 服务器到容器的 /etc/resolv.conf 中，让容器用这个服务器来解析所有不在 /etc/hosts 中的主机名。</li>
+<li><strong>-dns-search=DOMAIN</strong>： 设定容器的搜索域，当设定搜索域为 .example.com 时，在搜索一个名为 host 的主机时，DNS 不仅搜索 host，还会搜索 <a target="_blank" rel="noopener" href="http://host.example.com/">host.example.com</a>。</li>
+</ul>
+<p>如果在容器启动时没有指定 –dns 和 –dns-search，Docker 会默认用宿主主机上的 /etc/resolv.conf 来配置容器的 DNS。</p>
+<h2 id="Docker-仓库管理"><a href="#Docker-仓库管理" class="headerlink" title="Docker 仓库管理"></a>Docker 仓库管理</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a><strong>注册</strong></h3><p>在 <a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com</a> 免费注册一个 Docker 账号。</p>
+<h3 id="登录和退出"><a href="#登录和退出" class="headerlink" title="登录和退出"></a><strong>登录和退出</strong></h3><p>登录需要输入用户名和密码，登录成功后，我们就可以从 docker hub 上拉取自己账号下的全部镜像。</p>
+<pre><code class="bash">$ docker login
+</code></pre>
+<p><strong>退出</strong></p>
+<p>退出 docker hub 可以使用以下命令：</p>
+<pre><code class="bash">$ docker logout
+</code></pre>
+<p>拉取镜像</p>
+<p>你可以通过 docker search 命令来查找官方仓库中的镜像，并利用 docker pull 命令来将它下载到本地。</p>
+<h3 id="推送镜像"><a href="#推送镜像" class="headerlink" title="推送镜像"></a><strong>推送镜像</strong></h3><p>用户登录后，可以通过 docker push 命令将自己的镜像推送到 Docker Hub。</p>
+<p>以下命令中的 username 请替换为你的 Docker 账号用户名。</p>
+<pre><code class="bash">$ docker tag ubuntu:18.04 username/ubuntu:18.04
+$ docker image ls
 
-str1 = &quot;hello world!!!&quot;
-print(str1.strip(&#39;!&#39;))  // hello world
+REPOSITORY      TAG        IMAGE ID            CREATED           ...
+ubuntu          18.04      275d79972a86        6 days ago        ...
+username/ubuntu 18.04      275d79972a86        6 days ago        ...
+$ docker push username/ubuntu:18.04
+$ docker search username/ubuntu
+
+NAME             DESCRIPTION       STARS         OFFICIAL    AUTOMATED
+username/ubuntu
 </code></pre>
-</li>
-<li><p>lstrip() 只去除左边的空格或者特色字符;rstrip()只去除右边的空格或者特色字符</p>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://www.notion.so/141699493d8941938da4a703637b6b92">列表常用方法</a></p>
 
         </div>
 
@@ -316,10 +300,19 @@ print(str1.strip(&#39;!&#39;))  // hello world
     
 <nav class="article-nav">
   
+    <a href="/2021/08/11/DockerDockerfile/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          DockerDockerfile
+        
+      </div>
+    </a>
   
-    <a href="/2021/09/06/testblog/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2021/08/11/Docker%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
-      <div class="article-nav-title">testblog</div>
+      <div class="article-nav-title">Docker镜像使用</div>
     </a>
   
 </nav>
@@ -328,15 +321,15 @@ print(str1.strip(&#39;!&#39;))  // hello world
     <section class="share">
         <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=python3 - Golove&url=http://golove.github.io/2021/09/09/python3/">
+            href="https://twitter.com/share?text=Docker容器连接 - Golove&url=http://golove.github.io/2021/08/11/Docker%E5%AE%B9%E5%99%A8%E8%BF%9E%E6%8E%A5/">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=python3 - Golove&u=http://golove.github.io/2021/09/09/python3/">
+            href="https://www.facebook.com/sharer.php?title=Docker容器连接 - Golove&u=http://golove.github.io/2021/08/11/Docker%E5%AE%B9%E5%99%A8%E8%BF%9E%E6%8E%A5/">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=python3 - Golove&url=http://golove.github.io/2021/09/09/python3/&pic=">
+            href="https://service.weibo.com/share/share.php?title=Docker容器连接 - Golove&url=http://golove.github.io/2021/08/11/Docker%E5%AE%B9%E5%99%A8%E8%BF%9E%E6%8E%A5/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>
