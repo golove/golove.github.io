@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>javaScript继承多态闭包 | Golove</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+      <meta name="google-site-verification" content="XXX" />
+    
+
+    
+        <meta property="algolia:search" data-application-id="9XOXM50CPU" data-api-key="04c2f1003cc0614b0e70049f7f7a37d2" data-index-name="goloveblog">
+    
+
+    
+
+    
+
+    
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>㊝</text></svg>">
+    
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1630473019367.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "61dde4a7e2226b01b885",
+                clientSecret: "cd897e432772363a96abea0f3a2f010ca065f5ba",
+                repo: "golove.github.io",
+                owner: "golove",
+                admin: ["golove",],
+                distractionFreeMode: true  // Facebook-like distraction free mode
+            },
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = true
+        window.aomori_search_algolia = true
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-avatar avatar avatar-sm">
+                <img src="/images/avatar.png" alt="golove">
+            </div>
+            
+            <div class="header-type-inner">
+                
+                    <div id="typed-strings" style="display:none">
+                        <p>Golove</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/photography/">Gallery</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/friends/">Friends</a>
+                
+                <a href="/about/">About</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+    <a class="social" target="_blank" href="">
+        <box-icon type='facebook' name='facebook-circle'></box-icon>
+    </a>
+
+    <a class="social" target="_blank" href="github.com/golove">
+        <box-icon type='github' name='github'></box-icon>
+    </a>
+
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/photography/">Gallery</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/friends/">Friends</a>
+                    
+                    <a href="/about/">About</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cktgqrwta000gh2mffrmb97bt" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      javaScript继承多态闭包
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2020-04-10T08:50:53.000Z" itemprop="datePublished">2020-04-10</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
+            </div>
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+            </div>
+            
+
+            
+            <div class="article-busuanzi">
+                有 <span id="busuanzi_value_page_pv">N</span> 人看过
+            </div>
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h2><p>构造函数继承的关键：在child构造函数中执行<code>Parent.call(this)</code></p>
+<pre><code class="js">function Parent(name)&#123;
+    this.name=name;
+    this.hobby=[];
+    this.speak=function()&#123;
+        console.log(&quot;Parent spea&quot;);
+    &#125;// 缺点1：new多个child时Parent构造函数中的方法会在每个child中拷贝一份，浪费内存
+&#125;
+Parent.prototype.say = function()&#123;
+    console.log(&quot;Parent say&quot;)
+&#125; // 缺点2：Parent原型对象上的方法不会被Child继承
+
+function Child(name,type)&#123;
+    Parent.call(this,name);
+    this.type = type;
+&#125;
+</code></pre>
+<span id="more"></span>
+
+
+<h2 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h2><p>原型继承的关键：设置Child的原型指向Parent, <code>Child.prototype=new Parent()</code></p>
+<pre><code class="js">function Parent(name)&#123;
+    this.name = name;
+    this.hobby=[]; // 缺点：Parent的引用属性会被所有Child实列共享，互相干扰
+&#125;
+Parent.prototype.say = function()&#123;
+    console.log(&quot;Parent say&quot;);
+&#125;
+function Child(type)&#123;
+    this.type =type;
+&#125;
+Child.prototype = new Parent();
+</code></pre>
+<h2 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h2><h4 id="组合继承的关键："><a href="#组合继承的关键：" class="headerlink" title="组合继承的关键："></a>组合继承的关键：</h4><ul>
+<li>属性使用构造函数继承，避免了原型继承中<code>Parent</code>引用属性被所有<code>Child</code>实例共享的缺陷</li>
+<li>方法使用原型继承，避免了构造函数继承中方法重复拷贝，浪费内存的缺陷</li>
+</ul>
+<pre><code class="js">function Parent(name)&#123;
+    this.name = name;
+    this.hobby = []; //属性放在构造函数中
+&#125;
+Parent.ptototype.say = function()&#123;
+    console.log(&#39;Parent say&#39;);
+&#125;
+function Child(name,type)&#123;
+    Parent.call(this,name); // Child 继承Parent属性（构造函数继承）
+    this.type = type; // Child 扩展属性
+&#125;
+Child.prototype = Object.create(Parent.prototype);//Child继承Parent方法（原型继承）
+Child.prototype.speak=function()&#123; //Child扩展方法
+    console.logd(&quot;Child speak&quot;)
+&#125;
+Child.prototype.constructor = Child; // 修复Child的constructor指向，否则Child的constructor会指向Parent
+</code></pre>
+<h4 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h4><p>对于组合继承中的 <code> Child.prototype = Object.create(Parent.prototype)</code>还有两种常见的写法</p>
+<ul>
+<li><p><code>Child.prototype  = Parent.prototype</code> 修改<code>Child.prototype</code>就等于修改<code>Parent.prototype</code>,会干扰所有的Parent实例</p>
+</li>
+<li><p><code>Child.prototype = New Parent()</code> Parent构造函数重复调用的两次，浪费效率，且如果Parent构造函数有副作用，重复调用可能造成不良后果</p>
+</li>
+</ul>
+<h2 id="js中的多态"><a href="#js中的多态" class="headerlink" title="js中的多态"></a>js中的多态</h2><p>多态的实际含义是同一操作作用于不同的对象可以产生不同的解散和不同的执行结果。  </p>
+<p>多态”的思想把不变的部分隔离出来，把可变的部分封装起来，这给予我们扩展程序的能力，相对于修改代码，仅仅增加代码就能完成相同的功能，这样就优雅和安全的多。</p>
+<pre><code class="js">let MakeAction = function(animale)&#123;
+    animale.action()
+&#125;
+
+let Cat = function()&#123;&#125;
+Cat.prototype.sound = function()&#123;
+    console.log(&#39;miao miao&#39;)
+&#125;
+
+let Dog = function()&#123;&#125;
+Dog.prototype.sound = function()&#123;
+    console.log(&#39;wang wang wang&#39;)
+&#125;
+MakeAction(new Cat());
+MakeAction(new Dog());
+
+</code></pre>
+<h2 id="js-闭包"><a href="#js-闭包" class="headerlink" title="js 闭包"></a>js 闭包</h2><p>闭包指能够访问另一个函数作用域的变量的函数，</p>
+<p>闭包就是一个函数，这个函数能够访问其他函数的作用域中的变量。</p>
+<pre><code class="js">let add = (function () &#123;
+let counter = 0;
+return function () &#123;return counter += 1&#125;
+&#125;)();
+
+add();
+add();
+add();
+</code></pre>
+<p>add 变量可以作为一个函数使用，它可以访问函数上一层作用域的 它使得函数拥有私有变量变成可能</p>
+<h4 id="js-闭包实现递归"><a href="#js-闭包实现递归" class="headerlink" title="js 闭包实现递归"></a>js 闭包实现递归</h4><pre><code class="js">let inify = function f(num)&#123;
+    if(num&lt;1)&#123;return 1&#125;
+    else&#123;
+      return num * f(num-=1)
+    &#125;
+&#125;
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+<div class="article-copyright hairline">
+  <p>
+    本作品采用 <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可。
+  </p>
+</div>
+
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2020/04/10/java%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          java基础
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">javaScript常用方法</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=javaScript继承多态闭包 - Golove&url=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=javaScript继承多态闭包 - Golove&u=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=javaScript继承多态闭包 - Golove&url=http://golove.github.io/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
+
+
+
+
+
+
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar sidebar-search-fix">
+                
+
+    <div class="search">
+    <div class="has-icon-right">
+        <input type="text" class="form-input" id="search" placeholder="SEARCH" autocomplete="off">
+        <div class="form-icon">
+            <box-icon name='search' color="#3c4859"></box-icon>
+        </div>
+    </div>
+    <div class="search-result" id="search-ps"></div>
+</div>
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Docker/">Docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/poems/">poems</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/09/python3/">python3</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/06/testblog/">testblog</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/05/%E8%8E%AB%E5%90%AC%E7%A9%BF%E6%9E%97%E6%89%93%E5%8F%B6%E5%A3%B0/">莫听穿林打叶声</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/08/11/DockerDockerfile/">DockerDockerfile</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Golove &copy; 2021<br>
+            Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+
+
+
+<script src="/dist/build.js?1630473019367.js"></script>
+
+
+<script src="/dist/custom.js?1630473019367.js"></script>
+
+
+
+<!-- 百度链接提交 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+<!-- Google Analytics-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-X');
+</script>
+
+
+
+
+
+</body>
+
+</html>

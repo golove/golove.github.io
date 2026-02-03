@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>javaScript常用方法 | Golove</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+      <meta name="google-site-verification" content="XXX" />
+    
+
+    
+        <meta property="algolia:search" data-application-id="9XOXM50CPU" data-api-key="04c2f1003cc0614b0e70049f7f7a37d2" data-index-name="goloveblog">
+    
+
+    
+
+    
+
+    
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>㊝</text></svg>">
+    
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1630473019367.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "61dde4a7e2226b01b885",
+                clientSecret: "cd897e432772363a96abea0f3a2f010ca065f5ba",
+                repo: "golove.github.io",
+                owner: "golove",
+                admin: ["golove",],
+                distractionFreeMode: true  // Facebook-like distraction free mode
+            },
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = true
+        window.aomori_search_algolia = true
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-avatar avatar avatar-sm">
+                <img src="/images/avatar.png" alt="golove">
+            </div>
+            
+            <div class="header-type-inner">
+                
+                    <div id="typed-strings" style="display:none">
+                        <p>Golove</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/photography/">Gallery</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/friends/">Friends</a>
+                
+                <a href="/about/">About</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+    <a class="social" target="_blank" href="">
+        <box-icon type='facebook' name='facebook-circle'></box-icon>
+    </a>
+
+    <a class="social" target="_blank" href="github.com/golove">
+        <box-icon type='github' name='github'></box-icon>
+    </a>
+
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/photography/">Gallery</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/friends/">Friends</a>
+                    
+                    <a href="/about/">About</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cktgqrwt8000eh2mf9pb98sj8" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      javaScript常用方法
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2020-04-08T08:50:53.000Z" itemprop="datePublished">2020-04-08</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
+            </div>
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+            </div>
+            
+
+            
+            <div class="article-busuanzi">
+                有 <span id="busuanzi_value_page_pv">N</span> 人看过
+            </div>
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h4 id="使用给定的参数对句子执行一次查找和替换，然后返回新句子"><a href="#使用给定的参数对句子执行一次查找和替换，然后返回新句子" class="headerlink" title="使用给定的参数对句子执行一次查找和替换，然后返回新句子"></a>使用给定的参数对句子执行一次查找和替换，然后返回新句子</h4><pre><code class="Javascript">function myReplace(str, before, after) &#123;
+    if (before.charAt(0) &gt;= &#39;A&#39; &amp;&amp; before.charAt(0) &lt;= &#39;Z&#39;) &#123;
+        //将after的首字母变为大写
+        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());
+        str = str.replace(before, after);
+    &#125; else &#123;
+//将after的首字母变为小写
+        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());
+        str = str.replace(before, after);
+    &#125;
+    return str;
+&#125;
+console.log(myReplace(&quot;Let us get back to more Coding&quot;, &quot;Coding&quot;, &quot;algorithms&quot;))
+</code></pre>
+<span id="more"></span>
+<h2 id="重复输出字符串"><a href="#重复输出字符串" class="headerlink" title="重复输出字符串"></a>重复输出字符串</h2><pre><code class="Javascript">function repeat(str, num) &#123;
+    if (num &gt; 0) &#123;
+        var newstr = []
+        for (let i = 0; i &lt; num; i++) &#123;
+            newstr[i] = str
+        &#125;
+        console.log(newstr.join(&quot;&quot;));
+    &#125; else &#123;
+        console.log(&quot; &quot;);
+    &#125;
+&#125;
+
+repeat(&quot;i love you &quot;, 3);
+</code></pre>
+<h4 id="字符串超出隐藏"><a href="#字符串超出隐藏" class="headerlink" title="字符串超出隐藏"></a>字符串超出隐藏</h4><pre><code class="Javascript">function truncate(str, num) &#123;
+    let newstr = str.split(&quot;&quot;);
+
+    if (newstr.length &gt; num &amp;&amp; num &gt; 3) &#123;
+        console.log(newstr.slice(0, num - 3).join(&quot;&quot;) + &#39;...&#39;);
+    &#125; else if (num &lt;= 3) &#123;
+        console.log(newstr.slice(0, num).join(&quot;&quot;) + &#39;...&#39;);
+    &#125; else if (newstr.length === num) &#123;
+        console.log(newstr.join(&quot;&quot;));
+    &#125;
+
+    // console.log(newstr.slice(0, num).join(&quot;&quot;) + &#39;...&#39;)
+    // return newstr1;
+&#125;
+
+truncate(&quot;Walking on water and developing software from a specification&quot;, 36)
+</code></pre>
+<h4 id="把一个数组分成子数组为n的一个2维数组"><a href="#把一个数组分成子数组为n的一个2维数组" class="headerlink" title="把一个数组分成子数组为n的一个2维数组"></a>把一个数组分成子数组为n的一个2维数组</h4><pre><code class="Javascript">function chunk(arr, size) &#123;
+    var len = arr.length;
+    var n = len / size;
+    var arry = [];
+
+    for (var i = 0; i &lt; n; i++) &#123;
+        arry[i] = arr.slice(size * i, size * (i + 1))
+    &#125;
+    // console.log(arr.slice(2, 4))
+    console.log(arry)
+&#125;
+chunk([0, 1, 2, 3, 4, 5], 3);
+</code></pre>
+<h4 id="如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。"><a href="#如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。" class="headerlink" title="如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。"></a>如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。</h4><pre><code class="Javascript">function mutation(arr) &#123;
+    let arry = [];
+    let arr1 = arr[1].toLowerCase().split(&quot;&quot;)
+    let arr0 = arr[0].toLowerCase()
+    arr1.forEach((e, i) =&gt; &#123;
+
+        if (arr0.indexOf(e) &gt;= 0) &#123;
+            arry[i] = true;
+            console.log(e, true)
+        &#125; else &#123;
+            console.log(e, false)
+            arry[i] = false;
+        &#125;
+    &#125;);
+    // return arr[0].toLowerCase()
+    if (JSON.stringify(arry).indexOf(&#39;false&#39;) &gt;= 0) &#123;
+        return false;
+    &#125; else &#123;
+        return true;
+    &#125;
+    // return arr[1].toLowerCase().split(&quot;&quot;)
+
+&#125;
+
+yy = mutation([&quot;floor&quot;, &quot;for&quot;]);
+</code></pre>
+<h4 id="实现一个摧毁-destroyer-函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值"><a href="#实现一个摧毁-destroyer-函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值" class="headerlink" title="实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值"></a>实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值</h4><pre><code class="Javascript">function destroyer() &#123;
+    var argu = arguments
+    var arr1 = argu[0];
+    var arr2 = arr1.filter(function (val) &#123;
+        var a = true;
+        for (var i = 1; i &lt; argu.length; i++) &#123;
+            if (val === argu[i]) &#123;
+                a = false;
+            &#125;
+        &#125;
+        return a;
+    &#125;)
+    return arr2
+&#125;
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+</code></pre>
+<h4 id="先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。"><a href="#先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。" class="headerlink" title="先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。"></a>先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。</h4><pre><code class="Javascript">function where(arr, num) &#123;
+    function compare(a, b) &#123;
+        return a - b;
+    &#125;
+    arr.push(num);
+    arr.sort(compare);
+    return arr.indexOf(num);
+&#125;
+
+console.log(where([2, 10, 20, 3], 5))
+</code></pre>
+<h4 id="下面我们来介绍风靡全球的凯撒密码Caesar-cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。"><a href="#下面我们来介绍风靡全球的凯撒密码Caesar-cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。" class="headerlink" title="下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。"></a>下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。</h4><pre><code class="Javascript">// 普通方法
+function rot13(str) &#123; // LBH QVQ VG!
+    var yy = [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;, &#39;I&#39;, &#39;J&#39;, &#39;K&#39;, &#39;L&#39;, &#39;M&#39;, &#39;N&#39;, &#39;O&#39;, &#39;P&#39;, &#39;Q&#39;, &#39;R&#39;, &#39;S&#39;, &#39;T&#39;, &#39;U&#39;, &#39;V&#39;, &#39;W&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;];
+    var ystr = yy.join(&quot;&quot;).replace(&quot;,&quot;, &quot;&quot;);
+    let n = [];
+    str.toUpperCase().split(&quot;&quot;).forEach(e =&gt; &#123;
+        if (e === &quot;!&quot; || e === &#39;?&#39; || e === &quot; &quot; || e === &quot;.&quot;) n.push(e)
+        n.push(ystr.indexOf(e))
+    &#125;)
+    let newstr = [];
+    n.forEach((e, i) =&gt; &#123;
+        if (e === &quot;!&quot; || e === &#39;?&#39; || e === &quot; &quot; || e === &quot;.&quot;) &#123;
+            newstr[i] = e;
+        &#125; else if (e &gt;= 0) &#123;
+            newstr[i] = yy[e + 13];
+            if (e + 13 &gt; 25) &#123;
+                newstr[i] = yy[13 - (26 - e)]
+            &#125;
+        &#125;
+    &#125;)
+    return newstr.join(&quot;&quot;);
+&#125;
+
+// charCodeAt() 方法可返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。
+// (字符串中第一个字符的下标是 0。如果 index 是负数，或大于等于字符串的长度，则 charCodeAt() 返回 NaN。)
+// fromCharCode() 可接受一个指定的Unicode 值，然后返回一个字符串。
+// (该方法是 String 的静态方法，字符串中的每个字符都由单独的数字 Unicode 编码指定。
+// 它不能作为您已创建的 String 对象的方法来使用。因此它的语法应该是 
+// String.fromCharCode()，而不是 myStringObject.fromCharCode()。)
+
+function rot13(str) &#123; // LBH QVQ VG!
+    var str1 = [];
+    for (var i = 0; i &lt; str.length; i++) &#123;
+        var num = str[i].charCodeAt();
+        if (num &gt;= 65 &amp;&amp; num &lt;= 77) &#123;
+            num += 13;
+        &#125; else if (num &gt; 77 &amp;&amp; num &lt; 91) &#123;
+            num -= 13;
+        &#125;
+        str1.push(String.fromCharCode(num));
+    &#125;
+    return str1.join(&quot;&quot;);
+&#125;
+
+
+console.log(rot13(&quot;GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.&quot;))
+</code></pre>
+<h4 id="求任意两数之间所有数之和"><a href="#求任意两数之间所有数之和" class="headerlink" title="求任意两数之间所有数之和"></a>求任意两数之间所有数之和</h4><pre><code class="Javascript">function sumAll(arr) &#123;
+    var i = 0;
+    let a = Math.max(...arr);
+    let b = Math.min(...arr);
+
+    for (; b &lt; a + 1; b++) &#123;
+        i = i + b
+    &#125;
+    console.log(i)
+&#125;
+
+sumAll([56, 10]);
+</code></pre>
+<h4 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h4><pre><code class="Javascript">function diff(arr1, arr2) &#123;
+  var newArr = [];
+
+  newArr = Array.from(new Set([...arr1, ...arr2]));
+
+  console.log(newArr);
+&#125;
+
+diff([&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;pink wool&quot;, &quot;dead shrub&quot;], [&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;dead shrub&quot;]);
+</code></pre>
+<h4 id="对象数组去重"><a href="#对象数组去重" class="headerlink" title="对象数组去重"></a>对象数组去重</h4><pre><code class="Javascript">const lists = [&#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;, &#123; id: 3, a: 3 &#125;, &#123; id: 4, a: 4 &#125;, &#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;, &#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;, &#123; id: 3, a: 3 &#125;, &#123; id: 4, a: 4 &#125;, &#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;];
+const lists2 = [&#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;, &#123; id: 3, a: 3 &#125;, &#123; id: 4, a: 4 &#125;, &#123; id: 1, a: 1 &#125;, &#123; id: 2, a: 2 &#125;];
+
+const result = lists.reduce((prev, cur) =&gt; &#123;
+  const ids = prev.map(item =&gt; item.id)
+  return ids.includes(cur.id) ? prev : [...prev, cur]
+&#125;, []);
+console.log(result)
+</code></pre>
+<h4 id="比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。"><a href="#比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。" class="headerlink" title="比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。"></a>比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。</h4><pre><code class="Javascript">function diff(arr1, arr2) &#123;
+  var newArr = [];
+  var arr3 = [...arr1, ...arr2]
+  // var arr3 = arr1.concat(arr2); //将arr1和arr2合并为arr3
+  function isContain(a) &#123;
+    //找出arr3中不存在于arr1和arr2中的元素
+    return arr1.indexOf(a) == -1 || arr2.indexOf(a) == -1;
+  &#125;
+  newArr = arr3.filter(isContain);
+  console.log(newArr);
+&#125;
+
+diff([&quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;pink wool&quot;, &quot;dead shrub&quot;], [&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;dead shrub&quot;])
+</code></pre>
+<h4 id="将给定的数字转换成罗马数字。"><a href="#将给定的数字转换成罗马数字。" class="headerlink" title="将给定的数字转换成罗马数字。"></a>将给定的数字转换成罗马数字。</h4><pre><code class="Javascript">function convert(num) &#123;
+  var num0 = [&quot;1&quot;, &quot;4&quot;, &quot;5&quot;, &quot;9&quot;, &quot;10&quot;, &quot;40&quot;, &quot;50&quot;, &quot;90&quot;, &quot;100&quot;, &quot;400&quot;, &quot;500&quot;, &quot;900&quot;, &quot;1000&quot;];
+  var num0R = num0.reverse();
+  var num1 = [&quot;I&quot;, &quot;IV&quot;, &quot;V&quot;, &quot;IX&quot;, &quot;X&quot;, &quot;XL&quot;, &quot;L&quot;, &quot;XC&quot;, &quot;C&quot;, &quot;CD&quot;, &quot;D&quot;, &quot;CM&quot;, &quot;M&quot;];
+  var num1R = num1.reverse();
+  var numCon = [];
+  num0R.forEach(function (value, index, arr) &#123;
+    while (num &gt;= value) &#123; //条件循环
+      numCon.push(num1R[index]);
+      num -= value;
+    &#125;
+  &#125;);
+
+  return numCon.join(&quot;&quot;);
+&#125;
+
+console.log(convert(222));
+</code></pre>
+<h4 id="将给的的数字转换成中文"><a href="#将给的的数字转换成中文" class="headerlink" title="将给的的数字转换成中文"></a>将给的的数字转换成中文</h4><pre><code class="Javascript">function convert(num) &#123;
+  let changeNum = [ &#39;零&#39;, &#39;一&#39;,&#39;二&#39;,&#39;三&#39;,&#39;四&#39;,&#39;五&#39;,&#39;六&#39;, &#39;七&#39;,&#39;八&#39;, &#39;九&#39; ];
+  let unit = [&#39;&#39;, &#39;十&#39;, &#39;百&#39;, &#39;千&#39;, &#39;万&#39;];
+  num = parseInt(num)
+  let getWan = temp =&gt; &#123;
+    let strArr = temp
+      .toString()
+      .split(&#39;&#39;)
+      .reverse()
+    let newNum = &#39;&#39;
+    for (var i = 0; i &lt; strArr.length; i++) &#123;
+      newNum =
+        (i == 0 &amp;&amp; strArr[i] == 0
+          ? &#39;&#39;
+          : i &gt; 0 &amp;&amp; strArr[i] == 0 &amp;&amp; strArr[i - 1] == 0
+            ? &#39;&#39;
+            : changeNum[strArr[i]] + (strArr[i] == 0 ? unit[0] : unit[i])) +
+        newNum
+    &#125;
+    return newNum
+  &#125;
+  let overWan = Math.floor(num / 10000)
+  let noWan = num % 10000
+  if (noWan.toString().length &lt; 4) &#123;
+    noWan = &#39;0&#39; + noWan
+  &#125;
+  return overWan ? getWan(overWan) + &#39;万&#39; + getWan(noWan) : getWan(num)
+&#125;
+</code></pre>
+<h4 id="遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性"><a href="#遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性" class="headerlink" title="遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性"></a>遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性</h4><pre><code class="Javascript">function where(collection, source) &#123;
+  var arr = [];
+  // What&#39;s in a name?
+  var sourceArr = Object.keys(source);
+  arr = collection.filter(function (obj) &#123;
+    for (var i = 0; i &lt; sourceArr.length; i++) &#123;
+      if (obj[sourceArr[i]] !== source[sourceArr[i]]) &#123;
+        return false;
+      &#125;
+    &#125;
+    return true;
+  &#125;);
+  console.log(arr);
+&#125;
+
+where([&#123;
+  first: &quot;Romeo&quot;,
+  last: &quot;Montague&quot;
+&#125;, &#123;
+  first: &quot;Mercutio&quot;,
+  last: null
+&#125;, &#123;
+  first: &quot;Tybalt&quot;,
+  last: &quot;Capulet&quot;
+&#125;], &#123;
+  last: &quot;Capulet&quot;
+&#125;);
+</code></pre>
+<h4 id="给定一个字符串返回对象数组中包含该字符串的对象"><a href="#给定一个字符串返回对象数组中包含该字符串的对象" class="headerlink" title="给定一个字符串返回对象数组中包含该字符串的对象"></a>给定一个字符串返回对象数组中包含该字符串的对象</h4><pre><code class="Javascript">let str = &#39;MOTI&#39;;
+let data = [
+    &#123; technology: &#39;CHARACTER&#39;, score: -1, text: &#39;sfoefjlasdoejfoausfe&#39; &#125;,
+    &#123; technology: &#39;PRESSURE_RELIEF&#39;, score: 2, text: &#39;123qw&#39; &#125;,
+    &#123; technology: &#39;SUPPORT&#39;, score: 3, text: &#39;123qw&#39; &#125;,
+    &#123; technology: &#39;MOTION_ISOLATION&#39;, score: 2, text: &#39;123qw&#39; &#125;,
+    &#123; technology: &#39;TEMPERATURE_MANAGEMENT&#39;, score: -1, text: &#39;123qw&#39; &#125;,
+    &#123; technology: &#39;COMFORT&#39;, score: 2, text: &#39;szyy&#39; &#125;
+];
+let result = data.filter(function (el) &#123;
+    return el.technology.indexOf(str) &gt; -1 || el.text.indexOf(str) &gt; -1;
+&#125;);
+
+console.log(result);
+Javascript
+function confirmEnding(str, target) &#123;
+    var n = target.split(&quot;&quot;).length;
+    var newstr = str.split(&quot; &quot;).join(&quot;&quot;);
+    if (newstr.substr(-n) === target) &#123;
+        console.log(newstr.substr(-n));
+        // return true;
+    &#125; else &#123;
+        //return false;
+        console.log(newstr.substr(-n));
+    &#125;
+&#125;
+
+confirmEnding(&quot;Walking on water and developing software from a specification are easy if both are frozen&quot;, &quot;specification&quot;);
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+<div class="article-copyright hairline">
+  <p>
+    本作品采用 <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可。
+  </p>
+</div>
+
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2020/04/10/javaScript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          javaScript继承多态闭包
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=javaScript常用方法 - Golove&url=http://golove.github.io/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=javaScript常用方法 - Golove&u=http://golove.github.io/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=javaScript常用方法 - Golove&url=http://golove.github.io/2020/04/08/javaScript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
+
+
+
+
+
+
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar sidebar-search-fix">
+                
+
+    <div class="search">
+    <div class="has-icon-right">
+        <input type="text" class="form-input" id="search" placeholder="SEARCH" autocomplete="off">
+        <div class="form-icon">
+            <box-icon name='search' color="#3c4859"></box-icon>
+        </div>
+    </div>
+    <div class="search-result" id="search-ps"></div>
+</div>
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Docker/">Docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/poems/">poems</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python3/" rel="tag">python3</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/09/python3/">python3</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/06/testblog/">testblog</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/05/%E8%8E%AB%E5%90%AC%E7%A9%BF%E6%9E%97%E6%89%93%E5%8F%B6%E5%A3%B0/">莫听穿林打叶声</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/08/11/DockerDockerfile/">DockerDockerfile</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Golove &copy; 2021<br>
+            Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+
+
+
+<script src="/dist/build.js?1630473019367.js"></script>
+
+
+<script src="/dist/custom.js?1630473019367.js"></script>
+
+
+
+<!-- 百度链接提交 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+<!-- Google Analytics-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-X');
+</script>
+
+
+
+
+
+</body>
+
+</html>
