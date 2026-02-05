@@ -19,15 +19,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ① 先装 pnpm（放在 setup-node 前）
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      # ② 再 setup node + pnpm cache
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
 
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
+      # ③ 安装依赖 & 构建
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
 
