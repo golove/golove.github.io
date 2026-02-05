@@ -2,7 +2,7 @@
 title: "OpenClaw 技术文档"
 date: "2026-02-06"
 description: "OpenClaw 的架构、核心概念、插件系统及使用指南"
-published: true
+published: "2026-02-06"
 ---
 
 # OpenClaw 技术文档
