@@ -1,3 +1,13 @@
+---
+title: "Twitter/X 热门趋势速览（2026年2月13日）"
+published: 2026-02-13
+description: "今日美国区 Twitter/X 热门话题一览：Steve Bannon、Pam Bondi、Ghislaine Maxwell、Discord等话题引发广泛讨论。"
+image: ""
+tags: ["Twitter", "热门", "趋势", "美国", "社交媒体"]
+category: 热点追踪
+draft: false
+---
+
 # Twitter/X 热门趋势速览（2026年02月13日）
 
 ## 今日热门话题概览
