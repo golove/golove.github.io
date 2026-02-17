@@ -1,3 +1,13 @@
+---
+title: "Rust 学习笔记"
+published: 2026-02-17
+description: "系统性的 Rust 编程语言学习笔记，涵盖基础语法、所有权、并发等核心概念"
+tags: [Rust, 编程语言, 系统编程, 学习]
+category: 技术
+draft: false
+lang: zh
+---
+
 # Rust 学习笔记
 
 ## 1. 为什么选择 Rust?
