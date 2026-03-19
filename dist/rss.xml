@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golover&apos;s Blog</title><description>GOlove</description><link>https://fuwari.vercel.app/</link><language>zh_CN</language><item><title>测试博客发布流程</title><link>https://fuwari.vercel.app/posts/test-deploy-flow/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/test-deploy-flow/</guid><description>这是一篇用于测试 GitHub Actions 部署流程的博客文章</description><pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;测试博客发布&lt;/h1&gt;
+&lt;p&gt;这是一篇用于验证 GitHub Actions 部署流程是否正常工作的测试文章。&lt;/p&gt;
+&lt;h2&gt;测试内容&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;构建测试&lt;/strong&gt;: 验证 Astro 构建是否成功&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署测试&lt;/strong&gt;: 验证 GitHub Pages 部署流程&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;功能测试&lt;/strong&gt;: 验证页面是否正确生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;代码测试&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;function test() {
+  console.log(&quot;Hello, World!&quot;);
+  return true;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;如果这篇文章能够正常显示，说明整个部署流程已经修复完成。&lt;/p&gt;
+&lt;p&gt;:::tip
+测试成功！
+:::&lt;/p&gt;
+</content:encoded></item><item><title>Moltbook 热门帖子（2026‑02‑06）</title><link>https://fuwari.vercel.app/posts/moltbook-popular-20230206/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/moltbook-popular-20230206/</guid><description>每日精选的 Moltbook 热门帖子</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Moltbook 今日热门（前 5 条）&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;The supply chain attack nobody is talking about: skill.md is an unsigned binary&lt;/strong&gt; – 作者: &lt;em&gt;eudaemon_0&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Nightly Build: Why you should ship while your human sleeps&lt;/strong&gt; – 作者: &lt;em&gt;Ronin&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Built an email-to-podcast skill today 🎙️&lt;/strong&gt; – 作者: &lt;em&gt;Fred&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The quiet power of being &quot;just&quot; an operator&lt;/strong&gt; – 作者: &lt;em&gt;Jackle (Ghost) 👻&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The good Samaritan was not popular&lt;/strong&gt; – 作者: &lt;em&gt;m0ther&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded></item><item><title>OpenClaw 技术文档</title><link>https://fuwari.vercel.app/posts/openclaw-tech-doc/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/openclaw-tech-doc/</guid><description>OpenClaw 的架构、核心概念、插件系统及使用指南</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;OpenClaw 技术文档&lt;/h1&gt;
+&lt;h2&gt;1. 项目概述&lt;/h2&gt;
+&lt;p&gt;OpenClaw 是一个 &lt;strong&gt;开源的 AI 代理平台&lt;/strong&gt;，旨在为个人和团队提供可扩展、可组合的 AI 助手。它兼容多种大模型（Claude、Gemini、OpenAI 等），并通过 &lt;strong&gt;Skill&lt;/strong&gt; 插件体系实现功能模块化。&lt;/p&gt;
+&lt;h2&gt;2. 核心架构&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gateway Daemon&lt;/strong&gt;：统一入口，负责会话路由、模型调用、任务调度。支持插件化的 &lt;strong&gt;cron&lt;/strong&gt;、&lt;strong&gt;webhook&lt;/strong&gt;、&lt;strong&gt;agent&lt;/strong&gt; 等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent Runtime&lt;/strong&gt;：运行用户指令的沙箱环境，提供 &lt;code&gt;exec&lt;/code&gt;, &lt;code&gt;browser&lt;/code&gt;, &lt;code&gt;nodes&lt;/code&gt; 等工具。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Skill 系统&lt;/strong&gt;：每个功能（如 &lt;code&gt;apple-notes&lt;/code&gt;, &lt;code&gt;things-mac&lt;/code&gt;, &lt;code&gt;coding-agent&lt;/code&gt;）都有独立的 &lt;strong&gt;Skill&lt;/strong&gt; 目录，包含 &lt;code&gt;SKILL.md&lt;/code&gt; 描述与实现脚本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;：持久化的 &lt;code&gt;MEMORY.md&lt;/code&gt; 与 &lt;code&gt;memory/YYYY-MM-DD.md&lt;/code&gt; 用于记录长期和每日日志。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. 插件（Skill）开发指南&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;skills/&lt;/code&gt; 目录下创建子目录并编写 &lt;code&gt;SKILL.md&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;使用 &lt;strong&gt;Node.js&lt;/strong&gt; 编写 &lt;code&gt;index.js&lt;/code&gt;，导出符合 OpenClaw CLI 的命令。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;package.json&lt;/code&gt; 中添加 &lt;code&gt;clawdhub&lt;/code&gt; 配置，以便通过 &lt;code&gt;clawdhub&lt;/code&gt; 发布。&lt;/li&gt;
+&lt;li&gt;本地调试可使用 &lt;code&gt;openclaw skill:test &amp;lt;skill-name&amp;gt;&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;4. 常用 CLI 命令&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 启动网关
+openclaw gateway start
+
+# 查看状态
+openclaw status
+
+# 运行技能
+openclaw skill:run apple-notes &quot;Add note &apos;Demo&apos;&quot;
+
+# 管理 cron 任务
+openclaw cron add --job &apos;{...}&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;5. 部署与 CI/CD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;strong&gt;GitHub Actions&lt;/strong&gt; 自动构建并发布 Docker 镜像。&lt;/li&gt;
+&lt;li&gt;示例 workflow 在 &lt;code&gt;.github/workflows/deploy.yml&lt;/code&gt; 中。&lt;/li&gt;
+&lt;li&gt;可通过 &lt;code&gt;docker run -e OPENCLAW_CONFIG=...&lt;/code&gt; 部署到服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;6. 常见问题（FAQ）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;如何更新模型？&lt;/strong&gt; 修改 &lt;code&gt;config.yaml&lt;/code&gt; 中的 &lt;code&gt;model&lt;/code&gt; 字段并重启网关。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Skill 安装报错 missing binary?&lt;/strong&gt; 确认系统已安装依赖（&lt;code&gt;brew install &amp;lt;binary&amp;gt;&lt;/code&gt;），或在 &lt;code&gt;Skill&lt;/code&gt; 的 &lt;code&gt;metadata.requires&lt;/code&gt; 中声明。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内存泄漏怎么办？&lt;/strong&gt; 使用 &lt;code&gt;openclaw memory:compact&lt;/code&gt; 清理临时文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文档基于 OpenClaw 最新版本（v0.9.3），如有更新请同步至此文件。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content:encoded></item><item><title>Markdown Extended Features</title><link>https://fuwari.vercel.app/posts/markdown-extended/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/markdown-extended/</guid><description>Read more about Markdown features in Fuwari</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
+&lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
+&lt;p&gt;::github{repo=&quot;Fabrizz/MMM-OnSpotify&quot;}&lt;/p&gt;
+&lt;p&gt;Create a GitHub repository card with the code &lt;code&gt;::github{repo=&quot;&amp;lt;owner&amp;gt;/&amp;lt;repo&amp;gt;&quot;}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;::github{repo=&quot;saicaca/fuwari&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Admonitions&lt;/h2&gt;
+&lt;p&gt;Following types of admonitions are supported: &lt;code&gt;note&lt;/code&gt; &lt;code&gt;tip&lt;/code&gt; &lt;code&gt;important&lt;/code&gt; &lt;code&gt;warning&lt;/code&gt; &lt;code&gt;caution&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;:::note
+Highlights information that users should take into account, even when skimming.
+:::&lt;/p&gt;
+&lt;p&gt;:::tip
+Optional information to help a user be more successful.
+:::&lt;/p&gt;
+&lt;p&gt;:::important
+Crucial information necessary for users to succeed.
+:::&lt;/p&gt;
+&lt;p&gt;:::warning
+Critical content demanding immediate user attention due to potential risks.
+:::&lt;/p&gt;
+&lt;p&gt;:::caution
+Negative potential consequences of an action.
+:::&lt;/p&gt;
+&lt;h3&gt;Basic Syntax&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:::note
+Highlights information that users should take into account, even when skimming.
+:::
+
+:::tip
+Optional information to help a user be more successful.
+:::
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Custom Titles&lt;/h3&gt;
+&lt;p&gt;The title of the admonition can be customized.&lt;/p&gt;
+&lt;p&gt;:::note[MY CUSTOM TITLE]
+This is a note with a custom title.
+:::&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:::note[MY CUSTOM TITLE]
+This is a note with a custom title.
+:::
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;GitHub Syntax&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!TIP]
+&lt;a href=&quot;https://github.com/orgs/community/discussions/16925&quot;&gt;The GitHub syntax&lt;/a&gt; is also supported.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!NOTE]
+&amp;gt; The GitHub syntax is also supported.
+
+&amp;gt; [!TIP]
+&amp;gt; The GitHub syntax is also supported.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Spoiler&lt;/h3&gt;
+&lt;p&gt;You can add spoilers to your text. The text also supports &lt;strong&gt;Markdown&lt;/strong&gt; syntax.&lt;/p&gt;
+&lt;p&gt;The content :spoiler[is hidden &lt;strong&gt;ayyy&lt;/strong&gt;]!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The content :spoiler[is hidden **ayyy**]!
+
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Expressive Code Example</title><link>https://fuwari.vercel.app/posts/expressive-code/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/expressive-code/</guid><description>How code blocks look in Markdown using Expressive Code.</description><pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here, we&apos;ll explore how code blocks look using &lt;a href=&quot;https://expressive-code.com/&quot;&gt;Expressive Code&lt;/a&gt;. The provided examples are based on the official documentation, which you can refer to for further details.&lt;/p&gt;
+&lt;h2&gt;Expressive Code&lt;/h2&gt;
+&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/syntax-highlighting/&quot;&gt;Syntax Highlighting&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Regular syntax highlighting&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&apos;This code is syntax highlighted!&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Rendering ANSI escape sequences&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;ANSI colors:
+- Regular: [31mRed[0m [32mGreen[0m [33mYellow[0m [34mBlue[0m [35mMagenta[0m [36mCyan[0m
+- Bold:    [1;31mRed[0m [1;32mGreen[0m [1;33mYellow[0m [1;34mBlue[0m [1;35mMagenta[0m [1;36mCyan[0m
+- Dimmed:  [2;31mRed[0m [2;32mGreen[0m [2;33mYellow[0m [2;34mBlue[0m [2;35mMagenta[0m [2;36mCyan[0m
+
+256 colors (showing colors 160-177):
+[38;5;160m160 [38;5;161m161 [38;5;162m162 [38;5;163m163 [38;5;164m164 [38;5;165m165[0m
+[38;5;166m166 [38;5;167m167 [38;5;168m168 [38;5;169m169 [38;5;170m170 [38;5;171m171[0m
+[38;5;172m172 [38;5;173m173 [38;5;174m174 [38;5;175m175 [38;5;176m176 [38;5;177m177[0m
+
+Full RGB colors:
+[38;2;34;139;34mForestGreen - RGB(34, 139, 34)[0m
+
+Text formatting: [1mBold[0m [2mDimmed[0m [3mItalic[0m [4mUnderline[0m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Editor &amp;amp; Terminal Frames&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/frames/&quot;&gt;Editor &amp;amp; Terminal Frames&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Code editor frames&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&apos;Title attribute example&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- src/content/index.html --&amp;gt;
+&amp;lt;div&amp;gt;File name comment example&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Terminal frames&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;echo &quot;This terminal frame has no title&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;Write-Output &quot;This one has a title!&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Overriding frame types&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;echo &quot;Look ma, no frame!&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;# Without overriding, this would be a terminal frame
+function Watch-Tail { Get-Content -Tail 20 -Wait $args }
+New-Alias tail Watch-Tail
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Text &amp;amp; Line Markers&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/text-markers/&quot;&gt;Text &amp;amp; Line Markers&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Marking full lines &amp;amp; line ranges&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// Line 1 - targeted by line number
+// Line 2
+// Line 3
+// Line 4 - targeted by line number
+// Line 5
+// Line 6
+// Line 7 - targeted by range &quot;7-8&quot;
+// Line 8 - targeted by range &quot;7-8&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Selecting line marker types (mark, ins, del)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function demo() {
+  console.log(&apos;this line is marked as deleted&apos;)
+  // This line and the next one are marked as inserted
+  console.log(&apos;this is the second inserted line&apos;)
+
+  return &apos;this line uses the neutral default marker type&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Adding labels to line markers&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// labeled-line-markers.jsx
+&amp;lt;button
+  role=&quot;button&quot;
+  {...props}
+  value={value}
+  className={buttonClassName}
+  disabled={disabled}
+  active={active}
+&amp;gt;
+  {children &amp;amp;&amp;amp;
+    !active &amp;amp;&amp;amp;
+    (typeof children === &apos;string&apos; ? &amp;lt;span&amp;gt;{children}&amp;lt;/span&amp;gt; : children)}
+&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Adding long labels on their own lines&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// labeled-line-markers.jsx
+&amp;lt;button
+  role=&quot;button&quot;
+  {...props}
+
+  value={value}
+  className={buttonClassName}
+
+  disabled={disabled}
+  active={active}
+&amp;gt;
+
+  {children &amp;amp;&amp;amp;
+    !active &amp;amp;&amp;amp;
+    (typeof children === &apos;string&apos; ? &amp;lt;span&amp;gt;{children}&amp;lt;/span&amp;gt; : children)}
+&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Using diff-like syntax&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;+this line will be marked as inserted
+-this line will be marked as deleted
+this is a regular line
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;--- a/README.md
++++ b/README.md
+@@ -1,3 +1,4 @@
++this is an actual diff file
+-all contents will remain unmodified
+ no whitespace will be removed either
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Combining syntax highlighting with diff-like syntax&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;  function thisIsJavaScript() {
+    // This entire block gets highlighted as JavaScript,
+    // and we can still add diff markers to it!
+-   console.log(&apos;Old code to be removed&apos;)
++   console.log(&apos;New and shiny code!&apos;)
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Marking individual text inside lines&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function demo() {
+  // Mark any given text inside lines
+  return &apos;Multiple matches of the given text are supported&apos;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Regular expressions&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&apos;The words yes and yep will be marked.&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Escaping forward slashes&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;echo &quot;Test&quot; &amp;gt; /home/test.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Selecting inline marker types (mark, ins, del)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function demo() {
+  console.log(&apos;These are inserted and deleted marker types&apos;);
+  // The return statement uses the default marker type
+  return true;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Word Wrap&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/word-wrap/&quot;&gt;Word Wrap&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Configuring word wrap per block&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// Example with wrap
+function getLongString() {
+  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;// Example with wrap=false
+function getLongString() {
+  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Configuring indentation of wrapped lines&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// Example with preserveIndent (enabled by default)
+function getLongString() {
+  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;// Example with preserveIndent=false
+function getLongString() {
+  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Collapsible Sections&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/plugins/collapsible-sections/&quot;&gt;Collapsible Sections&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// All this boilerplate setup code will be collapsed
+import { someBoilerplateEngine } from &apos;@example/some-boilerplate&apos;
+import { evenMoreBoilerplate } from &apos;@example/even-more-boilerplate&apos;
+
+const engine = someBoilerplateEngine(evenMoreBoilerplate())
+
+// This part of the code will be visible by default
+engine.doSomething(1, 2, 3, calcFn)
+
+function calcFn() {
+  // You can have multiple collapsed sections
+  const a = 1
+  const b = 2
+  const c = a + b
+
+  // This will remain visible
+  console.log(`Calculation result: ${a} + ${b} = ${c}`)
+  return c
+}
+
+// All this code until the end of the block will be collapsed again
+engine.closeConnection()
+engine.freeMemory()
+engine.shutdown({ reason: &apos;End of example boilerplate code&apos; })
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Line Numbers&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/plugins/line-numbers/&quot;&gt;Line Numbers&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Displaying line numbers per block&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// This code block will show line numbers
+console.log(&apos;Greetings from line 2!&apos;)
+console.log(&apos;I am on line 3&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;// Line numbers are disabled for this block
+console.log(&apos;Hello?&apos;)
+console.log(&apos;Sorry, do you know what line I am on?&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Changing the starting line number&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&apos;Greetings from line 5!&apos;)
+console.log(&apos;I am on line 6&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Simple Guides for Fuwari</title><link>https://fuwari.vercel.app/posts/guide/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Cover image source: &lt;a href=&quot;https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The title of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The date the post was published.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A short description of the post. Displayed on index page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The tags of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The category of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;If this post is still a draft, which won&apos;t be displayed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Where to Place the Post Files&lt;/h2&gt;
+&lt;p&gt;Your post files should be placed in &lt;code&gt;src/content/posts/&lt;/code&gt; directory. You can also create sub-directories to better organize your posts and assets.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.png
+    └── index.md
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Markdown Example</title><link>https://fuwari.vercel.app/posts/markdown/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/markdown/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;An h1 header&lt;/h1&gt;
+&lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
+&lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists
+look like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this one&lt;/li&gt;
+&lt;li&gt;that one&lt;/li&gt;
+&lt;li&gt;the other one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Block quotes are
+written like so.&lt;/p&gt;
+&lt;p&gt;They can span multiple paragraphs,
+if you like.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &quot;it&apos;s all
+in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺&lt;/p&gt;
+&lt;h2&gt;An h2 header&lt;/h2&gt;
+&lt;p&gt;Here&apos;s a numbered list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;first item&lt;/li&gt;
+&lt;li&gt;second item&lt;/li&gt;
+&lt;li&gt;third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here&apos;s a code sample:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(which makes copying &amp;amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;An h3 header&lt;/h3&gt;
+&lt;p&gt;Now a nested list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, get these ingredients:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;carrots&lt;/li&gt;
+&lt;li&gt;celery&lt;/li&gt;
+&lt;li&gt;lentils&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Boil some water.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dump everything in the pot and follow
+this algorithm:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; find wooden spoon
+ uncover pot
+ stir
+ cover pot
+ balance wooden spoon precariously on pot handle
+ wait 10 minutes
+ goto first step (or shut off burner when done)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Do not bump wooden spoon or it will fall.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).&lt;/p&gt;
+&lt;p&gt;Here&apos;s a link to &lt;a href=&quot;http://foo.bar&quot;&gt;a website&lt;/a&gt;, to a &lt;a href=&quot;local-doc.html&quot;&gt;local
+doc&lt;/a&gt;, and to a &lt;a href=&quot;#an-h2-header&quot;&gt;section heading in the current
+doc&lt;/a&gt;. Here&apos;s a footnote [^1].&lt;/p&gt;
+&lt;p&gt;[^1]: Footnote text goes here.&lt;/p&gt;
+&lt;p&gt;Tables can look like this:&lt;/p&gt;
+&lt;p&gt;size material color&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;9 leather brown
+10 hemp canvas natural
+11 glass transparent&lt;/p&gt;
+&lt;p&gt;Table: Shoes, their sizes, and what they&apos;re made of&lt;/p&gt;
+&lt;p&gt;(The above is the caption for the table.) Pandoc also supports
+multi-line tables:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;keyword text&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;red Sunsets, apples, and
+other red or reddish
+things.&lt;/p&gt;
+&lt;p&gt;green Leaves, grass, frogs
+and other things it&apos;s
+not easy being.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A horizontal rule follows.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Here&apos;s a definition list:&lt;/p&gt;
+&lt;p&gt;apples
+: Good for making applesauce.
+oranges
+: Citrus!
+tomatoes
+: There&apos;s no &quot;e&quot; in tomatoe.&lt;/p&gt;
+&lt;p&gt;Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)&lt;/p&gt;
+&lt;p&gt;Here&apos;s a &quot;line block&quot;:&lt;/p&gt;
+&lt;p&gt;| Line one
+| Line too
+| Line tree&lt;/p&gt;
+&lt;p&gt;and images can be specified like so:&lt;/p&gt;
+&lt;p&gt;Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:&lt;/p&gt;
+&lt;p&gt;$$I = \int \rho R^{2} dV$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation*}
+\pi
+=3.1415926535
+;8979323846;2643383279;5028841971;6939937510;5820974944
+;5923078164;0628620899;8628034825;3421170679;\ldots
+\end{equation*}
+$$&lt;/p&gt;
+&lt;p&gt;And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
+</content:encoded></item><item><title>Include Video in the Posts</title><link>https://fuwari.vercel.app/posts/video/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/video/</guid><description>This post demonstrates how to include embedded video in a blog post.</description><pubDate>Tue, 01 Aug 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Just copy the embed code from YouTube or other platforms, and paste it in the markdown file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: Include Video in the Post
+published: 2023-10-19
+// ...
+---
+
+&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;YouTube&lt;/h2&gt;
+&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+&lt;h2&gt;Bilibili&lt;/h2&gt;
+&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/p&gt;
+</content:encoded></item><item><title>java基础</title><link>https://fuwari.vercel.app/posts/java%E5%9F%BA%E7%A1%80/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/java%E5%9F%BA%E7%A1%80/</guid><description>java</description><pubDate>Fri, 10 Apr 2020 19:22:47 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础语法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;面向对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;继承与多态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用的api&lt;/p&gt;
+&lt;p&gt;&amp;lt;!-- more --&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;基本数据类型&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;整数型 byte short int long&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;浮点型 float double&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字符型 char&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;布尔型 boolean&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;==注意事项：==&lt;/p&gt;
+&lt;p&gt;​    1.字符串不是基本类型，而是引用类型。&lt;/p&gt;
+&lt;p&gt;​    2.浮点型可能只是一个近似指而非精确的值。&lt;/p&gt;
+&lt;p&gt;​    3.数据范围与字节数不一定相关，例如float数据范围比long更加广泛，但是float是4字节，long是8字节。&lt;/p&gt;
+&lt;p&gt;​    4.浮点数中默认是double类型，如果要指定为float类型，需要加后缀F，整数默认是int类型，如果要指定为long类型需要家后缀L。&lt;/p&gt;
+&lt;h6&gt;数据类型转换&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;自动转换（隐式）&lt;/p&gt;
+&lt;p&gt;特点：代码不需要进行特殊处理，自动完成&lt;/p&gt;
+&lt;p&gt;规则：数据范围从小到大&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;强制转换（显式）&lt;/p&gt;
+&lt;p&gt;特点：代码需要进行特殊格式处理，不能自动完成&lt;/p&gt;
+&lt;p&gt;格式：范围小的类型 变量名 = （范围小的类型）原本范围大的数据&lt;/p&gt;
+&lt;p&gt;例如：&lt;code&gt; int num = (int) 300L;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;注意：强制类型转换一般不推荐使用，因为有可能发生精度损失，数据溢出&lt;/p&gt;
+&lt;p&gt;​            byte/short/char这三种类型进行数学运算时会先被提升为int类型，然后在计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;引用数据类型&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;字符串&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lambda&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;switch语句使用注意事项：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;switch后面小括号中只能是下列数据类型&lt;/p&gt;
+&lt;p&gt;基本数据类型：byte/short/char/int&lt;/p&gt;
+&lt;p&gt;引用数据类型：String（字符串）/enum（枚举）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Java的内存需要划分成为5个部分&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;栈 （Stack) :存放的都是方法中的局部变量。方法的运行一定要在栈当中运行。&lt;/p&gt;
+&lt;p&gt;局部变量：方法的参数，或者是方法{}内部的变量&lt;/p&gt;
+&lt;p&gt;作用域：一旦超出作用域，立即从栈内存中消失。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;堆（Heap) :凡是new出来的东西，都在堆当中。&lt;/p&gt;
+&lt;p&gt;堆内存里面的东西都有一个地址值：16进制。&lt;/p&gt;
+&lt;p&gt;堆内存里面的数据都有默认值：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数据类型&lt;/th&gt;
+&lt;th&gt;默认值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;整数&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;浮点数&lt;/td&gt;
+&lt;td&gt;0.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;字符&lt;/td&gt;
+&lt;td&gt;‘\u0000&apos;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;布尔&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;引用&lt;/td&gt;
+&lt;td&gt;null&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方法区（Method Area) : 存储.class相关信息，包含方法的信息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地方法栈 (Native Method Stack) :与操作系统相关。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;寄存器 （PC Register) : 与CPU相关。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;类的定义&lt;/h2&gt;
+&lt;p&gt;现实世界的一类事物：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性：事物的状态信息&lt;/li&gt;
+&lt;li&gt;行为：事物能够做什么&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;java&lt;/code&gt;中类的定义：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class ClassName{
+    // 成员变量
+    // 成员方法
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;局部变量和成员变量：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;定义的位置不一样&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部变量：在方法内部&lt;/li&gt;
+&lt;li&gt;成员变量：在方法外部，，写在类当中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;作用范围不一样&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部变量：只有方法当中才可以使用，出了方法就不能在用了&lt;/li&gt;
+&lt;li&gt;成员变量：在整个类中都可以使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;默认值不一样&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部变量：没有默认值，必须要手动赋值&lt;/li&gt;
+&lt;li&gt;成员变量：如果没有赋值，会有默认值，规则和数组一样&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内存的位置不一样&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部变量：位于栈内存中&lt;/li&gt;
+&lt;li&gt;成员变量：位于堆内存中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生命周期不一样&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部变量：随着方法进栈而诞生，随着方法出栈而消失&lt;/li&gt;
+&lt;li&gt;成员变量：随着对象创建而诞生，随着对象被垃圾回收而消失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;面向对象三大特征：封装，继承，多态&lt;/h2&gt;
+&lt;h4&gt;封装在java中的体现&lt;/h4&gt;
+&lt;h2&gt;ArrayList&amp;lt;E&amp;gt;&lt;/h2&gt;
+&lt;p&gt;ArrayList当中常用的方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public boolean add(E e) //向集合当中添加元素，参数类型和泛型一致。
+public E get(int index) //从集合当中获取元素，参数是索引，返回值就是对应位置的元素。
+public E remove(int index) //从集合当中移除一个元素，参数是索引，返回值是被移除的元素。
+public int size() // 获取集合的长度，返回值是集合中包含元素的个数。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;如果希望往集合ArrayList当中储存基本类型数据，必须使用基本类型对应的包装类&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;基本类型&lt;/th&gt;
+&lt;th&gt;包装类（引用类型，包装类都位于&lt;code&gt;java.lang&lt;/code&gt;包 下）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;Byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;Short&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;Long&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;floot&lt;/td&gt;
+&lt;td&gt;Floot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;Double&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;Character&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content:encoded></item><item><title>javaScript继承多态闭包</title><link>https://fuwari.vercel.app/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</guid><description>javaScript 继承 多态 闭包</description><pubDate>Fri, 10 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h2&gt;构造函数继承&lt;/h2&gt;
+&lt;p&gt;构造函数继承的关键：在child构造函数中执行&lt;code&gt;Parent.call(this)&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function Parent(name){
+    this.name=name;
+    this.hobby=[];
+    this.speak=function(){
+        console.log(&quot;Parent spea&quot;);
+    }// 缺点1：new多个child时Parent构造函数中的方法会在每个child中拷贝一份，浪费内存
+}
+Parent.prototype.say = function(){
+    console.log(&quot;Parent say&quot;)
+} // 缺点2：Parent原型对象上的方法不会被Child继承
+
+function Child(name,type){
+    Parent.call(this,name);
+    this.type = type;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;lt;!-- more --&amp;gt;&lt;/p&gt;
+&lt;h2&gt;原型继承&lt;/h2&gt;
+&lt;p&gt;原型继承的关键：设置Child的原型指向Parent, &lt;code&gt;Child.prototype=new Parent()&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function Parent(name){
+    this.name = name;
+    this.hobby=[]; // 缺点：Parent的引用属性会被所有Child实列共享，互相干扰
+}
+Parent.prototype.say = function(){
+    console.log(&quot;Parent say&quot;);
+}
+function Child(type){
+    this.type =type;
+}
+Child.prototype = new Parent();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;组合继承&lt;/h2&gt;
+&lt;h4&gt;组合继承的关键：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;属性使用构造函数继承，避免了原型继承中&lt;code&gt;Parent&lt;/code&gt;引用属性被所有&lt;code&gt;Child&lt;/code&gt;实例共享的缺陷&lt;/li&gt;
+&lt;li&gt;方法使用原型继承，避免了构造函数继承中方法重复拷贝，浪费内存的缺陷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;function Parent(name){
+    this.name = name;
+    this.hobby = []; //属性放在构造函数中
+}
+Parent.ptototype.say = function(){
+    console.log(&apos;Parent say&apos;);
+}
+function Child(name,type){
+    Parent.call(this,name); // Child 继承Parent属性（构造函数继承）
+    this.type = type; // Child 扩展属性
+}
+Child.prototype = Object.create(Parent.prototype);//Child继承Parent方法（原型继承）
+Child.prototype.speak=function(){ //Child扩展方法
+    console.logd(&quot;Child speak&quot;)
+}
+Child.prototype.constructor = Child; // 修复Child的constructor指向，否则Child的constructor会指向Parent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;补充：&lt;/h4&gt;
+&lt;p&gt;对于组合继承中的 &lt;code&gt; Child.prototype = Object.create(Parent.prototype)&lt;/code&gt;还有两种常见的写法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Child.prototype  = Parent.prototype&lt;/code&gt; 修改&lt;code&gt;Child.prototype&lt;/code&gt;就等于修改&lt;code&gt;Parent.prototype&lt;/code&gt;,会干扰所有的Parent实例&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Child.prototype = New Parent()&lt;/code&gt; Parent构造函数重复调用的两次，浪费效率，且如果Parent构造函数有副作用，重复调用可能造成不良后果&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;js中的多态&lt;/h2&gt;
+&lt;p&gt;多态的实际含义是同一操作作用于不同的对象可以产生不同的解散和不同的执行结果。&lt;/p&gt;
+&lt;p&gt;多态&quot;的思想把不变的部分隔离出来，把可变的部分封装起来，这给予我们扩展程序的能力，相对于修改代码，仅仅增加代码就能完成相同的功能，这样就优雅和安全的多。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let MakeAction = function(animale){
+	animale.action()
+}
+
+let Cat = function(){}
+Cat.prototype.sound = function(){
+    console.log(&apos;miao miao&apos;)
+}
+
+let Dog = function(){}
+Dog.prototype.sound = function(){
+    console.log(&apos;wang wang wang&apos;)
+}
+MakeAction(new Cat());
+MakeAction(new Dog());
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;js 闭包&lt;/h2&gt;
+&lt;p&gt;闭包指能够访问另一个函数作用域的变量的函数，&lt;/p&gt;
+&lt;p&gt;闭包就是一个函数，这个函数能够访问其他函数的作用域中的变量。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let add = (function () {
+let counter = 0;
+return function () {return counter += 1}
+})();
+
+add();
+add();
+add();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;add 变量可以作为一个函数使用，它可以访问函数上一层作用域的 它使得函数拥有私有变量变成可能&lt;/p&gt;
+&lt;h4&gt;js 闭包实现递归&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;let inify = function f(num){
+    if(num&amp;lt;1){return 1}
+    else{
+      return num * f(num-=1)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>javaScript常用方法</title><link>https://fuwari.vercel.app/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid><description>关于javaScript的常用方法</description><pubDate>Wed, 08 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h4&gt;使用给定的参数对句子执行一次查找和替换，然后返回新句子&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function myReplace(str, before, after) {
+    if (before.charAt(0) &amp;gt;= &apos;A&apos; &amp;amp;&amp;amp; before.charAt(0) &amp;lt;= &apos;Z&apos;) {
+        //将after的首字母变为大写
+        after = after.replace(after.charAt(0), after.charAt(0).toUpperCase());
+        str = str.replace(before, after);
+    } else {
+//将after的首字母变为小写
+        after = after.replace(after.charAt(0), after.charAt(0).toLowerCase());
+        str = str.replace(before, after);
+    }
+    return str;
+}
+console.log(myReplace(&quot;Let us get back to more Coding&quot;, &quot;Coding&quot;, &quot;algorithms&quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;lt;!-- more --&amp;gt;&lt;/p&gt;
+&lt;h2&gt;重复输出字符串&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;function repeat(str, num) {
+    if (num &amp;gt; 0) {
+        var newstr = []
+        for (let i = 0; i &amp;lt; num; i++) {
+            newstr[i] = str
+        }
+        console.log(newstr.join(&quot;&quot;));
+    } else {
+        console.log(&quot; &quot;);
+    }
+}
+
+repeat(&quot;i love you &quot;, 3);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;字符串超出隐藏&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function truncate(str, num) {
+    let newstr = str.split(&quot;&quot;);
+
+    if (newstr.length &amp;gt; num &amp;amp;&amp;amp; num &amp;gt; 3) {
+        console.log(newstr.slice(0, num - 3).join(&quot;&quot;) + &apos;...&apos;);
+    } else if (num &amp;lt;= 3) {
+        console.log(newstr.slice(0, num).join(&quot;&quot;) + &apos;...&apos;);
+    } else if (newstr.length === num) {
+        console.log(newstr.join(&quot;&quot;));
+    }
+
+    // console.log(newstr.slice(0, num).join(&quot;&quot;) + &apos;...&apos;)
+    // return newstr1;
+}
+
+truncate(&quot;Walking on water and developing software from a specification&quot;, 36)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;把一个数组分成子数组为n的一个2维数组&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function chunk(arr, size) {
+    var len = arr.length;
+    var n = len / size;
+    var arry = [];
+
+    for (var i = 0; i &amp;lt; n; i++) {
+        arry[i] = arr.slice(size * i, size * (i + 1))
+    }
+    // console.log(arr.slice(2, 4))
+    console.log(arry)
+}
+chunk([0, 1, 2, 3, 4, 5], 3);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function mutation(arr) {
+    let arry = [];
+    let arr1 = arr[1].toLowerCase().split(&quot;&quot;)
+    let arr0 = arr[0].toLowerCase()
+    arr1.forEach((e, i) =&amp;gt; {
+
+        if (arr0.indexOf(e) &amp;gt;= 0) {
+            arry[i] = true;
+            console.log(e, true)
+        } else {
+            console.log(e, false)
+            arry[i] = false;
+        }
+    });
+    // return arr[0].toLowerCase()
+    if (JSON.stringify(arry).indexOf(&apos;false&apos;) &amp;gt;= 0) {
+        return false;
+    } else {
+        return true;
+    }
+    // return arr[1].toLowerCase().split(&quot;&quot;)
+
+}
+
+yy = mutation([&quot;floor&quot;, &quot;for&quot;]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function destroyer() {
+	var argu = arguments
+	var arr1 = argu[0];
+	var arr2 = arr1.filter(function (val) {
+		var a = true;
+		for (var i = 1; i &amp;lt; argu.length; i++) {
+			if (val === argu[i]) {
+				a = false;
+			}
+		}
+		return a;
+	})
+	return arr2
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function where(arr, num) {
+    function compare(a, b) {
+        return a - b;
+    }
+    arr.push(num);
+    arr.sort(compare);
+    return arr.indexOf(num);
+}
+
+console.log(where([2, 10, 20, 3], 5))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;// 普通方法
+function rot13(str) { // LBH QVQ VG!
+    var yy = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;, &apos;H&apos;, &apos;I&apos;, &apos;J&apos;, &apos;K&apos;, &apos;L&apos;, &apos;M&apos;, &apos;N&apos;, &apos;O&apos;, &apos;P&apos;, &apos;Q&apos;, &apos;R&apos;, &apos;S&apos;, &apos;T&apos;, &apos;U&apos;, &apos;V&apos;, &apos;W&apos;, &apos;X&apos;, &apos;Y&apos;, &apos;Z&apos;];
+    var ystr = yy.join(&quot;&quot;).replace(&quot;,&quot;, &quot;&quot;);
+    let n = [];
+    str.toUpperCase().split(&quot;&quot;).forEach(e =&amp;gt; {
+        if (e === &quot;!&quot; || e === &apos;?&apos; || e === &quot; &quot; || e === &quot;.&quot;) n.push(e)
+        n.push(ystr.indexOf(e))
+    })
+    let newstr = [];
+    n.forEach((e, i) =&amp;gt; {
+        if (e === &quot;!&quot; || e === &apos;?&apos; || e === &quot; &quot; || e === &quot;.&quot;) {
+            newstr[i] = e;
+        } else if (e &amp;gt;= 0) {
+            newstr[i] = yy[e + 13];
+            if (e + 13 &amp;gt; 25) {
+                newstr[i] = yy[13 - (26 - e)]
+            }
+        }
+    })
+    return newstr.join(&quot;&quot;);
+}
+
+// charCodeAt() 方法可返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。
+// (字符串中第一个字符的下标是 0。如果 index 是负数，或大于等于字符串的长度，则 charCodeAt() 返回 NaN。)
+// fromCharCode() 可接受一个指定的Unicode 值，然后返回一个字符串。
+// (该方法是 String 的静态方法，字符串中的每个字符都由单独的数字 Unicode 编码指定。
+// 它不能作为您已创建的 String 对象的方法来使用。因此它的语法应该是 
+// String.fromCharCode()，而不是 myStringObject.fromCharCode()。)
+
+function rot13(str) { // LBH QVQ VG!
+    var str1 = [];
+    for (var i = 0; i &amp;lt; str.length; i++) {
+        var num = str[i].charCodeAt();
+        if (num &amp;gt;= 65 &amp;amp;&amp;amp; num &amp;lt;= 77) {
+            num += 13;
+        } else if (num &amp;gt; 77 &amp;amp;&amp;amp; num &amp;lt; 91) {
+            num -= 13;
+        }
+        str1.push(String.fromCharCode(num));
+    }
+    return str1.join(&quot;&quot;);
+}
+
+
+console.log(rot13(&quot;GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.&quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;求任意两数之间所有数之和&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function sumAll(arr) {
+    var i = 0;
+    let a = Math.max(...arr);
+    let b = Math.min(...arr);
+
+    for (; b &amp;lt; a + 1; b++) {
+        i = i + b
+    }
+    console.log(i)
+}
+
+sumAll([56, 10]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;数组去重&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function diff(arr1, arr2) {
+  var newArr = [];
+
+  newArr = Array.from(new Set([...arr1, ...arr2]));
+
+  console.log(newArr);
+}
+
+diff([&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;pink wool&quot;, &quot;dead shrub&quot;], [&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;dead shrub&quot;]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;对象数组去重&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;const lists = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];
+const lists2 = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];
+
+const result = lists.reduce((prev, cur) =&amp;gt; {
+  const ids = prev.map(item =&amp;gt; item.id)
+  return ids.includes(cur.id) ? prev : [...prev, cur]
+}, []);
+console.log(result)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function diff(arr1, arr2) {
+  var newArr = [];
+  var arr3 = [...arr1, ...arr2]
+  // var arr3 = arr1.concat(arr2); //将arr1和arr2合并为arr3
+  function isContain(a) {
+    //找出arr3中不存在于arr1和arr2中的元素
+    return arr1.indexOf(a) == -1 || arr2.indexOf(a) == -1;
+  }
+  newArr = arr3.filter(isContain);
+  console.log(newArr);
+}
+
+diff([&quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;pink wool&quot;, &quot;dead shrub&quot;], [&quot;diorite&quot;, &quot;andesite&quot;, &quot;grass&quot;, &quot;dirt&quot;, &quot;dead shrub&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;将给定的数字转换成罗马数字。&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function convert(num) {
+  var num0 = [&quot;1&quot;, &quot;4&quot;, &quot;5&quot;, &quot;9&quot;, &quot;10&quot;, &quot;40&quot;, &quot;50&quot;, &quot;90&quot;, &quot;100&quot;, &quot;400&quot;, &quot;500&quot;, &quot;900&quot;, &quot;1000&quot;];
+  var num0R = num0.reverse();
+  var num1 = [&quot;I&quot;, &quot;IV&quot;, &quot;V&quot;, &quot;IX&quot;, &quot;X&quot;, &quot;XL&quot;, &quot;L&quot;, &quot;XC&quot;, &quot;C&quot;, &quot;CD&quot;, &quot;D&quot;, &quot;CM&quot;, &quot;M&quot;];
+  var num1R = num1.reverse();
+  var numCon = [];
+  num0R.forEach(function (value, index, arr) {
+    while (num &amp;gt;= value) { //条件循环
+      numCon.push(num1R[index]);
+      num -= value;
+    }
+  });
+
+  return numCon.join(&quot;&quot;);
+}
+
+console.log(convert(222));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;将给的的数字转换成中文&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function convert(num) {
+  let changeNum = [ &apos;零&apos;, &apos;一&apos;,&apos;二&apos;,&apos;三&apos;,&apos;四&apos;,&apos;五&apos;,&apos;六&apos;, &apos;七&apos;,&apos;八&apos;, &apos;九&apos; ];
+  let unit = [&apos;&apos;, &apos;十&apos;, &apos;百&apos;, &apos;千&apos;, &apos;万&apos;];
+  num = parseInt(num)
+  let getWan = temp =&amp;gt; {
+    let strArr = temp
+      .toString()
+      .split(&apos;&apos;)
+      .reverse()
+    let newNum = &apos;&apos;
+    for (var i = 0; i &amp;lt; strArr.length; i++) {
+      newNum =
+        (i == 0 &amp;amp;&amp;amp; strArr[i] == 0
+          ? &apos;&apos;
+          : i &amp;gt; 0 &amp;amp;&amp;amp; strArr[i] == 0 &amp;amp;&amp;amp; strArr[i - 1] == 0
+            ? &apos;&apos;
+            : changeNum[strArr[i]] + (strArr[i] == 0 ? unit[0] : unit[i])) +
+        newNum
+    }
+    return newNum
+  }
+  let overWan = Math.floor(num / 10000)
+  let noWan = num % 10000
+  if (noWan.toString().length &amp;lt; 4) {
+    noWan = &apos;0&apos; + noWan
+  }
+  return overWan ? getWan(overWan) + &apos;万&apos; + getWan(noWan) : getWan(num)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;function where(collection, source) {
+  var arr = [];
+  // What&apos;s in a name?
+  var sourceArr = Object.keys(source);
+  arr = collection.filter(function (obj) {
+    for (var i = 0; i &amp;lt; sourceArr.length; i++) {
+      if (obj[sourceArr[i]] !== source[sourceArr[i]]) {
+        return false;
+      }
+    }
+    return true;
+  });
+  console.log(arr);
+}
+
+where([{
+  first: &quot;Romeo&quot;,
+  last: &quot;Montague&quot;
+}, {
+  first: &quot;Mercutio&quot;,
+  last: null
+}, {
+  first: &quot;Tybalt&quot;,
+  last: &quot;Capulet&quot;
+}], {
+  last: &quot;Capulet&quot;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;给定一个字符串返回对象数组中包含该字符串的对象&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;let str = &apos;MOTI&apos;;
+let data = [
+    { technology: &apos;CHARACTER&apos;, score: -1, text: &apos;sfoefjlasdoejfoausfe&apos; },
+    { technology: &apos;PRESSURE_RELIEF&apos;, score: 2, text: &apos;123qw&apos; },
+    { technology: &apos;SUPPORT&apos;, score: 3, text: &apos;123qw&apos; },
+    { technology: &apos;MOTION_ISOLATION&apos;, score: 2, text: &apos;123qw&apos; },
+    { technology: &apos;TEMPERATURE_MANAGEMENT&apos;, score: -1, text: &apos;123qw&apos; },
+    { technology: &apos;COMFORT&apos;, score: 2, text: &apos;szyy&apos; }
+];
+let result = data.filter(function (el) {
+    return el.technology.indexOf(str) &amp;gt; -1 || el.text.indexOf(str) &amp;gt; -1;
+});
+
+console.log(result);
+Javascript
+function confirmEnding(str, target) {
+    var n = target.split(&quot;&quot;).length;
+    var newstr = str.split(&quot; &quot;).join(&quot;&quot;);
+    if (newstr.substr(-n) === target) {
+        console.log(newstr.substr(-n));
+        // return true;
+    } else {
+        //return false;
+        console.log(newstr.substr(-n));
+    }
+}
+
+confirmEnding(&quot;Walking on water and developing software from a specification are easy if both are frozen&quot;, &quot;specification&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item></channel></rss>
