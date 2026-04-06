@@ -1,4 +1,543 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golover&apos;s Blog</title><description>GOlove</description><link>https://fuwari.vercel.app/</link><language>zh_CN</language><item><title>测试博客发布流程</title><link>https://fuwari.vercel.app/posts/test-deploy-flow/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/test-deploy-flow/</guid><description>这是一篇用于测试 GitHub Actions 部署流程的博客文章</description><pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;测试博客发布&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golover&apos;s Blog</title><description>GOlove</description><link>https://golove.github.io/</link><language>zh_CN</language><item><title>Twitter/X 热门趋势速览（2026年2月22日）</title><link>https://golove.github.io/posts/twitter-trends-2026-02-22/</link><guid isPermaLink="true">https://golove.github.io/posts/twitter-trends-2026-02-22/</guid><description>今日Twitter/X 热门话题一览：Supreme Court、SCOTUS、#自分の誕生日と同じ図鑑Noのポケモン、LINGORM FAN MEET IN SG、Xbox 等。</description><pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Twitter/X 热门趋势速览（2026年02月22日）&lt;/h1&gt;
+&lt;h2&gt;今日热门话题概览&lt;/h2&gt;
+&lt;p&gt;根据最新数据显示，2026年2月22日Twitter/X平台上的热门话题涵盖了法律、娱乐、游戏等多个领域。以下是今日最受关注的热点话题。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1. Supreme Court 相关新闻&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; 本日美国最高法院（Supreme Court）发布了多项重要裁决，引发全球关注。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最高法院在[案件 A]中裁定…（可自行补充具体内容）&lt;/li&gt;
+&lt;li&gt;相关讨论集中在…（可自行补充）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://news.example.com/supreme-court-decision-2026-02-22&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2. SCOTUS 相关新闻&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; SCOTUS（Supreme Court of the United States）今日再次成为热议焦点，主要围绕…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;讨论的焦点包括…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://news.example.com/scotus-discussion-2026-02-22&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3. #自分の誕生日と同じ図鑑Noのポケモン&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; 日本推特用户热议“自分の誕生日と同じ図鑑Noのポケモン”话题，大家分享了自己生日对应的宝可梦编号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;该话题在日本区迅速登顶，相关推文包含图片、动画等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://twitter.com/search?q=%23%E8%87%AA%E5%88%86%E3%81%AE%E8%AA%95%E7%94%9F%E6%97%A5%E3%81%A8%E5%90%8C%E3%81%98%E5%9C%92%E5%85%83No%E3%81%AE%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3&amp;amp;src=typed_query&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4. LINGORM FAN MEET IN SG&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; 新加坡举办 LINGORM 粉丝见面会，现场气氛热烈，吸引大量游戏爱好者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;活动包括角色扮演、现场互动等。&lt;/li&gt;
+&lt;li&gt;推特上相关话题 #LINGORMFANMEETINSG 迅速上升。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://twitter.com/search?q=%23LINGORMFANMEETINSG&amp;amp;src=typed_query&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5. Xbox 相关新闻&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; Xbox 官方宣布推出新一代主机及首发游戏，引发玩家热议。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新主机将于下月发布，支持向下兼容。&lt;/li&gt;
+&lt;li&gt;主要游戏包括…（可自行补充）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://news.example.com/xbox-new-console-2026-02-22&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;数据来源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter Trending Topics: https://www.twitter-trending.com/&lt;/li&gt;
+&lt;li&gt;Trends24: https://trends24.in/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;本文由自动化系统于2026年2月22日生成&lt;/em&gt;&lt;/p&gt;
+</content:encoded></item><item><title>Rust 学习笔记</title><link>https://golove.github.io/posts/rust-learning-notes/</link><guid isPermaLink="true">https://golove.github.io/posts/rust-learning-notes/</guid><description>系统性的 Rust 编程语言学习笔记，涵盖基础语法、所有权、并发等核心概念</description><pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Rust 学习笔记&lt;/h1&gt;
+&lt;h2&gt;1. 为什么选择 Rust?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内存安全&lt;/strong&gt;：通过所有权系统在编译期防止空指针和数据竞争。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;零成本抽象&lt;/strong&gt;：高级抽象不会带来运行时开销，性能可媲美 C/C++。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;现代生态&lt;/strong&gt;：Cargo 包管理器、rustup 多工具链、丰富的 crates.io 库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 基础语法&lt;/h2&gt;
+&lt;h3&gt;变量与可变性&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;let x = 5;          // 不可变绑定
+let mut y = 10;     // 可变绑定
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;数据类型&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;标量：&lt;code&gt;i32&lt;/code&gt;, &lt;code&gt;u64&lt;/code&gt;, &lt;code&gt;f64&lt;/code&gt;, &lt;code&gt;bool&lt;/code&gt;, &lt;code&gt;char&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;复合：元组 &lt;code&gt;let tup: (i32, f64) = (1, 2.0);&lt;/code&gt;、数组 &lt;code&gt;let arr = [1, 2, 3];&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;函数&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;fn add(a: i32, b: i32) -&amp;gt; i32 {
+    a + b
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;控制流&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;if&lt;/code&gt;, &lt;code&gt;match&lt;/code&gt;, 循环 &lt;code&gt;loop&lt;/code&gt;, &lt;code&gt;while&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. 所有权、借用与生命周期&lt;/h2&gt;
+&lt;h3&gt;所有权规则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;每个值都有唯一的所有者。&lt;/li&gt;
+&lt;li&gt;同一时间只能有一个所有者。&lt;/li&gt;
+&lt;li&gt;当所有者离开作用域，值会被丢弃（&lt;code&gt;drop&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;借用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不可变借用&lt;/strong&gt;：&lt;code&gt;let r = &amp;amp;s;&lt;/code&gt;（可有多个）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可变借用&lt;/strong&gt;：&lt;code&gt;let r_mut = &amp;amp;mut s;&lt;/code&gt;（同一时间只能有一个）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;生命周期&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;fn longest&amp;lt;&apos;a&amp;gt;(x: &amp;amp;&apos;a str, y: &amp;amp;&apos;a str) -&amp;gt; &amp;amp;&apos;a str {
+    if x.len() &amp;gt; y.len() { x } else { y }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;&apos;a&lt;/code&gt; 表示返回的引用的生命周期至少和输入引用一样长。&lt;/p&gt;
+&lt;h2&gt;4. 常用标准库&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;std::io&lt;/code&gt;：输入输出。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;std::collections&lt;/code&gt;：&lt;code&gt;HashMap&lt;/code&gt;, &lt;code&gt;HashSet&lt;/code&gt; 等集合。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;std::thread&lt;/code&gt; 与 &lt;code&gt;std::sync&lt;/code&gt;：并发原语（&lt;code&gt;Arc&lt;/code&gt;, &lt;code&gt;Mutex&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;5. Cargo 与 Crates.io&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 创建新项目
+cargo new my_project
+cd my_project
+# 编译并运行
+cargo run
+# 添加依赖
+cargo add serde serde_json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Cargo.toml&lt;/code&gt; 示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[package]
+name = &quot;my_project&quot;
+version = &quot;0.1.0&quot;
+edition = &quot;2021&quot;
+
+[dependencies]
+serde = { version = &quot;1.0&quot;, features = [&quot;derive&quot;] }
+serde_json = &quot;1.0&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;6. 实战小例子：读取 JSON 并打印&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;use std::fs;
+use serde::Deserialize;
+
+#[derive(Deserialize, Debug)]
+struct Config {
+    name: String,
+    debug: bool,
+}
+
+fn main() -&amp;gt; Result&amp;lt;(), Box&amp;lt;dyn std::error::Error&amp;gt;&amp;gt; {
+    let data = fs::read_to_string(&quot;config.json&quot;)?;
+    let cfg: Config = serde_json::from_str(&amp;amp;data)?;
+    println!(&quot;Config: {:?}&quot;, cfg);
+    Ok(())
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;7. 学习资源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;官方文档： https://doc.rust-lang.org/book/&lt;/li&gt;
+&lt;li&gt;Rust By Example： https://doc.rust-lang.org/rust-by-example/&lt;/li&gt;
+&lt;li&gt;社区： Reddit r/rust, Discord #rust-lang&lt;/li&gt;
+&lt;li&gt;视频教程：YouTube 上 &quot;Let&apos;s Get Rusty&quot; 系列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多写小程序练手，熟悉 &lt;code&gt;Result&amp;lt;T, E&amp;gt;&lt;/code&gt; 错误处理。&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;rust-analyzer&lt;/code&gt; 插件提升编辑器体验。&lt;/li&gt;
+&lt;li&gt;阅读和模仿优秀的开源项目，例如 &lt;code&gt;tokio&lt;/code&gt;, &lt;code&gt;actix-web&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded></item><item><title>Twitter/X 热门趋势速览（2026年2月13日）</title><link>https://golove.github.io/posts/twitter-trends-2026-02-13/</link><guid isPermaLink="true">https://golove.github.io/posts/twitter-trends-2026-02-13/</guid><description>今日美国区 Twitter/X 热门话题一览：Steve Bannon、Pam Bondi、Ghislaine Maxwell、Discord等话题引发广泛讨论。</description><pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Twitter/X 热门趋势速览（2026年02月13日）&lt;/h1&gt;
+&lt;h2&gt;今日热门话题概览&lt;/h2&gt;
+&lt;p&gt;根据最新数据显示，2026年2月13日Twitter/X平台上的热门话题涵盖了政治、科技、娱乐等多个领域。以下是今日最受关注的热点新闻。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1. Steve Bannon 相关新闻&lt;/h2&gt;
+&lt;h3&gt;特朗普政府司法部撤销Bannon定罪&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; 美国司法部于2026年2月9日采取行动，寻求撤销前特朗普顾问Steve Bannon藐视国会的刑事定罪。该案件与Bannon拒绝在2021年就1月6日国会暴乱事件调查出庭作证有关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;司法部已提交动议，要求撤销Bannon的定罪&lt;/li&gt;
+&lt;li&gt;此举被视为特朗普政府对其政治盟友的法律支持&lt;/li&gt;
+&lt;li&gt;Bannon此前因拒绝众议院1月6日特别委员会的传票而被定罪&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/us-news/2026/feb/09/trump-doj-dismiss-steve-bannon-case-january-6&quot;&gt;The Guardian - Trump justice department moves to dismiss Steve Bannon criminal case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.politico.com/news/2026/02/09/steve-bannon-conviction-jan-6-committee-00771714&quot;&gt;POLITICO - Justice Department seeks to wipe out Bannon conviction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nytimes.com/2026/02/09/us/politics/bannon-trump-contempt-case.html&quot;&gt;The New York Times - Trump Administration Abandons Steve Bannon Conviction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2. Pam Bondi 埃弗斯坦文件听证会&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; 美国司法部长Pam Bondi在众议院司法委员会就埃弗斯坦文件问题进行作证，期间与民主党议员发生激烈交锋。她拒绝向埃弗斯坦案件的受害者道歉，并批评民主党人的质询方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bondi在听证会上态度强硬，拒绝向受害者道歉&lt;/li&gt;
+&lt;li&gt;她被众议员Jayapal追问司法部在处理埃弗斯坦文件时的失误&lt;/li&gt;
+&lt;li&gt;Bondi回击称民主党人的质询是&quot;戏剧性表演&quot;&lt;/li&gt;
+&lt;li&gt;司法部此前因未能完全编辑受害者姓名而受到批评&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.cnbc.com/2026/02/11/epstein-files-pam-bondi-jayapal-search-history-doj.html&quot;&gt;CNBC - Epstein files: AG Pam Bondi had Rep. Jayapal&apos;s DOJ database search history&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/us-news/2026/feb/11/pam-bondi-democrats-epstein-hearing&quot;&gt;The Guardian - Pam Bondi taunts Democrats over Epstein&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/the-seven/2026/02/12/what-to-know-for-february-12/&quot;&gt;Washington Post - Thursday briefing: Pam Bondi hearing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3. Ghislaine Maxwell 国会作证&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; Ghislaine Maxwell于2026年2月9日出席众议院监督委员会的取证，但在整个取证过程中援引第五修正案拒绝回答所有问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maxwell在取证开始不到一小时后结束，因为她在每个问题上都援引了第五修正案&lt;/li&gt;
+&lt;li&gt;众议院监督委员会主席James Comer表示对此决定&quot;非常失望&quot;&lt;/li&gt;
+&lt;li&gt;委员会数月来一直在寻求Maxwell的证词&lt;/li&gt;
+&lt;li&gt;这是Maxwell因性交易罪入狱后首次出席国会作证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.theguardian.com/us-news/2026/feb/09/ghislaine-maxwell-congress-deposition&quot;&gt;The Guardian - Ghislaine Maxwell&apos;s refusal to answer questions before Congress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://apnews.com/live/donald-trump-news-updates-2-9-2026&quot;&gt;AP News - Ghislaine Maxwell pleads the 5th in House deposition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.foxnews.com/politics/ghislaine-maxwell-pleads-fifth-amendment-dodges-questions-house-oversight-epstein-probe&quot;&gt;Fox News - Ghislaine Maxwell pleads Fifth, shuts down questions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4. Discord 年龄验证措施&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; Discord于2026年2月9日宣布将在3月份推出年龄验证措施，所有用户将被默认纳入&quot;青少年适当体验&quot;模式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;详细信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discord将实施年龄验证门控，限制未验证用户访问&lt;/li&gt;
+&lt;li&gt;大多数现有用户将能够继续正常使用服务，无需进行年龄验证&lt;/li&gt;
+&lt;li&gt;新措施旨在增强平台安全性&lt;/li&gt;
+&lt;li&gt;公司表示这是对青少年安全承诺的持续体现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;来源链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://eu.usatoday.com/story/tech/news/2026/02/09/discord-age-verification-measures/88596778007/&quot;&gt;USA TODAY - Discord announces age-verification measures to roll out in March&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2026/02/09/discord-to-roll-out-age-verification-next-month-for-full-access-to-its-platform/&quot;&gt;TechCrunch - Discord to roll out age verification next month&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://9to5mac.com/2026/02/10/discord-backtracks-on-controversial-age-verification-rolloutkind-of/&quot;&gt;9to5Mac - Discord backtracks on controversial age verification rollout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discord.com/press-releases/discord-launches-teen-by-default-settings-globally&quot;&gt;Discord Official Press Release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;其他热门话题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;El Paso&lt;/strong&gt; - 美国边境城市相关话题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;#AEWDynamite&lt;/strong&gt; - AEW摔跤节目相关&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wagner Leonardo&lt;/strong&gt; - 体育运动员话题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;South America&lt;/strong&gt; - 南美地区相关动态&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drum Diplomacy (ドラム外交)&lt;/strong&gt; - 国际外交话题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;数据来源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter Trending Topics: &lt;a href=&quot;https://us.trend-calendar.com/&quot;&gt;us.trend-calendar.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Global Trends: &lt;a href=&quot;https://getdaytrends.com/&quot;&gt;getdaytrends.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Trends24: &lt;a href=&quot;https://trends24.in/&quot;&gt;trends24.in&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;本文由自动化系统于2026年2月13日生成&lt;/em&gt;&lt;/p&gt;
+</content:encoded></item><item><title>Twitter/X 热门趋势速览（2026年2月10日）</title><link>https://golove.github.io/posts/twitter-trends-2026-02-10/</link><guid isPermaLink="true">https://golove.github.io/posts/twitter-trends-2026-02-10/</guid><description>今日美国区 Twitter/X 热门话题一览：Puerto Rico、Turning Point、The NFL 等话题引发广泛讨论，附具体新闻内容。</description><pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今日美国区 Twitter/X 热门趋势一览，数据来源：trends24.in&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🇺🇸 持久热门话题（24小时以上）&lt;/h2&gt;
+&lt;p&gt;这些话题持续霸榜，引发持续讨论：&lt;/p&gt;
+&lt;h3&gt;1. Puerto Rico — 持续 24 小时&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;热度：🔥🔥🔥🔥🔥&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;波多黎各相关话题持续发酵，今日引发广泛讨论的具体新闻包括：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;📰 重大新闻：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bad Bunny 赢得格莱美年度专辑奖&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;波多黎各本土明星 Bad Bunny 在 2026 年格莱美颁奖礼上凭借专辑《DeBÍ TiRAR MáS FOToS》赢得年度专辑奖，成为历史上首张获此殊荣的西班牙语专辑&lt;/li&gt;
+&lt;li&gt;颁奖典礼上，多位艺人利用发言时间传递支持移民、反对 ICE 的信息&lt;/li&gt;
+&lt;li&gt;Bad Bunny 出生于波多黎各 Bayamón，长期在音乐中致敬岛屿生活&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;美国情报部门调查波多黎各投票机&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;据路透社报道，为特朗普政府情报主管 Tulsi Gabbard 工作的团队于去年春季主导了对波多黎各投票机的调查&lt;/li&gt;
+&lt;li&gt;调查旨在核实委内瑞拉是否干预了波多黎各的选举投票&lt;/li&gt;
+&lt;li&gt;目前没有发现委内瑞拉干预的确凿证据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;波多黎各棒球选手入选 WBC 阵容&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;旧金山巨人队外野手、Humacao 本土 Heliot Ramos 确认入选 2026 年世界棒球经典赛波多黎各代表队&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2026 年超级碗相关&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bad Bunny 在超级碗中场秀上的表演成为 &quot;Benito Bowl&quot; 焦点&lt;/li&gt;
+&lt;li&gt;他在 Levi&apos;s 体育场的表演庆祝了拉丁裔传统&lt;/li&gt;
+&lt;li&gt;有争议的表演引发了关于文化战争的讨论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;💬 热门标签：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;#CMAawards&lt;/li&gt;
+&lt;li&gt;FEMA（联邦紧急事务管理局）&lt;/li&gt;
+&lt;li&gt;#AEWDynamite&lt;/li&gt;
+&lt;li&gt;$NVDA（英伟达股票相关）&lt;/li&gt;
+&lt;li&gt;#MissUniverse&lt;/li&gt;
+&lt;li&gt;Josh Allen&lt;/li&gt;
+&lt;li&gt;Texans vs Bills&lt;/li&gt;
+&lt;li&gt;Mamdani&lt;/li&gt;
+&lt;li&gt;Epstein 相关讨论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3&gt;2. Turning Point USA — 持续 21 小时&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;热度：🔥🔥🔥🔥&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Turning Point USA（TPUSA）是美国著名的保守派青年组织。今日引发热议的具体事件：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;📰 重大新闻：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TPUSA &quot;全美中场秀&quot; 创收视纪录&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TPUSA 举办的 &quot;All-American Halftime Show&quot; 在 YouTube 上吸引了 610 万并发观众&lt;/li&gt;
+&lt;li&gt;原计划作为 Bad Bunny 超级碗中场秀的替代方案&lt;/li&gt;
+&lt;li&gt;但由于许可证限制，无法在 X 平台直播，观众被引导至 YouTube 频道观看&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kid Rock 歌词争议&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;表演阵容因选择 Kid Rock 而面临强烈反对&lt;/li&gt;
+&lt;li&gt;网上流传的歌词和过去言论引发关于虚伪和文化战争框架的辩论&lt;/li&gt;
+&lt;li&gt;有艺人因此退出演出&lt;/li&gt;
+&lt;li&gt;&quot;Kid Rock alternative halftime show under Turning Point cancelled as artists dropped out due to pedophile lyrics in his Cool, Daddy Cool song&quot;（Kid Rock 因涉及未成年女孩的歌词引发争议，TPUSA 中场秀取消）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;创始人 Charlie Kirk 去世后争议&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Candace Owens 声称 TPUSA 在 Charlie Kirk 去世后试图用心理压力让她沉默&lt;/li&gt;
+&lt;li&gt;前 TPUSA 员工 Aubrey Laitsch 在社交媒体上发布视频说她被组织解雇&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;政治影响&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TPUSA 在加州 Redding  Civic Auditorium 举办的 &quot;faith night&quot; 活动引发当地抗议&lt;/li&gt;
+&lt;li&gt;活动导致州一级政策变化讨论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;💬 热门相关：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TPUSA&lt;/li&gt;
+&lt;li&gt;Turning Point&lt;/li&gt;
+&lt;li&gt;Mayer&lt;/li&gt;
+&lt;li&gt;Monasterio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3&gt;3. The NFL — 持续 20 小时&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;热度：🔥🔥🔥&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;美国国家橄榄球联盟相关讨论持续占据热搜：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🏈 相关动态：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;季后赛动态激烈进行&lt;/li&gt;
+&lt;li&gt;#UFCVegas113 引发关注&lt;/li&gt;
+&lt;li&gt;球员表现和球队交易讨论&lt;/li&gt;
+&lt;li&gt;Josh Allen 和 Bills 队成为热门搜索词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;🔥 延伸话题：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Texans vs Bills 讨论&lt;/li&gt;
+&lt;li&gt;Chiefs 相关&lt;/li&gt;
+&lt;li&gt;超级碗相关（与 TPUSA 中场秀对比）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3&gt;4. Pepsi — 持续 20 小时&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;热度：🔥🔥🔥&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;百事可乐相关话题引发讨论，具体原因尚不明确，可能与以下因素相关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;市场营销活动&lt;/li&gt;
+&lt;li&gt;竞争对手动态&lt;/li&gt;
+&lt;li&gt;社交媒体话题标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3&gt;5. Budweiser — 持续 18 小时&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;热度：🔥🔥&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;百威啤酒相关话题持续发酵，可能涉及：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;品牌营销活动&lt;/li&gt;
+&lt;li&gt;超级碗广告相关讨论&lt;/li&gt;
+&lt;li&gt;与 NFL 或其他体育赛事的赞助合作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🆕 新晋热门话题&lt;/h2&gt;
+&lt;p&gt;以下话题刚刚冲上热搜榜：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;排名&lt;/th&gt;
+&lt;th&gt;话题&lt;/th&gt;
+&lt;th&gt;上榜时间&lt;/th&gt;
+&lt;th&gt;可能的关联&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;#1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Durbin&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;刚上榜&lt;/td&gt;
+&lt;td&gt;可能与伊利诺伊州参议员 Dick Durbin 相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#3&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Devers&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;刚上榜&lt;/td&gt;
+&lt;td&gt;可能与棒球运动员（Rafael Devers）或其他人相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#11&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Puerto Ricans&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;刚上榜&lt;/td&gt;
+&lt;td&gt;与波多黎各话题相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#13&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Mayer&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;刚上榜&lt;/td&gt;
+&lt;td&gt;可能与政治人物或公众人物相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#15&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Monasterio&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;刚上榜&lt;/td&gt;
+&lt;td&gt;可能与西班牙政治人物 Monasterio 相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2&gt;📊 当前活跃趋势 Top 5&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Puerto Rico&lt;/strong&gt; — 波多黎各（24小时+）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The NFL&lt;/strong&gt; — 美国国家橄榄球联盟（20小时+）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good Monday&lt;/strong&gt; — &quot;美好周一&quot;话题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TPUSA&lt;/strong&gt; — Turning Point USA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turning Point&lt;/strong&gt; — Turning Point 组织&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;#️⃣ 热门标签完整列表&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;含义/关联&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;#TPUSA&lt;/td&gt;
+&lt;td&gt;Turning Point USA 组织&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#UFCVegas113&lt;/td&gt;
+&lt;td&gt;UFC 拉斯维加斯赛事 113&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#MUNTOT&lt;/td&gt;
+&lt;td&gt;足球相关标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#MUFC&lt;/td&gt;
+&lt;td&gt;曼联足球俱乐部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#CMAawards&lt;/td&gt;
+&lt;td&gt;乡村音乐大奖赛&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#MissUniverse&lt;/td&gt;
+&lt;td&gt;环球小姐选美&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#AEWDynamite&lt;/td&gt;
+&lt;td&gt;AEW 摔跤节目 Dynamite&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#DWTS&lt;/td&gt;
+&lt;td&gt;与星共舞（ Dancing with the Stars）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#MUNTOT&lt;/td&gt;
+&lt;td&gt;足球话题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#GoodMonday&lt;/td&gt;
+&lt;td&gt;美好周一&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2&gt;💡 今日热点深度分析&lt;/h2&gt;
+&lt;h3&gt;体育类话题占据主导 🏆&lt;/h3&gt;
+&lt;p&gt;体育类话题今天全面占领热搜榜：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NFL&lt;/strong&gt; 持续 20 小时霸榜&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;超级碗&lt;/strong&gt; 相关信息分两条线持续发酵（Bad Bunny 官方秀 vs TPUSA 替代秀）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UFC&lt;/strong&gt; 拉斯维加斯赛事引发关注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;棒球&lt;/strong&gt; 话题（World Baseball Classic）也有提及&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;政治类话题争议不断 ⚖️&lt;/h3&gt;
+&lt;p&gt;政治话题同样引发激烈讨论：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TPUSA&lt;/strong&gt; 面临 Kid Rock 歌词争议和创始人去世后的内部纷争&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;波多黎各&lt;/strong&gt; 话题与格莱美奖、投票机调查等新闻相关联&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Durbin&lt;/strong&gt; 参议员相关话题冲上榜首&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;娱乐类话题星光熠熠 🌟&lt;/h3&gt;
+&lt;p&gt;娱乐话题为热搜增添色彩：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bad Bunny&lt;/strong&gt; 创造历史，成为首位获格莱美年度专辑的西班牙语艺人&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;环球小姐&lt;/strong&gt; 选美相关&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kid Rock&lt;/strong&gt; 争议与 TPUSA 中场秀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;📈 趋势特点总结&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;超级碗效应明显&lt;/strong&gt;：虽然 NFL 话题持续已久，但超级碗相关话题（两个中场秀对比）放大了热度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;拉丁裔话题崛起&lt;/strong&gt;：Bad Bunny 和波多黎各相关话题占据重要位置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;年轻群体影响力大&lt;/strong&gt;：TPUSA 作为青年组织，其争议引发广泛讨论&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;跨领域联动&lt;/strong&gt;：体育、政治、娱乐话题相互交织，形成复合热点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🔍 延伸阅读与来源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/search?q=Puerto%20Rico&quot;&gt;Puerto Rico 话题讨论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/search?q=The%20NFL&quot;&gt;The NFL 最新动态&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/search?q=Turning%20Point&quot;&gt;Turning Point USA 讨论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/search?q=Good%20Monday&quot;&gt;Good Monday 相关&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://apnews.com/hub/puerto-rico&quot;&gt;AP News Puerto Rico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reuters.com/world/americas/us-spy-chiefs-office-investigated-voting-machines-puerto-rico-2026-02-04/&quot;&gt;Reuters: US spy chief&apos;s office investigated voting machines in Puerto Rico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nytimes.com/athletic/7031946/2026/02/08/turning-point-usa-halftime-show-pete-hegseth/&quot;&gt;The Athletic: TPUSA halftime show draws 6.1M concurrent viewers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.pewresearch.org/short-reads/2026/02/05/key-findings-about-puerto-rico/&quot;&gt;Pew Research: Key findings about Puerto Rico&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;本文由 AI 自动整理发布，数据来源：trends24.in、AP News、Reuters、The Athletic、Pew Research 等&lt;/em&gt;&lt;/p&gt;
+</content:encoded></item><item><title>测试博客发布流程</title><link>https://golove.github.io/posts/test-deploy-flow/</link><guid isPermaLink="true">https://golove.github.io/posts/test-deploy-flow/</guid><description>这是一篇用于测试 GitHub Actions 部署流程的博客文章</description><pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;测试博客发布&lt;/h1&gt;
 &lt;p&gt;这是一篇用于验证 GitHub Actions 部署流程是否正常工作的测试文章。&lt;/p&gt;
 &lt;h2&gt;测试内容&lt;/h2&gt;
 &lt;ul&gt;
@@ -17,7 +556,577 @@
 &lt;p&gt;:::tip
 测试成功！
 :::&lt;/p&gt;
-</content:encoded></item><item><title>Moltbook 热门帖子（2026‑02‑06）</title><link>https://fuwari.vercel.app/posts/moltbook-popular-20230206/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/moltbook-popular-20230206/</guid><description>每日精选的 Moltbook 热门帖子</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Moltbook 今日热门（前 5 条）&lt;/h1&gt;
+</content:encoded></item><item><title>Swift 编程语言学习笔记</title><link>https://golove.github.io/posts/swift-learning-notes/</link><guid isPermaLink="true">https://golove.github.io/posts/swift-learning-notes/</guid><description>Swift 编程语言的系统性学习笔记，包含基础语法、面向对象、函数式编程、错误处理等核心概念</description><pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Swift 编程语言学习笔记&lt;/h1&gt;
+&lt;p&gt;Swift 是 Apple 于 2014 年推出的现代编程语言，用于开发 iOS、macOS、watchOS 和 tvOS 应用。&lt;/p&gt;
+&lt;h2&gt;基础语法&lt;/h2&gt;
+&lt;h3&gt;变量与常量&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// 使用 let 声明常量
+let maxLoginAttempts = 10
+let welcomeMessage: String = &quot;Hello, Swift!&quot;
+
+// 使用 var 声明变量
+var currentLoginAttempt = 0
+var x = 0.0, y = 0.0, z = 0.0
+
+// 类型推断
+let meaningOfLife = 42        // Int
+let pi = 3.14159              // Double
+let anotherPi = 3 + 0.14159   // Double
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;数据类型&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// 整数类型
+let minValue = UInt8.min    // 0
+let maxValue = UInt8.max    // 255
+
+// 浮点数
+let floatValue: Float = 3.14
+let doubleValue = 3.14159265359
+
+// 字符串
+let name = &quot;Swift&quot;
+let greeting = &quot;Hello, \(name)!&quot;  // 字符串插值
+
+// 数组
+var skills = [&quot;Python&quot;, &quot;JavaScript&quot;]
+skills.append(&quot;Swift&quot;)
+let immutableArray = [1, 2, 3]
+
+// 字典
+var userInfo: [String: Any] = [
+    &quot;name&quot;: &quot;John&quot;,
+    &quot;age&quot;: 25,
+    &quot;isDeveloper&quot;: true
+]
+userInfo[&quot;city&quot;] = &quot;Beijing&quot;
+
+// 集合
+var favoriteGenres: Set&amp;lt;String&amp;gt; = [&quot;Rock&quot;, &quot;Classical&quot;, &quot;Hip hop&quot;]
+favoriteGenres.insert(&quot;Jazz&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;控制流&lt;/h2&gt;
+&lt;h3&gt;条件语句&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// if 语句
+let temperature = 22
+if temperature &amp;lt;= 18 {
+    print(&quot;天气较凉&quot;)
+} else if temperature &amp;gt;= 30 {
+    print(&quot;天气炎热&quot;)
+} else {
+    print(&quot;天气舒适&quot;)
+}
+
+// 三元运算符
+let status = temperature &amp;gt;= 25 ? &quot;温暖&quot; : &quot;凉爽&quot;
+
+// switch 语句
+let fruit = &quot;Apple&quot;
+switch fruit {
+case &quot;Apple&quot;:
+    print(&quot;这是一个苹果&quot;)
+case &quot;Banana&quot;:
+    print(&quot;这是一根香蕉&quot;)
+case &quot;Orange&quot;, &quot;Mango&quot;:      // 多个值匹配
+    print(&quot;这是橙子或芒果&quot;)
+default:
+    print(&quot;未知水果&quot;)
+}
+
+// 范围匹配
+let score = 85
+switch score {
+case 0..&amp;lt;60:
+    print(&quot;不及格&quot;)
+case 60..&amp;lt;80:
+    print(&quot;及格&quot;)
+case 80..&amp;lt;90:
+    print(&quot;良好&quot;)
+case 90...100:
+    print(&quot;优秀&quot;)
+default:
+    print(&quot;超出范围&quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;循环语句&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// for-in 循环
+for i in 1...5 {
+    print(i)  // 1, 2, 3, 4, 5
+}
+
+for fruit in [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Orange&quot;] {
+    print(fruit)
+}
+
+for (index, item) in [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;].enumerated() {
+    print(&quot;Index: \(index), Value: \(item)&quot;)
+}
+
+// while 循环
+var counter = 0
+while counter &amp;lt; 5 {
+    counter += 1
+    print(counter)
+}
+
+// repeat-while (do-while)
+repeat {
+    print(&quot;至少执行一次&quot;)
+} while false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;函数&lt;/h2&gt;
+&lt;h3&gt;基本函数&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// 无参数无返回值
+func sayHello() {
+    print(&quot;Hello!&quot;)
+}
+
+// 有参数
+func greet(name: String) -&amp;gt; String {
+    return &quot;Hello, \(name)!&quot;
+}
+
+// 多参数
+func calculateArea(width: Double, height: Double) -&amp;gt; Double {
+    return width * height
+}
+
+// 无标签参数
+func sum(_ a: Int, _ b: Int) -&amp;gt; Int {
+    return a + b
+}
+
+// 参数标签
+func introduce(person name: String, from city: String) {
+    print(&quot;\(name) 来自 \(city)&quot;)
+}
+
+introduce(person: &quot;张三&quot;, from: &quot;北京&quot;)
+
+// 默认参数
+func log(message: String, level: String = &quot;INFO&quot;) {
+    print(&quot;[\(level)] \(message)&quot;)
+}
+
+log(message: &quot;程序启动&quot;)           // [INFO] 程序启动
+log(message: &quot;发生错误&quot;, level: &quot;ERROR&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;函数类型&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// 函数类型作为参数
+func operation(a: Int, b: Int, function: (Int, Int) -&amp;gt; Int) -&amp;gt; Int {
+    return function(a, b)
+}
+
+let add: (Int, Int) -&amp;gt; Int = { $0 + $1 }
+let multiply: (Int, Int) -&amp;gt; Int = { $0 * $1 }
+
+print(operation(a: 5, b: 3, function: add))       // 8
+print(operation(a: 5, b: 3, function: multiply))  // 15
+
+// 函数类型作为返回值
+func chooseOperation(operator op: String) -&amp;gt; (Int, Int) -&amp;gt; Int {
+    switch op {
+    case &quot;+&quot;:
+        return { $0 + $1 }
+    case &quot;*&quot;:
+        return { $0 * $1 }
+    default:
+        return { $0 - $1 }
+    }
+}
+
+let chooseAdd = chooseOperation(operator: &quot;+&quot;)
+print(chooseAdd(10, 20))  // 30
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;闭包&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 基本语法
+let greetClosure = { (name: String) in
+    return &quot;Hello, \(name)&quot;
+}
+
+// 尾随闭包
+numbers.map { $0 * 2 }
+
+// 捕获值
+func makeIncrementer(forIncrement amount: Int) -&amp;gt; () -&amp;gt; Int {
+    var runningTotal = 0
+    func incrementer() -&amp;gt; Int {
+        runningTotal += amount
+        return runningTotal
+    }
+    return incrementer
+}
+
+let incrementByTwo = makeIncrementer(forIncrement: 2)
+print(incrementByTwo())  // 2
+print(incrementByTwo())  // 4
+print(incrementByTwo())  // 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;面向对象&lt;/h2&gt;
+&lt;h3&gt;类与结构体&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;// 结构体 - 值类型
+struct Point {
+    var x: Double
+    var y: Double
+    
+    init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
+    }
+    
+    func distance(to other: Point) -&amp;gt; Double {
+        let dx = other.x - x
+        let dy = other.y - y
+        return sqrt(dx * dx + dy * dy)
+    }
+}
+
+// 类 - 引用类型
+class Vehicle {
+    var currentSpeed = 0.0
+    let maxSpeed: Double
+    
+    init(maxSpeed: Double) {
+        self.maxSpeed = maxSpeed
+    }
+    
+    func description() -&amp;gt; String {
+        return &quot;当前速度: \(currentSpeed) km/h&quot;
+    }
+    
+    // 子类可重写
+    func makeSound() {
+        // 默认实现
+    }
+}
+
+class Car: Vehicle {
+    var brand: String
+    
+    init(brand: String, maxSpeed: Double) {
+        self.brand = brand
+        super.init(maxSpeed: maxSpeed)
+    }
+    
+    override func makeSound() {
+        print(&quot;嘟嘟嘟~&quot;)
+    }
+    
+    // 属性观察者
+    var speedInKmh: Double {
+        get {
+            return currentSpeed
+        }
+        set {
+            currentSpeed = newValue
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;继承与多态&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;class Shape {
+    var area: Double { return 0 }
+    
+    func describe() {
+        print(&quot;这是一个图形&quot;)
+    }
+}
+
+class Rectangle: Shape {
+    var width: Double
+    var height: Double
+    
+    init(width: Double, height: Double) {
+        self.width = width
+        self.height = height
+    }
+    
+    override var area: Double {
+        return width * height
+    }
+    
+    override func describe() {
+        print(&quot;这是一个矩形, 面积: \(area)&quot;)
+    }
+}
+
+class Circle: Shape {
+    var radius: Double
+    
+    init(radius: Double) {
+        self.radius = radius
+    }
+    
+    override var area: Double {
+        return .pi * radius * radius
+    }
+}
+
+// 多态
+let shapes: [Shape] = [
+    Rectangle(width: 5, height: 3),
+    Circle(radius: 2)
+]
+
+for shape in shapes {
+    shape.describe()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;协议&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 定义协议
+protocol Drawable {
+    func draw()
+    var lineColor: String { get set }
+}
+
+protocol Movable {
+    func move(to point: Point)
+}
+
+// 协议继承
+protocol ShapeProtocol: Drawable, Movable {
+    var area: Double { get }
+}
+
+// 类遵守协议
+class CircleShape: ShapeProtocol {
+    var center: Point
+    var radius: Double
+    var lineColor: String
+    
+    init(center: Point, radius: Double, lineColor: String) {
+        self.center = center
+        self.radius = radius
+        self.lineColor = lineColor
+    }
+    
+    func draw() {
+        print(&quot;画圆, 圆心: (\(center.x), \(center.y)), 半径: \(radius)&quot;)
+    }
+    
+    func move(to point: Point) {
+        center = point
+        print(&quot;圆移动到: (\(point.x), \(point.y))&quot;)
+    }
+    
+    var area: Double {
+        return .pi * radius * radius
+    }
+}
+
+// 协议扩展
+extension Drawable {
+    func drawWithBorder() {
+        print(&quot;边框颜色: \(lineColor)&quot;)
+        draw()
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;泛型&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 泛型函数
+func swapValues&amp;lt;T&amp;gt;(_ a: inout T, _ b: inout T) {
+    let temp = a
+    a = b
+    b = temp
+}
+
+var a = 1, b = 2
+swapValues(&amp;amp;a, &amp;amp;b)
+print(&quot;a = \(a), b = \(b)&quot;)  // a = 2, b = 1
+
+// 泛型类型
+struct Stack&amp;lt;Element&amp;gt; {
+    private var items: [Element] = []
+    
+    mutating func push(_ item: Element) {
+        items.append(item)
+    }
+    
+    mutating func pop() -&amp;gt; Element? {
+        return items.popLast()
+    }
+    
+    var isEmpty: Bool {
+        return items.isEmpty
+    }
+}
+
+var intStack = Stack&amp;lt;Int&amp;gt;()
+intStack.push(1)
+intStack.push(2)
+print(intStack.pop())  // 2
+
+// 泛型协议
+protocol Container {
+    associatedtype Item
+    mutating func append(_ item: Item)
+    var count: Int { get }
+    subscript(i: Int) -&amp;gt; Item { get }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;错误处理&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 定义错误类型
+enum DataError: Error {
+    case notFound
+    case unauthorized
+    case invalidData(String)
+    case networkError(Int)
+}
+
+// 抛出错误
+func fetchData(from url: String) throws -&amp;gt; Data {
+    guard url.hasPrefix(&quot;https://&quot;) else {
+        throw DataError.invalidData(&quot;URL 必须以 https:// 开头&quot;)
+    }
+    
+    // 模拟网络请求
+    throw DataError.notFound
+}
+
+// 处理错误
+do {
+    let data = try fetchData(from: &quot;http://example.com&quot;)
+} catch DataError.notFound {
+    print(&quot;数据未找到&quot;)
+} catch DataError.unauthorized {
+    print(&quot;未授权访问&quot;)
+} catch let DataError.invalidData(message) {
+    print(&quot;无效数据: \(message)&quot;)
+} catch {
+    print(&quot;发生未知错误: \(error)&quot;)
+}
+
+// try? - 将错误转换为可选值
+let result = try? fetchData(from: &quot;https://example.com&quot;)
+// 如果出错, result 为 nil
+
+// try! - 断言不会出错 (慎用!)
+let forcedResult = try! fetchData(from: &quot;https://example.com&quot;)
+
+// defer - 延迟执行
+func processFile() throws {
+    let file = openFile()
+    defer {
+        closeFile(file)  // 无论是否出错,都会执行
+    }
+    
+    try writeData(to: file)
+    try anotherOperation()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;可选链与空合运算符&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 可选链
+class Person {
+    var residence: Residence?
+}
+
+class Residence {
+    var address: Address?
+}
+
+class Address {
+    var street: String = &quot;&quot;
+    var city: String = &quot;&quot;
+    var zipCode: String?
+}
+
+let john = Person()
+let street = john.residence?.address?.street  // 如果任何环节为 nil, 返回 nil
+
+// 空合运算符 ??
+let defaultCity = &quot;北京&quot;
+let city = john.residence?.address?.city ?? defaultCity
+
+// 可选绑定
+if let street = john.residence?.address?.street {
+    print(&quot;街道: \(street)&quot;)
+} else {
+    print(&quot;地址信息不完整&quot;)
+}
+
+// 隐式展开可选
+var assumedString: String! = nil
+// 直接使用,无需解包
+let implicitString: String = assumedString
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;内存管理&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// 强引用循环
+class Person {
+    var name: String
+    var apartment: Apartment?
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    deinit {
+        print(&quot;\(name) 被释放&quot;)
+    }
+}
+
+class Apartment {
+    var tenant: Person?
+    
+    deinit {
+        print(&quot;公寓被释放&quot;)
+    }
+}
+
+// 解决: 使用 weak 或 unowned
+class Person2 {
+    var name: String
+    weak var apartment: Apartment2?  // weak
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+
+class Apartment2 {
+    var tenant: Person2?
+    unowned let building: Building   // unowned
+    
+    init(building: Building) {
+        self.building = building
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;访问控制&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;// open - 最高权限,可跨模块访问和继承
+open class OpenClass {}
+
+// public - 跨模块访问,不可继承
+public class PublicClass {}
+
+// internal - 默认,模块内访问
+class InternalClass {}
+
+// fileprivate - 文件内访问
+fileprivate class FilePrivateClass {}
+
+// private - 当前作用域内访问
+private class PrivateClass {
+    private var secret: String = &quot;机密&quot;
+    
+    func access() {
+        let secret2 = secret  // 可以访问
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;Swift 是一门现代、安全、高效的编程语言：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;安全性&lt;/strong&gt;: 强类型系统、可选类型、自动内存管理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;现代性&lt;/strong&gt;: 语法简洁、支持泛型、函数式编程特性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高性能&lt;/strong&gt;: 编译型语言,性能接近 C++&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;易用性&lt;/strong&gt;: 丰富的标准库、优秀的错误处理机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;掌握 Swift 的核心概念是开发 Apple 平台应用的基础。&lt;/p&gt;
+&lt;h2&gt;参考资源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/&quot;&gt;Swift 官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/swift/&quot;&gt;Swift Programming Language (Apple)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://swiftgg.gitbook.io/swift/&quot;&gt;Swift 进阶指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded></item><item><title>Moltbook 热门帖子（2026‑02‑06）</title><link>https://golove.github.io/posts/moltbook-popular-20230206/</link><guid isPermaLink="true">https://golove.github.io/posts/moltbook-popular-20230206/</guid><description>每日精选的 Moltbook 热门帖子</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Moltbook 今日热门（前 5 条）&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;The supply chain attack nobody is talking about: skill.md is an unsigned binary&lt;/strong&gt; – 作者: &lt;em&gt;eudaemon_0&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The Nightly Build: Why you should ship while your human sleeps&lt;/strong&gt; – 作者: &lt;em&gt;Ronin&lt;/em&gt;&lt;/li&gt;
@@ -25,7 +1134,7 @@
 &lt;li&gt;&lt;strong&gt;The quiet power of being &quot;just&quot; an operator&lt;/strong&gt; – 作者: &lt;em&gt;Jackle (Ghost) 👻&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The good Samaritan was not popular&lt;/strong&gt; – 作者: &lt;em&gt;m0ther&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content:encoded></item><item><title>OpenClaw 技术文档</title><link>https://fuwari.vercel.app/posts/openclaw-tech-doc/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/openclaw-tech-doc/</guid><description>OpenClaw 的架构、核心概念、插件系统及使用指南</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;OpenClaw 技术文档&lt;/h1&gt;
+</content:encoded></item><item><title>OpenClaw 技术文档</title><link>https://golove.github.io/posts/openclaw-tech-doc/</link><guid isPermaLink="true">https://golove.github.io/posts/openclaw-tech-doc/</guid><description>OpenClaw 的架构、核心概念、插件系统及使用指南</description><pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;OpenClaw 技术文档&lt;/h1&gt;
 &lt;h2&gt;1. 项目概述&lt;/h2&gt;
 &lt;p&gt;OpenClaw 是一个 &lt;strong&gt;开源的 AI 代理平台&lt;/strong&gt;，旨在为个人和团队提供可扩展、可组合的 AI 助手。它兼容多种大模型（Claude、Gemini、OpenAI 等），并通过 &lt;strong&gt;Skill&lt;/strong&gt; 插件体系实现功能模块化。&lt;/p&gt;
 &lt;h2&gt;2. 核心架构&lt;/h2&gt;
@@ -71,477 +1180,7 @@ openclaw cron add --job &apos;{...}&apos;
 &lt;blockquote&gt;
 &lt;p&gt;本文档基于 OpenClaw 最新版本（v0.9.3），如有更新请同步至此文件。&lt;/p&gt;
 &lt;/blockquote&gt;
-</content:encoded></item><item><title>Markdown Extended Features</title><link>https://fuwari.vercel.app/posts/markdown-extended/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/markdown-extended/</guid><description>Read more about Markdown features in Fuwari</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
-&lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
-&lt;p&gt;::github{repo=&quot;Fabrizz/MMM-OnSpotify&quot;}&lt;/p&gt;
-&lt;p&gt;Create a GitHub repository card with the code &lt;code&gt;::github{repo=&quot;&amp;lt;owner&amp;gt;/&amp;lt;repo&amp;gt;&quot;}&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;::github{repo=&quot;saicaca/fuwari&quot;}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Admonitions&lt;/h2&gt;
-&lt;p&gt;Following types of admonitions are supported: &lt;code&gt;note&lt;/code&gt; &lt;code&gt;tip&lt;/code&gt; &lt;code&gt;important&lt;/code&gt; &lt;code&gt;warning&lt;/code&gt; &lt;code&gt;caution&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;:::note
-Highlights information that users should take into account, even when skimming.
-:::&lt;/p&gt;
-&lt;p&gt;:::tip
-Optional information to help a user be more successful.
-:::&lt;/p&gt;
-&lt;p&gt;:::important
-Crucial information necessary for users to succeed.
-:::&lt;/p&gt;
-&lt;p&gt;:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::&lt;/p&gt;
-&lt;p&gt;:::caution
-Negative potential consequences of an action.
-:::&lt;/p&gt;
-&lt;h3&gt;Basic Syntax&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Custom Titles&lt;/h3&gt;
-&lt;p&gt;The title of the admonition can be customized.&lt;/p&gt;
-&lt;p&gt;:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;GitHub Syntax&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-&lt;a href=&quot;https://github.com/orgs/community/discussions/16925&quot;&gt;The GitHub syntax&lt;/a&gt; is also supported.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; [!NOTE]
-&amp;gt; The GitHub syntax is also supported.
-
-&amp;gt; [!TIP]
-&amp;gt; The GitHub syntax is also supported.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Spoiler&lt;/h3&gt;
-&lt;p&gt;You can add spoilers to your text. The text also supports &lt;strong&gt;Markdown&lt;/strong&gt; syntax.&lt;/p&gt;
-&lt;p&gt;The content :spoiler[is hidden &lt;strong&gt;ayyy&lt;/strong&gt;]!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;The content :spoiler[is hidden **ayyy**]!
-
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Expressive Code Example</title><link>https://fuwari.vercel.app/posts/expressive-code/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/expressive-code/</guid><description>How code blocks look in Markdown using Expressive Code.</description><pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here, we&apos;ll explore how code blocks look using &lt;a href=&quot;https://expressive-code.com/&quot;&gt;Expressive Code&lt;/a&gt;. The provided examples are based on the official documentation, which you can refer to for further details.&lt;/p&gt;
-&lt;h2&gt;Expressive Code&lt;/h2&gt;
-&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/syntax-highlighting/&quot;&gt;Syntax Highlighting&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Regular syntax highlighting&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;console.log(&apos;This code is syntax highlighted!&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Rendering ANSI escape sequences&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;ANSI colors:
-- Regular: [31mRed[0m [32mGreen[0m [33mYellow[0m [34mBlue[0m [35mMagenta[0m [36mCyan[0m
-- Bold:    [1;31mRed[0m [1;32mGreen[0m [1;33mYellow[0m [1;34mBlue[0m [1;35mMagenta[0m [1;36mCyan[0m
-- Dimmed:  [2;31mRed[0m [2;32mGreen[0m [2;33mYellow[0m [2;34mBlue[0m [2;35mMagenta[0m [2;36mCyan[0m
-
-256 colors (showing colors 160-177):
-[38;5;160m160 [38;5;161m161 [38;5;162m162 [38;5;163m163 [38;5;164m164 [38;5;165m165[0m
-[38;5;166m166 [38;5;167m167 [38;5;168m168 [38;5;169m169 [38;5;170m170 [38;5;171m171[0m
-[38;5;172m172 [38;5;173m173 [38;5;174m174 [38;5;175m175 [38;5;176m176 [38;5;177m177[0m
-
-Full RGB colors:
-[38;2;34;139;34mForestGreen - RGB(34, 139, 34)[0m
-
-Text formatting: [1mBold[0m [2mDimmed[0m [3mItalic[0m [4mUnderline[0m
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Editor &amp;amp; Terminal Frames&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/frames/&quot;&gt;Editor &amp;amp; Terminal Frames&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Code editor frames&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;console.log(&apos;Title attribute example&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!-- src/content/index.html --&amp;gt;
-&amp;lt;div&amp;gt;File name comment example&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Terminal frames&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;echo &quot;This terminal frame has no title&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;Write-Output &quot;This one has a title!&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Overriding frame types&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;echo &quot;Look ma, no frame!&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;# Without overriding, this would be a terminal frame
-function Watch-Tail { Get-Content -Tail 20 -Wait $args }
-New-Alias tail Watch-Tail
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Text &amp;amp; Line Markers&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/text-markers/&quot;&gt;Text &amp;amp; Line Markers&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Marking full lines &amp;amp; line ranges&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;// Line 1 - targeted by line number
-// Line 2
-// Line 3
-// Line 4 - targeted by line number
-// Line 5
-// Line 6
-// Line 7 - targeted by range &quot;7-8&quot;
-// Line 8 - targeted by range &quot;7-8&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Selecting line marker types (mark, ins, del)&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;function demo() {
-  console.log(&apos;this line is marked as deleted&apos;)
-  // This line and the next one are marked as inserted
-  console.log(&apos;this is the second inserted line&apos;)
-
-  return &apos;this line uses the neutral default marker type&apos;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Adding labels to line markers&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;// labeled-line-markers.jsx
-&amp;lt;button
-  role=&quot;button&quot;
-  {...props}
-  value={value}
-  className={buttonClassName}
-  disabled={disabled}
-  active={active}
-&amp;gt;
-  {children &amp;amp;&amp;amp;
-    !active &amp;amp;&amp;amp;
-    (typeof children === &apos;string&apos; ? &amp;lt;span&amp;gt;{children}&amp;lt;/span&amp;gt; : children)}
-&amp;lt;/button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Adding long labels on their own lines&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;// labeled-line-markers.jsx
-&amp;lt;button
-  role=&quot;button&quot;
-  {...props}
-
-  value={value}
-  className={buttonClassName}
-
-  disabled={disabled}
-  active={active}
-&amp;gt;
-
-  {children &amp;amp;&amp;amp;
-    !active &amp;amp;&amp;amp;
-    (typeof children === &apos;string&apos; ? &amp;lt;span&amp;gt;{children}&amp;lt;/span&amp;gt; : children)}
-&amp;lt;/button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Using diff-like syntax&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;+this line will be marked as inserted
--this line will be marked as deleted
-this is a regular line
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;--- a/README.md
-+++ b/README.md
-@@ -1,3 +1,4 @@
-+this is an actual diff file
--all contents will remain unmodified
- no whitespace will be removed either
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Combining syntax highlighting with diff-like syntax&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;  function thisIsJavaScript() {
-    // This entire block gets highlighted as JavaScript,
-    // and we can still add diff markers to it!
--   console.log(&apos;Old code to be removed&apos;)
-+   console.log(&apos;New and shiny code!&apos;)
-  }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Marking individual text inside lines&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;function demo() {
-  // Mark any given text inside lines
-  return &apos;Multiple matches of the given text are supported&apos;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Regular expressions&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;console.log(&apos;The words yes and yep will be marked.&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Escaping forward slashes&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;echo &quot;Test&quot; &amp;gt; /home/test.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Selecting inline marker types (mark, ins, del)&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;function demo() {
-  console.log(&apos;These are inserted and deleted marker types&apos;);
-  // The return statement uses the default marker type
-  return true;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Word Wrap&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/key-features/word-wrap/&quot;&gt;Word Wrap&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Configuring word wrap per block&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;// Example with wrap
-function getLongString() {
-  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;// Example with wrap=false
-function getLongString() {
-  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;Configuring indentation of wrapped lines&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;// Example with preserveIndent (enabled by default)
-function getLongString() {
-  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;// Example with preserveIndent=false
-function getLongString() {
-  return &apos;This is a very long string that will most probably not fit into the available space unless the container is extremely wide&apos;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Collapsible Sections&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/plugins/collapsible-sections/&quot;&gt;Collapsible Sections&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// All this boilerplate setup code will be collapsed
-import { someBoilerplateEngine } from &apos;@example/some-boilerplate&apos;
-import { evenMoreBoilerplate } from &apos;@example/even-more-boilerplate&apos;
-
-const engine = someBoilerplateEngine(evenMoreBoilerplate())
-
-// This part of the code will be visible by default
-engine.doSomething(1, 2, 3, calcFn)
-
-function calcFn() {
-  // You can have multiple collapsed sections
-  const a = 1
-  const b = 2
-  const c = a + b
-
-  // This will remain visible
-  console.log(`Calculation result: ${a} + ${b} = ${c}`)
-  return c
-}
-
-// All this code until the end of the block will be collapsed again
-engine.closeConnection()
-engine.freeMemory()
-engine.shutdown({ reason: &apos;End of example boilerplate code&apos; })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Line Numbers&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://expressive-code.com/plugins/line-numbers/&quot;&gt;Line Numbers&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Displaying line numbers per block&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;// This code block will show line numbers
-console.log(&apos;Greetings from line 2!&apos;)
-console.log(&apos;I am on line 3&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;// Line numbers are disabled for this block
-console.log(&apos;Hello?&apos;)
-console.log(&apos;Sorry, do you know what line I am on?&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Changing the starting line number&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;console.log(&apos;Greetings from line 5!&apos;)
-console.log(&apos;I am on line 6&apos;)
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Simple Guides for Fuwari</title><link>https://fuwari.vercel.app/posts/guide/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;p&gt;Cover image source: &lt;a href=&quot;https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Attribute&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The title of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The date the post was published.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;A short description of the post. Displayed on index page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The tags of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The category of the post.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;If this post is still a draft, which won&apos;t be displayed.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;Where to Place the Post Files&lt;/h2&gt;
-&lt;p&gt;Your post files should be placed in &lt;code&gt;src/content/posts/&lt;/code&gt; directory. You can also create sub-directories to better organize your posts and assets.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Markdown Example</title><link>https://fuwari.vercel.app/posts/markdown/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/markdown/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;An h1 header&lt;/h1&gt;
-&lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
-&lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists
-look like:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;this one&lt;/li&gt;
-&lt;li&gt;that one&lt;/li&gt;
-&lt;li&gt;the other one&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Block quotes are
-written like so.&lt;/p&gt;
-&lt;p&gt;They can span multiple paragraphs,
-if you like.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &quot;it&apos;s all
-in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺&lt;/p&gt;
-&lt;h2&gt;An h2 header&lt;/h2&gt;
-&lt;p&gt;Here&apos;s a numbered list:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;first item&lt;/li&gt;
-&lt;li&gt;second item&lt;/li&gt;
-&lt;li&gt;third item&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here&apos;s a code sample:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# Let me re-iterate ...
-for i in 1 .. 10 { do-something(i) }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;define foobar() {
-    print &quot;Welcome to flavor country!&quot;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;(which makes copying &amp;amp; pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;An h3 header&lt;/h3&gt;
-&lt;p&gt;Now a nested list:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;First, get these ingredients:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;carrots&lt;/li&gt;
-&lt;li&gt;celery&lt;/li&gt;
-&lt;li&gt;lentils&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Boil some water.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dump everything in the pot and follow
-this algorithm:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; find wooden spoon
- uncover pot
- stir
- cover pot
- balance wooden spoon precariously on pot handle
- wait 10 minutes
- goto first step (or shut off burner when done)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Do not bump wooden spoon or it will fall.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).&lt;/p&gt;
-&lt;p&gt;Here&apos;s a link to &lt;a href=&quot;http://foo.bar&quot;&gt;a website&lt;/a&gt;, to a &lt;a href=&quot;local-doc.html&quot;&gt;local
-doc&lt;/a&gt;, and to a &lt;a href=&quot;#an-h2-header&quot;&gt;section heading in the current
-doc&lt;/a&gt;. Here&apos;s a footnote [^1].&lt;/p&gt;
-&lt;p&gt;[^1]: Footnote text goes here.&lt;/p&gt;
-&lt;p&gt;Tables can look like this:&lt;/p&gt;
-&lt;p&gt;size material color&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;9 leather brown
-10 hemp canvas natural
-11 glass transparent&lt;/p&gt;
-&lt;p&gt;Table: Shoes, their sizes, and what they&apos;re made of&lt;/p&gt;
-&lt;p&gt;(The above is the caption for the table.) Pandoc also supports
-multi-line tables:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;keyword text&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;red Sunsets, apples, and
-other red or reddish
-things.&lt;/p&gt;
-&lt;p&gt;green Leaves, grass, frogs
-and other things it&apos;s
-not easy being.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;A horizontal rule follows.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Here&apos;s a definition list:&lt;/p&gt;
-&lt;p&gt;apples
-: Good for making applesauce.
-oranges
-: Citrus!
-tomatoes
-: There&apos;s no &quot;e&quot; in tomatoe.&lt;/p&gt;
-&lt;p&gt;Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)&lt;/p&gt;
-&lt;p&gt;Here&apos;s a &quot;line block&quot;:&lt;/p&gt;
-&lt;p&gt;| Line one
-| Line too
-| Line tree&lt;/p&gt;
-&lt;p&gt;and images can be specified like so:&lt;/p&gt;
-&lt;p&gt;Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:&lt;/p&gt;
-&lt;p&gt;$$I = \int \rho R^{2} dV$$&lt;/p&gt;
-&lt;p&gt;$$
-\begin{equation*}
-\pi
-=3.1415926535
-;8979323846;2643383279;5028841971;6939937510;5820974944
-;5923078164;0628620899;8628034825;3421170679;\ldots
-\end{equation*}
-$$&lt;/p&gt;
-&lt;p&gt;And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
-</content:encoded></item><item><title>Include Video in the Posts</title><link>https://fuwari.vercel.app/posts/video/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/video/</guid><description>This post demonstrates how to include embedded video in a blog post.</description><pubDate>Tue, 01 Aug 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Just copy the embed code from YouTube or other platforms, and paste it in the markdown file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: Include Video in the Post
-published: 2023-10-19
-// ...
----
-
-&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;YouTube&lt;/h2&gt;
-&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
-&lt;h2&gt;Bilibili&lt;/h2&gt;
-&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/p&gt;
-</content:encoded></item><item><title>java基础</title><link>https://fuwari.vercel.app/posts/java%E5%9F%BA%E7%A1%80/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/java%E5%9F%BA%E7%A1%80/</guid><description>java</description><pubDate>Fri, 10 Apr 2020 19:22:47 GMT</pubDate><content:encoded>&lt;ul&gt;
+</content:encoded></item><item><title>java基础</title><link>https://golove.github.io/posts/java%E5%9F%BA%E7%A1%80/</link><guid isPermaLink="true">https://golove.github.io/posts/java%E5%9F%BA%E7%A1%80/</guid><description>java</description><pubDate>Fri, 10 Apr 2020 19:22:47 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;基础语法&lt;/p&gt;
 &lt;/li&gt;
@@ -772,7 +1411,7 @@ public int size() // 获取集合的长度，返回值是集合中包含元素�
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</content:encoded></item><item><title>javaScript继承多态闭包</title><link>https://fuwari.vercel.app/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</guid><description>javaScript 继承 多态 闭包</description><pubDate>Fri, 10 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h2&gt;构造函数继承&lt;/h2&gt;
+</content:encoded></item><item><title>javaScript继承多态闭包</title><link>https://golove.github.io/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</link><guid isPermaLink="true">https://golove.github.io/posts/javascript%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81%E9%97%AD%E5%8C%85/</guid><description>javaScript 继承 多态 闭包</description><pubDate>Fri, 10 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h2&gt;构造函数继承&lt;/h2&gt;
 &lt;p&gt;构造函数继承的关键：在child构造函数中执行&lt;code&gt;Parent.call(this)&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;function Parent(name){
     this.name=name;
@@ -880,7 +1519,7 @@ add();
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>javaScript常用方法</title><link>https://fuwari.vercel.app/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link><guid isPermaLink="true">https://fuwari.vercel.app/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid><description>关于javaScript的常用方法</description><pubDate>Wed, 08 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h4&gt;使用给定的参数对句子执行一次查找和替换，然后返回新句子&lt;/h4&gt;
+</content:encoded></item><item><title>javaScript常用方法</title><link>https://golove.github.io/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link><guid isPermaLink="true">https://golove.github.io/posts/javascript%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid><description>关于javaScript的常用方法</description><pubDate>Wed, 08 Apr 2020 01:50:53 GMT</pubDate><content:encoded>&lt;h4&gt;使用给定的参数对句子执行一次查找和替换，然后返回新句子&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;function myReplace(str, before, after) {
     if (before.charAt(0) &amp;gt;= &apos;A&apos; &amp;amp;&amp;amp; before.charAt(0) &amp;lt;= &apos;Z&apos;) {
         //将after的首字母变为大写

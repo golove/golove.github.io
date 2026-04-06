@@ -21,6 +21,7 @@ export const id: Translation = {
 	[Key.wordsCount]: "kata",
 	[Key.minuteCount]: "menit",
 	[Key.minutesCount]: "menit",
+	[Key.readingTime]: "Waktu baca",
 	[Key.postCount]: "postingan",
 	[Key.postsCount]: "postingan",
 

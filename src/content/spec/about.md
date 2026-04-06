@@ -1,9 +1,9 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-::github{repo="saicaca/fuwari"}
+这里是我的个人博客，主要记录技术学习、开发实践和一些阶段性的观察与整理。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+目前内容以 `Swift`、`Rust`、`JavaScript`、工具使用和热点追踪为主，后续也会继续补充更多长期笔记。
+
+站点基于 `Astro` 构建，文章使用 Markdown 管理，保持轻量、可维护，也方便持续更新。
+
+::github{repo="golove/golove.github.io"}

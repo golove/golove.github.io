@@ -3,15 +3,23 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import Icon from "@iconify/svelte";
 import { getDefaultHue, getHue, setHue } from "@utils/setting-utils";
+import { onMount } from "svelte";
 
-let hue = getHue();
-const defaultHue = getDefaultHue();
+let hue = 250;
+let defaultHue = 250;
+let mounted = false;
+
+onMount(() => {
+	mounted = true;
+	defaultHue = getDefaultHue();
+	hue = getHue();
+});
 
 function resetHue() {
 	hue = getDefaultHue();
 }
 
-$: if (hue || hue === 0) {
+$: if (mounted && (hue || hue === 0)) {
 	setHue(hue);
 }
 </script>

@@ -21,6 +21,7 @@ export const tr: Translation = {
 	[Key.wordsCount]: "kelime",
 	[Key.minuteCount]: "dakika",
 	[Key.minutesCount]: "dakika",
+	[Key.readingTime]: "Okuma süresi",
 	[Key.postCount]: "gönderi",
 	[Key.postsCount]: "gönderiler",
 
