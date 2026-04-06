@@ -10,7 +10,7 @@ lang: ''
 ---
 
 #### 使用给定的参数对句子执行一次查找和替换，然后返回新句子
-```Javascript
+```javascript
 function myReplace(str, before, after) {
     if (before.charAt(0) >= 'A' && before.charAt(0) <= 'Z') {
         //将after的首字母变为大写
@@ -27,7 +27,7 @@ console.log(myReplace("Let us get back to more Coding", "Coding", "algorithms"))
 ```
 <!-- more -->
 ## 重复输出字符串
-```Javascript
+```javascript
 function repeat(str, num) {
     if (num > 0) {
         var newstr = []
@@ -43,7 +43,7 @@ function repeat(str, num) {
 repeat("i love you ", 3);
 ```
 #### 字符串超出隐藏
-```Javascript
+```javascript
 function truncate(str, num) {
     let newstr = str.split("");
 
@@ -62,7 +62,7 @@ function truncate(str, num) {
 truncate("Walking on water and developing software from a specification", 36)
 ```
 #### 把一个数组分成子数组为n的一个2维数组
-```Javascript
+```javascript
 function chunk(arr, size) {
     var len = arr.length;
     var n = len / size;
@@ -77,7 +77,7 @@ function chunk(arr, size) {
 chunk([0, 1, 2, 3, 4, 5], 3);
 ```
 #### 如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。
-```Javascript
+```javascript
 function mutation(arr) {
     let arry = [];
     let arr1 = arr[1].toLowerCase().split("")
@@ -106,7 +106,7 @@ yy = mutation(["floor", "for"]);
 ```
 
 #### 实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值
-```Javascript
+```javascript
 function destroyer() {
 	var argu = arguments
 	var arr1 = argu[0];
@@ -126,7 +126,7 @@ console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 ```
 
 #### 先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。
-```Javascript
+```javascript
 function where(arr, num) {
     function compare(a, b) {
         return a - b;
@@ -140,7 +140,7 @@ console.log(where([2, 10, 20, 3], 5))
 ```
 
 #### 下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。移位密码也就是密码中的字母会按照指定的数量来做移位。
-```Javascript
+```javascript
 // 普通方法
 function rot13(str) { // LBH QVQ VG!
     var yy = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -190,7 +190,7 @@ console.log(rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."))
 ```
 
 #### 求任意两数之间所有数之和
-```Javascript
+```javascript
 function sumAll(arr) {
     var i = 0;
     let a = Math.max(...arr);
@@ -206,7 +206,7 @@ sumAll([56, 10]);
 ```
 
 #### 数组去重
-```Javascript
+```javascript
 function diff(arr1, arr2) {
   var newArr = [];
 
@@ -218,7 +218,7 @@ function diff(arr1, arr2) {
 diff(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);
 ```
 #### 对象数组去重
-```Javascript
+```javascript
 const lists = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];
 const lists2 = [{ id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 }, { id: 4, a: 4 }, { id: 1, a: 1 }, { id: 2, a: 2 }];
 
@@ -230,7 +230,7 @@ console.log(result)
 ```
 
 #### 比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。
-```Javascript
+```javascript
 function diff(arr1, arr2) {
   var newArr = [];
   var arr3 = [...arr1, ...arr2]
@@ -248,7 +248,7 @@ diff(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "ande
 
 
 #### 将给定的数字转换成罗马数字。
-```Javascript
+```javascript
 function convert(num) {
   var num0 = ["1", "4", "5", "9", "10", "40", "50", "90", "100", "400", "500", "900", "1000"];
   var num0R = num0.reverse();
@@ -269,7 +269,7 @@ console.log(convert(222));
 ```
 
 #### 将给的的数字转换成中文
-```Javascript
+```javascript
 function convert(num) {
   let changeNum = [ '零', '一','二','三','四','五','六', '七','八', '九' ];
   let unit = ['', '十', '百', '千', '万'];
@@ -300,7 +300,7 @@ function convert(num) {
 }
 ```
 #### 遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性
-```Javascript
+```javascript
 function where(collection, source) {
   var arr = [];
   // What's in a name?
@@ -332,7 +332,7 @@ where([{
 
 
 #### 给定一个字符串返回对象数组中包含该字符串的对象
-```Javascript
+```javascript
 let str = 'MOTI';
 let data = [
     { technology: 'CHARACTER', score: -1, text: 'sfoefjlasdoejfoausfe' },
