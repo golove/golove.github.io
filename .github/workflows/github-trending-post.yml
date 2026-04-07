@@ -79,6 +79,8 @@ jobs:
             exit 0
           fi
           git commit -m "Add GitHub trending roundup"
+          echo "Git status before rebase:"
+          git status --short
           git fetch origin main
-          git rebase origin/main
+          git rebase --autostash origin/main
           git push origin HEAD:main
