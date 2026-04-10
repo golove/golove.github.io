@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
 
+  workflow_run:
+    workflows: ["Generate GitHub Trending Post"]
+    types:
+      - completed
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -18,8 +23,13 @@ concurrency:
 
 jobs:
   build:
+    if: >
+      github.event_name == 'push' ||
+      github.event.workflow_run.conclusion == 'success'
+
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
       - uses: actions/checkout@v5
 
@@ -42,5 +52,6 @@ jobs:
     needs: build
     environment:
       name: github-pages
+
     steps:
       - uses: actions/deploy-pages@v4
